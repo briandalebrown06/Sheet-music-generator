@@ -1,0 +1,6 @@
+# Optional initial target: CPython 3.11, Linux x86-64 CPU.
+# Basic Pitch's TensorFlow ceiling does not support the core app's Python 3.12 runtime.
+-r requirements.txt
+basic-pitch==0.4.0
+tensorflow==2.15.0
+numpy==1.26.4
