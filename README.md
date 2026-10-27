@@ -80,10 +80,13 @@ set -a; . ./.env; set +a
 .venv-analysis/bin/python -m backend.worker
 ```
 
-This is a **candidate compatibility-pinned runtime**, not a cross-platform guarantee.
-The foundation's core API, FFmpeg path and missing-model behavior have been tested;
-model inference and accuracy have not been verified in this repository's Python
-3.12 environment. Check model-asset licensing below before redistribution.
+This runtime was installed and smoke-tested on **Linux x86-64/Python 3.11**,
+not validated across platforms. A labeled synthetic 440 Hz tone passed through
+real Basic Pitch inference and produced an A4 event. A browser-generated synthetic
+stream also passed recording → upload → FFmpeg → worker inference → note display.
+These checks do **not** establish accuracy on musical performances.
+The core API and missing-model behavior were tested on Python 3.12; inference was
+tested only in the isolated 3.11 environment. Check model-asset licensing below before redistribution.
 TensorFlow is large; install it only when needed. macOS/Apple Silicon and Windows
 require separate runtime validation. Review transitive advisories before deploying
 or redistributing this legacy inference stack.
@@ -135,15 +138,16 @@ Versions below are evaluations, not all installed dependencies:
 | Component | Decision / compatibility | License |
 | --- | --- | --- |
 | [Basic Pitch 0.4.0](https://github.com/spotify/basic-pitch/tree/v0.4.0) **code** | Initial optional engine; published support through Python 3.11. [Metadata](https://pypi.org/pypi/basic-pitch/0.4.0/json) requires TensorFlow `<2.15.1` on Linux Python 3.11. | [Apache-2.0](https://github.com/spotify/basic-pitch/blob/v0.4.0/LICENSE) |
-| Basic Pitch **model weights** (`icassp_2022`) | Bundled assets, not downloaded or vendored by this repository. Inspected separately: [model tree](https://github.com/spotify/basic-pitch/tree/v0.4.0/basic_pitch/saved_models/icassp_2022), [manifest](https://github.com/spotify/basic-pitch/blob/v0.4.0/MANIFEST.in), [NOTICE](https://github.com/spotify/basic-pitch/blob/v0.4.0/NOTICE). | Apparently repository-level Apache-2.0 coverage, but **no distinct weight-specific license grant found**. Obtain upstream confirmation for redistribution/commercial asset clearance. Test audio notices do not establish a model license. |
+| Basic Pitch **model weights** (`icassp_2022`) | Supplied by the optional package, not vendored here. Inspected separately: [model tree](https://github.com/spotify/basic-pitch/tree/v0.4.0/basic_pitch/saved_models/icassp_2022), [manifest](https://github.com/spotify/basic-pitch/blob/v0.4.0/MANIFEST.in), [NOTICE](https://github.com/spotify/basic-pitch/blob/v0.4.0/NOTICE). | Apparently repository-level Apache-2.0 coverage, but **no distinct weight-specific license grant found**. Obtain upstream confirmation for redistribution/commercial asset clearance. Test audio notices do not establish a model license. |
 | [music21 10.5.1](https://github.com/cuthbertLab/music21/tree/v10.5.1) | Suitable for symbolic score construction and MusicXML/MIDI export in stage 2/3; not installed yet. Release [metadata](https://pypi.org/pypi/music21/10.5.1/json): Python ≥3.11, NumPy ≥1.26.4. | [BSD-3-Clause](https://github.com/cuthbertLab/music21/blob/v10.5.1/LICENSE); corpus/third-party scores may differ. |
 | [OpenSheetMusicDisplay 2.2.1](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/tree/2.2.1) | Suitable MusicXML browser renderer, not a note editor or transcription engine. Bundle locally when scores exist; not installed yet. [Official quick start](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/wiki/Getting-Started). | [BSD-3-Clause](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/2.2.1/LICENSE) |
 | [FFmpeg](https://github.com/FFmpeg/FFmpeg/blob/n9.0.2/LICENSE.md) | External controlled decoder; 9.0.2 current upstream at evaluation, actual smoke test used OS FFmpeg 6.1.1. | Usually LGPL-2.1-or-later; build flags/components may switch to GPL/v3 or nonredistributable `nonfree`. Inspect `ffmpeg -buildconf` and `ffmpeg -L`; no binary bundled here. |
 
 TensorFlow 2.15.0 [metadata](https://pypi.org/pypi/tensorflow/2.15.0/json)
 requires NumPy `>=1.23.5,<2`; NumPy 1.26.4 intersects with music21 10.5.1's
-requirement. This verifies declared constraints, **not** inference or notation
-quality. No music21/OSMD dependency is added until notation is implemented.
+requirement. This verifies declared constraints; the Basic Pitch environment was
+also installed and smoke-tested, but music21 has not been runtime-tested here.
+No music21/OSMD dependency is added until notation is implemented.
 React/Vite/TypeScript preserve their package license notices through npm; no
 external fonts, analytics or music fixtures are loaded by the UI.
 
@@ -161,6 +165,8 @@ npm audit
 Tests use temporary databases and explicitly labeled synthetic silence/adapter
 fixtures. They cover uploads, limits, persistent state, local-only access, queue
 claims, retries and failure handling, not model accuracy. Manual verification
-includes browser upload/project navigation, responsive layout and real FFmpeg
-decoding. Hardware microphone capture and real model inference still require
-validation on a supported local machine.
+includes browser upload/project navigation, responsive layout, original-audio playback,
+real FFmpeg decoding and real Basic Pitch inference on labeled synthetic audio.
+MediaRecorder capture was tested with an explicitly synthetic browser stream;
+physical microphone capture and accuracy on real musical performances still require
+validation on a supported local machine. The runner has no physical microphone.

@@ -76,6 +76,15 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(response.json()["filename"], "escape.wav")
         self.assertFalse((self.settings.data_dir.parent / "escape.wav").exists())
 
+    def test_chunked_request_limit_is_enforced_before_multipart_parsing(self):
+        response = self.client.post(
+            "/api/projects",
+            content=iter([b"x" * 700000, b"x" * 700000]),
+            headers={"Content-Type": "multipart/form-data; boundary=test"},
+        )
+        self.assertEqual(response.status_code, 413)
+        self.assertEqual(self.client.get("/api/projects").json(), [])
+
     def test_unknown_project(self):
         self.assertEqual(self.client.get("/api/projects/missing").status_code, 404)
         self.assertEqual(self.client.post("/api/projects/missing/retry").status_code, 404)
@@ -156,6 +165,28 @@ class FoundationTests(unittest.TestCase):
                 result = self.store.project(project["id"])
                 self.assertEqual(result["jobs"][0]["status"], "failed")
                 self.assertIsNone(result["notes"])
+
+    def test_worker_rejects_audio_over_duration_limit_before_inference(self):
+        project = self.upload()
+        job = self.store.claim()
+        self.store.settings = Settings(self.settings.data_dir, max_audio_seconds=1)
+
+        def decode_long_audio(command, **_kwargs):
+            with wave.open(command[-1], "wb") as audio:
+                audio.setnchannels(1)
+                audio.setsampwidth(2)
+                audio.setframerate(22050)
+                audio.writeframes(b"\0\0" * 44100)
+            return subprocess.CompletedProcess(command, 0)
+
+        with patch("backend.worker.shutil.which", return_value="ffmpeg"), \
+                patch("backend.worker.subprocess.run", side_effect=decode_long_audio) as run:
+            process_job(self.store, job)
+        self.assertEqual(run.call_count, 1)
+        result = self.store.project(project["id"])
+        self.assertEqual(result["jobs"][0]["status"], "failed")
+        self.assertIn("exceeds", result["jobs"][0]["error"])
+        self.assertIsNone(result["notes"])
 
     def test_unknown_engine_is_not_a_fake_fallback(self):
         with self.assertRaisesRegex(RuntimeError, "Unsupported transcription engine"):
