@@ -1,0 +1,26 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #23332d;
+  background: #f7f8f4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+a { color: inherit; }
+button, input { font: inherit; }
+button { cursor: pointer; border: 1px solid #bdcbc0; border-radius: 9px; background: white; color: #23332d; padding: 11px 18px; font-weight: 600; }
+button:hover { background: #eaf0e8; }
+button:disabled, .disabled { opacity: .55; cursor: not-allowed; }
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible { outline: 3px solid #b46c2d; outline-offset: 4px; }
+button.primary { background: #285d46; color: white; border-color: #285d46; }
+button.primary:hover { background: #194430; }
+button.danger { background: #a43838; color: white; }
+h1, h2, p { margin-top: 0; }
+h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); letter-spacing: -.045em; line-height: 1.12; margin-bottom: 20px; overflow-wrap: anywhere; }
+h2 { font-size: 1.25rem; letter-spacing: -.02em; }
+p { line-height: 1.7; color: #59665f; }
+small { font-size: .8rem; color: #647169; }
+audio { width: 100%; max-width: 650px; }
