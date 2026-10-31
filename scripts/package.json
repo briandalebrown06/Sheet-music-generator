@@ -1,0 +1,26 @@
+{
+  "name": "scorecraft-browser-checks",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "test": "node browser-smoke.mjs",
+    "test:audio": "node audio-input-smoke.mjs",
+    "test:transcription": "node transcription-browser-smoke.mjs",
+    "test:notation": "node notation-browser-smoke.mjs",
+    "test:review": "node review-browser-smoke.mjs",
+    "test:mixed": "node mixed-browser-smoke.mjs",
+    "test:playback": "node --experimental-strip-types --test test_playback.ts",
+    "test:deployment": "node deployment-browser-smoke.mjs",
+    "test:ingress": "node hosted-ingress-smoke.mjs",
+    "test:sheet-music": "node sheet-music-smoke.mjs",
+    "test:large-upload": "node large-upload-browser-smoke.mjs",
+    "test:piano": "node piano-browser-smoke.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

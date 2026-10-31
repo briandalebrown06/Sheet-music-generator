@@ -1,0 +1,22 @@
+Salamander Grand Piano samples
+
+Original recording: Alexander Holm, Yamaha C5 grand piano.
+License: Creative Commons Attribution 3.0 Unported (CC BY 3.0).
+License terms: https://creativecommons.org/licenses/by/3.0/
+Legal code: https://creativecommons.org/licenses/by/3.0/legalcode
+
+The 30 compressed MP3 samples are distributed by Tonejs/audio:
+https://github.com/Tonejs/audio/tree/efd8296360f9526e379bfbe5c1698ff54d6a1d34/salamander
+Pinned source commit: efd8296360f9526e379bfbe5c1698ff54d6a1d34
+The upstream author's attribution/license notice is preserved in UPSTREAM-README.txt.
+The original library is also available at https://github.com/sfzinstruments/SalamanderGrandPiano
+
+These MP3 bytes are unmodified from the pinned Tonejs/audio distribution.
+This application selects one recorded sample layer, pitches neighboring notes
+by playback rate, applies velocity-controlled gain and note-off envelopes,
+and uses the saved note schedule. It does not redistribute the full multi-layer
+SFZ instrument or claim that a sampled review is a human piano performance.
+No endorsement by Alexander Holm or Tone.js is implied.
+
+Reproduce/verify downloads with scripts/download_piano_samples.py and the
+per-file SHA-256 hashes in scripts/piano_samples.manifest.json.

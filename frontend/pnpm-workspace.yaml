@@ -1,0 +1,2 @@
+allowBuilds:
+  gl: false # Native headless OpenGL is unused by the browser SVG renderer.

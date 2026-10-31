@@ -1,0 +1,1128 @@
+{
+  "run_at_utc": "2026-10-27T19:03:37.617498+00:00",
+  "onset_tolerance_seconds": 0.05,
+  "cleanup": {
+    "minimum_note_seconds": 0.08,
+    "merge_gap_seconds": 0.03
+  },
+  "python_version": "3.11.18",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "engine_version": "0.4.0",
+  "onnxruntime_version": "1.31.1",
+  "numpy_version": "1.26.4",
+  "fixture_manifest_sha256": "b7371754be16b2f254e664dad471e2142ac0ffde5e616cd22abdc9c2166fc78b",
+  "generator_sha256": "005a1a58c358db5cc23ba5c8cb497756fa8c960c52f058ec6df2542e5f9b4cba",
+  "primary_aggregate_raw": {
+    "expected_notes": 18,
+    "predicted_notes": 30,
+    "matched_exact_pitch_and_onset": 18,
+    "false_positive_notes": 12,
+    "missed_notes": 0,
+    "precision": 0.6,
+    "recall": 1.0,
+    "f1": 0.7499999999999999,
+    "onset_mae_seconds": 0.005942428823381202,
+    "offset_mae_seconds": 0.03879687578735195
+  },
+  "primary_aggregate_cleaned": {
+    "expected_notes": 18,
+    "predicted_notes": 26,
+    "matched_exact_pitch_and_onset": 18,
+    "false_positive_notes": 8,
+    "missed_notes": 0,
+    "precision": 0.6923076923076923,
+    "recall": 1.0,
+    "f1": 0.8181818181818181,
+    "onset_mae_seconds": 0.005942428823381202,
+    "offset_mae_seconds": 0.03879687578735195
+  },
+  "fixtures": [
+    {
+      "id": "single_note_melody",
+      "supplementary": false,
+      "input_sha256": "103b5b9554dc820dde508c91a22c6146d34e1b3b72a1d411225f7eae61d1b8d8",
+      "duration_seconds": 5.0,
+      "elapsed_seconds": 0.8312,
+      "raw": {
+        "expected_notes": 4,
+        "predicted_notes": 5,
+        "matched_exact_pitch_and_onset": 4,
+        "false_positive_notes": 1,
+        "missed_notes": 0,
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.888888888888889,
+        "onset_mae_seconds": 0.0032879818594104826,
+        "offset_mae_seconds": 0.04444716553287975,
+        "onset_max_error_seconds": 0.00749705215419505,
+        "offset_max_error_seconds": 0.05417233560090695,
+        "pitch_diagnostic_pairs": 4,
+        "pitch_mae_semitones_within_150ms": 0.0,
+        "octave_errors_within_150ms": 0
+      },
+      "cleaned": {
+        "expected_notes": 4,
+        "predicted_notes": 5,
+        "matched_exact_pitch_and_onset": 4,
+        "false_positive_notes": 1,
+        "missed_notes": 0,
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.888888888888889,
+        "onset_mae_seconds": 0.0032879818594104826,
+        "offset_mae_seconds": 0.04444716553287975,
+        "onset_max_error_seconds": 0.00749705215419505,
+        "offset_max_error_seconds": 0.05417233560090695,
+        "pitch_diagnostic_pairs": 4,
+        "pitch_mae_semitones_within_150ms": 0.0,
+        "octave_errors_within_150ms": 0
+      },
+      "predicted_notes": [
+        {
+          "id": "50e61492-ec20-55cf-8e09-7ab1e0704d49",
+          "pitch": 60,
+          "start": 0.4992290249433107,
+          "end": 1.195827664399093,
+          "velocity": 103,
+          "part_id": "part-1",
+          "model_score": 0.8079530000686646,
+          "provenance": "detected",
+          "source_note_ids": [
+            "50e61492-ec20-55cf-8e09-7ab1e0704d49"
+          ],
+          "original_timing": {
+            "start": 0.4992290249433107,
+            "end": 1.195827664399093,
+            "pitch": 60,
+            "velocity": 103
+          },
+          "score_timing": null
+        },
+        {
+          "id": "0c4ffe3e-c523-5e01-b74c-07d2dc9f9742",
+          "pitch": 60,
+          "start": 1.195827664399093,
+          "end": 1.3003174603174603,
+          "velocity": 78,
+          "part_id": "part-1",
+          "model_score": 0.6173542141914368,
+          "provenance": "detected",
+          "source_note_ids": [
+            "0c4ffe3e-c523-5e01-b74c-07d2dc9f9742"
+          ],
+          "original_timing": {
+            "start": 1.195827664399093,
+            "end": 1.3003174603174603,
+            "pitch": 60,
+            "velocity": 78
+          },
+          "score_timing": null
+        },
+        {
+          "id": "4ce17013-d6c3-570a-8d84-699c7ccb44fc",
+          "pitch": 62,
+          "start": 1.497687074829932,
+          "end": 2.288449433106576,
+          "velocity": 100,
+          "part_id": "part-1",
+          "model_score": 0.788148045539856,
+          "provenance": "detected",
+          "source_note_ids": [
+            "4ce17013-d6c3-570a-8d84-699c7ccb44fc"
+          ],
+          "original_timing": {
+            "start": 1.497687074829932,
+            "end": 2.288449433106576,
+            "pitch": 62,
+            "velocity": 100
+          },
+          "score_timing": null
+        },
+        {
+          "id": "cd01b526-c095-5a1b-b4c9-f12f41fa6a38",
+          "pitch": 64,
+          "start": 2.4974290249433104,
+          "end": 3.29851746031746,
+          "velocity": 100,
+          "part_id": "part-1",
+          "model_score": 0.7904207706451416,
+          "provenance": "detected",
+          "source_note_ids": [
+            "cd01b526-c095-5a1b-b4c9-f12f41fa6a38"
+          ],
+          "original_timing": {
+            "start": 2.4974290249433104,
+            "end": 3.29851746031746,
+            "pitch": 64,
+            "velocity": 100
+          },
+          "score_timing": null
+        },
+        {
+          "id": "2726e8a7-f221-5230-b12b-79ba1c1383c8",
+          "pitch": 67,
+          "start": 3.507497052154195,
+          "end": 4.286649433106576,
+          "velocity": 102,
+          "part_id": "part-1",
+          "model_score": 0.8067681789398193,
+          "provenance": "detected",
+          "source_note_ids": [
+            "2726e8a7-f221-5230-b12b-79ba1c1383c8"
+          ],
+          "original_timing": {
+            "start": 3.507497052154195,
+            "end": 4.286649433106576,
+            "pitch": 67,
+            "velocity": 102
+          },
+          "score_timing": null
+        }
+      ],
+      "manifest": {
+        "schema_version": 1,
+        "engine": "basic-pitch",
+        "namespace": "363e0bb6-76f5-537e-8722-4fe628425ef8",
+        "clip_duration_seconds": 5.0,
+        "normalized_audio_sha256": "103b5b9554dc820dde508c91a22c6146d34e1b3b72a1d411225f7eae61d1b8d8",
+        "engine_version": "0.4.0",
+        "runtime": "onnx",
+        "model_sha256": "2c3c1d144bfa61ad236e92e169c13535c880469a12a047d4e73451f2c059a0ec",
+        "runtime_version": "1.31.1",
+        "time_basis": "seconds relative to selected clip; unquantized",
+        "windowing": {
+          "implementation": "basic_pitch.inference.run_inference",
+          "sample_rate": 22050,
+          "model_window_samples": 43844,
+          "overlap_frames": 30,
+          "fft_hop_samples": 256,
+          "reconciliation": "upstream unwrap_output trims overlap and produces a global activation timeline before note extraction"
+        },
+        "extraction": {
+          "onset_threshold": 0.5,
+          "frame_threshold": 0.3,
+          "minimum_note_frames": 2,
+          "melodia_trick": true,
+          "infer_onsets": true
+        },
+        "cleanup": {
+          "settings": {
+            "minimum_note_seconds": 0.08,
+            "merge_gap_seconds": 0.03
+          },
+          "raw_valid_note_count": 5,
+          "removed_short_note_ids": [],
+          "merged_source_note_groups": [],
+          "normalized_note_count": 5,
+          "merge_rule": "same pitch/part, bounded gap or overlap, continuous frame activation >=0.3, boundary onset <0.2, local frame rise <0.15"
+        },
+        "raw_note_count": 5,
+        "normalized_note_count": 5,
+        "model_score_semantics": "mean model note activation for a raw event; merged notes use the maximum source activation; not calibrated accuracy",
+        "pitch_bend_semantics": "original pitch bends are retained in raw-note-events.json and upstream raw-performance.mid where MIDI permits; editable normalized notes currently contain discrete pitches only",
+        "velocity_semantics": "MIDI velocity derived by rounding model amplitude * 127; editable and not measured playing force",
+        "original_timing_semantics": "earliest source event snapshot; merged source events remain in raw-note-events.json via source_note_ids"
+      }
+    },
+    {
+      "id": "sustained_notes",
+      "supplementary": false,
+      "input_sha256": "bfd425d9871d544a5f70a947c641ae089f89223dc74290ff7b24955e619ad9c7",
+      "duration_seconds": 9.0,
+      "elapsed_seconds": 0.0969,
+      "raw": {
+        "expected_notes": 2,
+        "predicted_notes": 3,
+        "matched_exact_pitch_and_onset": 2,
+        "false_positive_notes": 1,
+        "missed_notes": 0,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "onset_mae_seconds": 0.003619501133786729,
+        "offset_mae_seconds": 0.044639909297052416,
+        "onset_max_error_seconds": 0.006468027210884131,
+        "offset_max_error_seconds": 0.05081088435374159,
+        "pitch_diagnostic_pairs": 2,
+        "pitch_mae_semitones_within_150ms": 0.0,
+        "octave_errors_within_150ms": 0
+      },
+      "cleaned": {
+        "expected_notes": 2,
+        "predicted_notes": 3,
+        "matched_exact_pitch_and_onset": 2,
+        "false_positive_notes": 1,
+        "missed_notes": 0,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "onset_mae_seconds": 0.003619501133786729,
+        "offset_mae_seconds": 0.044639909297052416,
+        "onset_max_error_seconds": 0.006468027210884131,
+        "offset_max_error_seconds": 0.05081088435374159,
+        "pitch_diagnostic_pairs": 2,
+        "pitch_mae_semitones_within_150ms": 0.0,
+        "octave_errors_within_150ms": 0
+      },
+      "predicted_notes": [
+        {
+          "id": "2938e9a8-c48c-5d33-b2c7-d38742bd2476",
+          "pitch": 60,
+          "start": 0.4992290249433107,
+          "end": 4.449189115646258,
+          "velocity": 103,
+          "part_id": "part-1",
+          "model_score": 0.8144248127937317,
+          "provenance": "detected",
+          "source_note_ids": [
+            "2938e9a8-c48c-5d33-b2c7-d38742bd2476"
+          ],
+          "original_timing": {
+            "start": 0.4992290249433107,
+            "end": 4.449189115646258,
+            "pitch": 60,
+            "velocity": 103
+          },
+          "score_timing": null
+        },
+        {
+          "id": "58c6dd77-961f-5c2e-9fe2-0342a63fdbb0",
+          "pitch": 60,
+          "start": 4.449189115646258,
+          "end": 4.542068934240363,
+          "velocity": 79,
+          "part_id": "part-1",
+          "model_score": 0.6202561855316162,
+          "provenance": "detected",
+          "source_note_ids": [
+            "58c6dd77-961f-5c2e-9fe2-0342a63fdbb0"
+          ],
+          "original_timing": {
+            "start": 4.449189115646258,
+            "end": 4.542068934240363,
+            "pitch": 60,
+            "velocity": 79
+          },
+          "score_timing": null
+        },
+        {
+          "id": "1ec706fc-237b-5ba9-81b4-c6f97ccefca6",
+          "pitch": 67,
+          "start": 5.006468027210884,
+          "end": 8.538468934240363,
+          "velocity": 106,
+          "part_id": "part-1",
+          "model_score": 0.8334113955497742,
+          "provenance": "detected",
+          "source_note_ids": [
+            "1ec706fc-237b-5ba9-81b4-c6f97ccefca6"
+          ],
+          "original_timing": {
+            "start": 5.006468027210884,
+            "end": 8.538468934240363,
+            "pitch": 67,
+            "velocity": 106
+          },
+          "score_timing": null
+        }
+      ],
+      "manifest": {
+        "schema_version": 1,
+        "engine": "basic-pitch",
+        "namespace": "6c262444-2354-586a-9809-498f729ef2ee",
+        "clip_duration_seconds": 9.0,
+        "normalized_audio_sha256": "bfd425d9871d544a5f70a947c641ae089f89223dc74290ff7b24955e619ad9c7",
+        "engine_version": "0.4.0",
+        "runtime": "onnx",
+        "model_sha256": "2c3c1d144bfa61ad236e92e169c13535c880469a12a047d4e73451f2c059a0ec",
+        "runtime_version": "1.31.1",
+        "time_basis": "seconds relative to selected clip; unquantized",
+        "windowing": {
+          "implementation": "basic_pitch.inference.run_inference",
+          "sample_rate": 22050,
+          "model_window_samples": 43844,
+          "overlap_frames": 30,
+          "fft_hop_samples": 256,
+          "reconciliation": "upstream unwrap_output trims overlap and produces a global activation timeline before note extraction"
+        },
+        "extraction": {
+          "onset_threshold": 0.5,
+          "frame_threshold": 0.3,
+          "minimum_note_frames": 2,
+          "melodia_trick": true,
+          "infer_onsets": true
+        },
+        "cleanup": {
+          "settings": {
+            "minimum_note_seconds": 0.08,
+            "merge_gap_seconds": 0.03
+          },
+          "raw_valid_note_count": 3,
+          "removed_short_note_ids": [],
+          "merged_source_note_groups": [],
+          "normalized_note_count": 3,
+          "merge_rule": "same pitch/part, bounded gap or overlap, continuous frame activation >=0.3, boundary onset <0.2, local frame rise <0.15"
+        },
+        "raw_note_count": 3,
+        "normalized_note_count": 3,
+        "model_score_semantics": "mean model note activation for a raw event; merged notes use the maximum source activation; not calibrated accuracy",
+        "pitch_bend_semantics": "original pitch bends are retained in raw-note-events.json and upstream raw-performance.mid where MIDI permits; editable normalized notes currently contain discrete pitches only",
+        "velocity_semantics": "MIDI velocity derived by rounding model amplitude * 127; editable and not measured playing force",
+        "original_timing_semantics": "earliest source event snapshot; merged source events remain in raw-note-events.json via source_note_ids"
+      }
+    },
+    {
+      "id": "repeated_notes",
+      "supplementary": false,
+      "input_sha256": "39e11415c0c5a50f1829bfe86c4da979c92c0d6248b84da7d29586b1c234977f",
+      "duration_seconds": 5.0,
+      "elapsed_seconds": 0.0624,
+      "raw": {
+        "expected_notes": 6,
+        "predicted_notes": 11,
+        "matched_exact_pitch_and_onset": 6,
+        "false_positive_notes": 5,
+        "missed_notes": 0,
+        "precision": 0.5454545454545454,
+        "recall": 1.0,
+        "f1": 0.7058823529411764,
+        "onset_mae_seconds": 0.008518518518518592,
+        "offset_mae_seconds": 0.042889720332577395,
+        "onset_max_error_seconds": 0.0156462585034014,
+        "offset_max_error_seconds": 0.05334195011337872,
+        "pitch_diagnostic_pairs": 6,
+        "pitch_mae_semitones_within_150ms": 0.0,
+        "octave_errors_within_150ms": 0
+      },
+      "cleaned": {
+        "expected_notes": 6,
+        "predicted_notes": 8,
+        "matched_exact_pitch_and_onset": 6,
+        "false_positive_notes": 2,
+        "missed_notes": 0,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571,
+        "onset_mae_seconds": 0.008518518518518592,
+        "offset_mae_seconds": 0.042889720332577395,
+        "onset_max_error_seconds": 0.0156462585034014,
+        "offset_max_error_seconds": 0.05334195011337872,
+        "pitch_diagnostic_pairs": 6,
+        "pitch_mae_semitones_within_150ms": 0.0,
+        "octave_errors_within_150ms": 0
+      },
+      "predicted_notes": [
+        {
+          "id": "697b278c-6a12-54ae-9ccd-c2aeab805ad2",
+          "pitch": 64,
+          "start": 0.4876190476190476,
+          "end": 0.9868480725623583,
+          "velocity": 99,
+          "part_id": "part-1",
+          "model_score": 0.7759330868721008,
+          "provenance": "detected",
+          "source_note_ids": [
+            "697b278c-6a12-54ae-9ccd-c2aeab805ad2"
+          ],
+          "original_timing": {
+            "start": 0.4876190476190476,
+            "end": 0.9868480725623583,
+            "pitch": 64,
+            "velocity": 99
+          },
+          "score_timing": null
+        },
+        {
+          "id": "1d6037c3-e437-581d-807d-e0c13f5e4c80",
+          "pitch": 64,
+          "start": 1.207437641723356,
+          "end": 1.6950566893424037,
+          "velocity": 99,
+          "part_id": "part-1",
+          "model_score": 0.7799216508865356,
+          "provenance": "detected",
+          "source_note_ids": [
+            "1d6037c3-e437-581d-807d-e0c13f5e4c80"
+          ],
+          "original_timing": {
+            "start": 1.207437641723356,
+            "end": 1.6950566893424037,
+            "pitch": 64,
+            "velocity": 99
+          },
+          "score_timing": null
+        },
+        {
+          "id": "9a3243c4-d33b-53fa-97f4-5a5a98dc1180",
+          "pitch": 64,
+          "start": 1.9156462585034013,
+          "end": 2.392939229024943,
+          "velocity": 98,
+          "part_id": "part-1",
+          "model_score": 0.77333003282547,
+          "provenance": "detected",
+          "source_note_ids": [
+            "9a3243c4-d33b-53fa-97f4-5a5a98dc1180"
+          ],
+          "original_timing": {
+            "start": 1.9156462585034013,
+            "end": 2.392939229024943,
+            "pitch": 64,
+            "velocity": 98
+          },
+          "score_timing": null
+        },
+        {
+          "id": "3f7682b6-ac48-5ee2-b274-bb535259873f",
+          "pitch": 64,
+          "start": 2.6019188208616777,
+          "end": 2.996658049886621,
+          "velocity": 103,
+          "part_id": "part-1",
+          "model_score": 0.8144591450691223,
+          "provenance": "detected",
+          "source_note_ids": [
+            "3f7682b6-ac48-5ee2-b274-bb535259873f"
+          ],
+          "original_timing": {
+            "start": 2.6019188208616777,
+            "end": 2.996658049886621,
+            "pitch": 64,
+            "velocity": 103
+          },
+          "score_timing": null
+        },
+        {
+          "id": "31998496-c143-58b3-9905-40f0a1213207",
+          "pitch": 64,
+          "start": 2.996658049886621,
+          "end": 3.0895378684807255,
+          "velocity": 80,
+          "part_id": "part-1",
+          "model_score": 0.6274349093437195,
+          "provenance": "detected",
+          "source_note_ids": [
+            "31998496-c143-58b3-9905-40f0a1213207"
+          ],
+          "original_timing": {
+            "start": 2.996658049886621,
+            "end": 3.0895378684807255,
+            "pitch": 64,
+            "velocity": 80
+          },
+          "score_timing": null
+        },
+        {
+          "id": "a8573a60-c207-5b3a-bb33-fdf7354847fd",
+          "pitch": 64,
+          "start": 3.3101274376417233,
+          "end": 3.7048666666666668,
+          "velocity": 103,
+          "part_id": "part-1",
+          "model_score": 0.8130279183387756,
+          "provenance": "detected",
+          "source_note_ids": [
+            "a8573a60-c207-5b3a-bb33-fdf7354847fd"
+          ],
+          "original_timing": {
+            "start": 3.3101274376417233,
+            "end": 3.7048666666666668,
+            "pitch": 64,
+            "velocity": 103
+          },
+          "score_timing": null
+        },
+        {
+          "id": "d4ebc59f-b06a-5c89-a71a-d584e6385e69",
+          "pitch": 64,
+          "start": 3.7048666666666668,
+          "end": 3.7977464852607707,
+          "velocity": 79,
+          "part_id": "part-1",
+          "model_score": 0.6252404451370239,
+          "provenance": "detected",
+          "source_note_ids": [
+            "d4ebc59f-b06a-5c89-a71a-d584e6385e69"
+          ],
+          "original_timing": {
+            "start": 3.7048666666666668,
+            "end": 3.7977464852607707,
+            "pitch": 64,
+            "velocity": 79
+          },
+          "score_timing": null
+        },
+        {
+          "id": "f23c6d08-8649-5697-9cdf-cbab1bd25f6d",
+          "pitch": 64,
+          "start": 3.9963999999999995,
+          "end": 4.484019047619047,
+          "velocity": 99,
+          "part_id": "part-1",
+          "model_score": 0.7826321125030518,
+          "provenance": "detected",
+          "source_note_ids": [
+            "f23c6d08-8649-5697-9cdf-cbab1bd25f6d"
+          ],
+          "original_timing": {
+            "start": 3.9963999999999995,
+            "end": 4.484019047619047,
+            "pitch": 64,
+            "velocity": 99
+          },
+          "score_timing": null
+        }
+      ],
+      "manifest": {
+        "schema_version": 1,
+        "engine": "basic-pitch",
+        "namespace": "eb3023f2-156f-5fc9-898c-7f29751f7444",
+        "clip_duration_seconds": 5.0,
+        "normalized_audio_sha256": "39e11415c0c5a50f1829bfe86c4da979c92c0d6248b84da7d29586b1c234977f",
+        "engine_version": "0.4.0",
+        "runtime": "onnx",
+        "model_sha256": "2c3c1d144bfa61ad236e92e169c13535c880469a12a047d4e73451f2c059a0ec",
+        "runtime_version": "1.31.1",
+        "time_basis": "seconds relative to selected clip; unquantized",
+        "windowing": {
+          "implementation": "basic_pitch.inference.run_inference",
+          "sample_rate": 22050,
+          "model_window_samples": 43844,
+          "overlap_frames": 30,
+          "fft_hop_samples": 256,
+          "reconciliation": "upstream unwrap_output trims overlap and produces a global activation timeline before note extraction"
+        },
+        "extraction": {
+          "onset_threshold": 0.5,
+          "frame_threshold": 0.3,
+          "minimum_note_frames": 2,
+          "melodia_trick": true,
+          "infer_onsets": true
+        },
+        "cleanup": {
+          "settings": {
+            "minimum_note_seconds": 0.08,
+            "merge_gap_seconds": 0.03
+          },
+          "raw_valid_note_count": 11,
+          "removed_short_note_ids": [
+            "20644656-85b7-54af-9584-8431c20129df",
+            "9a2de487-104d-578d-bbc6-12fe4a84bc76",
+            "74d3dd95-ef10-59e3-8b77-200338730bc6"
+          ],
+          "merged_source_note_groups": [],
+          "normalized_note_count": 8,
+          "merge_rule": "same pitch/part, bounded gap or overlap, continuous frame activation >=0.3, boundary onset <0.2, local frame rise <0.15"
+        },
+        "raw_note_count": 11,
+        "normalized_note_count": 8,
+        "model_score_semantics": "mean model note activation for a raw event; merged notes use the maximum source activation; not calibrated accuracy",
+        "pitch_bend_semantics": "original pitch bends are retained in raw-note-events.json and upstream raw-performance.mid where MIDI permits; editable normalized notes currently contain discrete pitches only",
+        "velocity_semantics": "MIDI velocity derived by rounding model amplitude * 127; editable and not measured playing force",
+        "original_timing_semantics": "earliest source event snapshot; merged source events remain in raw-note-events.json via source_note_ids"
+      }
+    },
+    {
+      "id": "simple_chords",
+      "supplementary": false,
+      "input_sha256": "d26c04d56600955935bc3d329a997a756c2c0bf68a59748ec9a25c038cc50201",
+      "duration_seconds": 4.0,
+      "elapsed_seconds": 0.0476,
+      "raw": {
+        "expected_notes": 6,
+        "predicted_notes": 11,
+        "matched_exact_pitch_and_onset": 6,
+        "false_positive_notes": 5,
+        "missed_notes": 0,
+        "precision": 0.5454545454545454,
+        "recall": 1.0,
+        "f1": 0.7058823529411764,
+        "onset_mae_seconds": 0.005910279667422451,
+        "offset_mae_seconds": 0.02898949357520782,
+        "onset_max_error_seconds": 0.012380952380952381,
+        "offset_max_error_seconds": 0.04149659863945576,
+        "pitch_diagnostic_pairs": 6,
+        "pitch_mae_semitones_within_150ms": 0.0,
+        "octave_errors_within_150ms": 0
+      },
+      "cleaned": {
+        "expected_notes": 6,
+        "predicted_notes": 10,
+        "matched_exact_pitch_and_onset": 6,
+        "false_positive_notes": 4,
+        "missed_notes": 0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.7499999999999999,
+        "onset_mae_seconds": 0.005910279667422451,
+        "offset_mae_seconds": 0.02898949357520782,
+        "onset_max_error_seconds": 0.012380952380952381,
+        "offset_max_error_seconds": 0.04149659863945576,
+        "pitch_diagnostic_pairs": 6,
+        "pitch_mae_semitones_within_150ms": 0.0,
+        "octave_errors_within_150ms": 0
+      },
+      "predicted_notes": [
+        {
+          "id": "ec4d0a14-d286-5e71-8224-d6a314e74659",
+          "pitch": 64,
+          "start": 0.4876190476190476,
+          "end": 1.7298866213151927,
+          "velocity": 100,
+          "part_id": "part-1",
+          "model_score": 0.784447431564331,
+          "provenance": "detected",
+          "source_note_ids": [
+            "ec4d0a14-d286-5e71-8224-d6a314e74659"
+          ],
+          "original_timing": {
+            "start": 0.4876190476190476,
+            "end": 1.7298866213151927,
+            "pitch": 64,
+            "velocity": 100
+          },
+          "score_timing": null
+        },
+        {
+          "id": "045f570d-db9a-51d6-b408-4c13d2574cd0",
+          "pitch": 60,
+          "start": 0.4992290249433107,
+          "end": 1.7298866213151927,
+          "velocity": 88,
+          "part_id": "part-1",
+          "model_score": 0.6922672986984253,
+          "provenance": "detected",
+          "source_note_ids": [
+            "045f570d-db9a-51d6-b408-4c13d2574cd0"
+          ],
+          "original_timing": {
+            "start": 0.4992290249433107,
+            "end": 1.7298866213151927,
+            "pitch": 60,
+            "velocity": 88
+          },
+          "score_timing": null
+        },
+        {
+          "id": "96021316-aea1-5b8c-9392-e8516abe3aa1",
+          "pitch": 67,
+          "start": 0.4992290249433107,
+          "end": 1.7414965986394557,
+          "velocity": 97,
+          "part_id": "part-1",
+          "model_score": 0.7640062570571899,
+          "provenance": "detected",
+          "source_note_ids": [
+            "96021316-aea1-5b8c-9392-e8516abe3aa1"
+          ],
+          "original_timing": {
+            "start": 0.4992290249433107,
+            "end": 1.7414965986394557,
+            "pitch": 67,
+            "velocity": 97
+          },
+          "score_timing": null
+        },
+        {
+          "id": "fc980e4e-0d84-56dc-8386-40949103be81",
+          "pitch": 86,
+          "start": 0.5108390022675737,
+          "end": 1.6486167800453515,
+          "velocity": 51,
+          "part_id": "part-1",
+          "model_score": 0.4046463072299957,
+          "provenance": "detected",
+          "source_note_ids": [
+            "fc980e4e-0d84-56dc-8386-40949103be81"
+          ],
+          "original_timing": {
+            "start": 0.5108390022675737,
+            "end": 1.6486167800453515,
+            "pitch": 86,
+            "velocity": 51
+          },
+          "score_timing": null
+        },
+        {
+          "id": "f3d6c675-57ac-521b-bd4c-fdb0866eb736",
+          "pitch": 62,
+          "start": 2.2071795918367347,
+          "end": 3.3913972789115645,
+          "velocity": 77,
+          "part_id": "part-1",
+          "model_score": 0.6079180240631104,
+          "provenance": "detected",
+          "source_note_ids": [
+            "f3d6c675-57ac-521b-bd4c-fdb0866eb736"
+          ],
+          "original_timing": {
+            "start": 2.2071795918367347,
+            "end": 3.3913972789115645,
+            "pitch": 62,
+            "velocity": 77
+          },
+          "score_timing": null
+        },
+        {
+          "id": "fac585e5-b6a7-5779-810f-742fd95eb07c",
+          "pitch": 65,
+          "start": 2.2071795918367347,
+          "end": 3.4262272108843534,
+          "velocity": 91,
+          "part_id": "part-1",
+          "model_score": 0.7189458012580872,
+          "provenance": "detected",
+          "source_note_ids": [
+            "fac585e5-b6a7-5779-810f-742fd95eb07c"
+          ],
+          "original_timing": {
+            "start": 2.2071795918367347,
+            "end": 3.4262272108843534,
+            "pitch": 65,
+            "velocity": 91
+          },
+          "score_timing": null
+        },
+        {
+          "id": "c6f8bb03-f2c4-5112-8f26-2062d39d849d",
+          "pitch": 69,
+          "start": 2.2071795918367347,
+          "end": 3.4378371882086167,
+          "velocity": 93,
+          "part_id": "part-1",
+          "model_score": 0.7323660254478455,
+          "provenance": "detected",
+          "source_note_ids": [
+            "c6f8bb03-f2c4-5112-8f26-2062d39d849d"
+          ],
+          "original_timing": {
+            "start": 2.2071795918367347,
+            "end": 3.4378371882086167,
+            "pitch": 69,
+            "velocity": 93
+          },
+          "score_timing": null
+        },
+        {
+          "id": "667b2620-8a4b-54ea-a90e-a30253762427",
+          "pitch": 88,
+          "start": 2.2071795918367347,
+          "end": 3.3565673469387756,
+          "velocity": 55,
+          "part_id": "part-1",
+          "model_score": 0.434359073638916,
+          "provenance": "detected",
+          "source_note_ids": [
+            "667b2620-8a4b-54ea-a90e-a30253762427"
+          ],
+          "original_timing": {
+            "start": 2.2071795918367347,
+            "end": 3.3565673469387756,
+            "pitch": 88,
+            "velocity": 55
+          },
+          "score_timing": null
+        },
+        {
+          "id": "70ab1538-6926-5b0e-9fd5-5a5af7c698ac",
+          "pitch": 84,
+          "start": 2.230399546485261,
+          "end": 2.6019188208616777,
+          "velocity": 40,
+          "part_id": "part-1",
+          "model_score": 0.31675803661346436,
+          "provenance": "detected",
+          "source_note_ids": [
+            "70ab1538-6926-5b0e-9fd5-5a5af7c698ac"
+          ],
+          "original_timing": {
+            "start": 2.230399546485261,
+            "end": 2.6019188208616777,
+            "pitch": 84,
+            "velocity": 40
+          },
+          "score_timing": null
+        },
+        {
+          "id": "cb02cf29-79aa-5c30-b7fe-f1001bfa13db",
+          "pitch": 84,
+          "start": 2.91538820861678,
+          "end": 3.3101274376417233,
+          "velocity": 38,
+          "part_id": "part-1",
+          "model_score": 0.3008359968662262,
+          "provenance": "detected",
+          "source_note_ids": [
+            "cb02cf29-79aa-5c30-b7fe-f1001bfa13db"
+          ],
+          "original_timing": {
+            "start": 2.91538820861678,
+            "end": 3.3101274376417233,
+            "pitch": 84,
+            "velocity": 38
+          },
+          "score_timing": null
+        }
+      ],
+      "manifest": {
+        "schema_version": 1,
+        "engine": "basic-pitch",
+        "namespace": "2b18a97a-2b2a-5aec-9efe-c14b56fa4594",
+        "clip_duration_seconds": 4.0,
+        "normalized_audio_sha256": "d26c04d56600955935bc3d329a997a756c2c0bf68a59748ec9a25c038cc50201",
+        "engine_version": "0.4.0",
+        "runtime": "onnx",
+        "model_sha256": "2c3c1d144bfa61ad236e92e169c13535c880469a12a047d4e73451f2c059a0ec",
+        "runtime_version": "1.31.1",
+        "time_basis": "seconds relative to selected clip; unquantized",
+        "windowing": {
+          "implementation": "basic_pitch.inference.run_inference",
+          "sample_rate": 22050,
+          "model_window_samples": 43844,
+          "overlap_frames": 30,
+          "fft_hop_samples": 256,
+          "reconciliation": "upstream unwrap_output trims overlap and produces a global activation timeline before note extraction"
+        },
+        "extraction": {
+          "onset_threshold": 0.5,
+          "frame_threshold": 0.3,
+          "minimum_note_frames": 2,
+          "melodia_trick": true,
+          "infer_onsets": true
+        },
+        "cleanup": {
+          "settings": {
+            "minimum_note_seconds": 0.08,
+            "merge_gap_seconds": 0.03
+          },
+          "raw_valid_note_count": 11,
+          "removed_short_note_ids": [
+            "0fbf294d-c43b-5b25-a594-db7eadda86ff"
+          ],
+          "merged_source_note_groups": [],
+          "normalized_note_count": 10,
+          "merge_rule": "same pitch/part, bounded gap or overlap, continuous frame activation >=0.3, boundary onset <0.2, local frame rise <0.15"
+        },
+        "raw_note_count": 11,
+        "normalized_note_count": 10,
+        "model_score_semantics": "mean model note activation for a raw event; merged notes use the maximum source activation; not calibrated accuracy",
+        "pitch_bend_semantics": "original pitch bends are retained in raw-note-events.json and upstream raw-performance.mid where MIDI permits; editable normalized notes currently contain discrete pitches only",
+        "velocity_semantics": "MIDI velocity derived by rounding model amplitude * 127; editable and not measured playing force",
+        "original_timing_semantics": "earliest source event snapshot; merged source events remain in raw-note-events.json via source_note_ids"
+      }
+    },
+    {
+      "id": "silence",
+      "supplementary": false,
+      "input_sha256": "9954b1ec94cd58bd7debcf5e3a34585c545100427917cee822de476787090e3c",
+      "duration_seconds": 4.0,
+      "elapsed_seconds": 0.0295,
+      "raw": {
+        "expected_notes": 0,
+        "predicted_notes": 0,
+        "matched_exact_pitch_and_onset": 0,
+        "false_positive_notes": 0,
+        "missed_notes": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "onset_mae_seconds": null,
+        "offset_mae_seconds": null,
+        "onset_max_error_seconds": null,
+        "offset_max_error_seconds": null,
+        "pitch_diagnostic_pairs": 0,
+        "pitch_mae_semitones_within_150ms": null,
+        "octave_errors_within_150ms": 0
+      },
+      "cleaned": {
+        "expected_notes": 0,
+        "predicted_notes": 0,
+        "matched_exact_pitch_and_onset": 0,
+        "false_positive_notes": 0,
+        "missed_notes": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "onset_mae_seconds": null,
+        "offset_mae_seconds": null,
+        "onset_max_error_seconds": null,
+        "offset_max_error_seconds": null,
+        "pitch_diagnostic_pairs": 0,
+        "pitch_mae_semitones_within_150ms": null,
+        "octave_errors_within_150ms": 0
+      },
+      "predicted_notes": [],
+      "manifest": {
+        "schema_version": 1,
+        "engine": "basic-pitch",
+        "namespace": "97c5d06b-4190-57ef-815b-75bdf9c24350",
+        "clip_duration_seconds": 4.0,
+        "normalized_audio_sha256": "9954b1ec94cd58bd7debcf5e3a34585c545100427917cee822de476787090e3c",
+        "engine_version": "0.4.0",
+        "runtime": "onnx",
+        "model_sha256": "2c3c1d144bfa61ad236e92e169c13535c880469a12a047d4e73451f2c059a0ec",
+        "runtime_version": "1.31.1",
+        "time_basis": "seconds relative to selected clip; unquantized",
+        "windowing": {
+          "implementation": "basic_pitch.inference.run_inference",
+          "sample_rate": 22050,
+          "model_window_samples": 43844,
+          "overlap_frames": 30,
+          "fft_hop_samples": 256,
+          "reconciliation": "upstream unwrap_output trims overlap and produces a global activation timeline before note extraction"
+        },
+        "extraction": {
+          "onset_threshold": 0.5,
+          "frame_threshold": 0.3,
+          "minimum_note_frames": 2,
+          "melodia_trick": true,
+          "infer_onsets": true
+        },
+        "cleanup": {
+          "settings": {
+            "minimum_note_seconds": 0.08,
+            "merge_gap_seconds": 0.03
+          },
+          "raw_valid_note_count": 0,
+          "removed_short_note_ids": [],
+          "merged_source_note_groups": [],
+          "normalized_note_count": 0,
+          "merge_rule": "same pitch/part, bounded gap or overlap, continuous frame activation >=0.3, boundary onset <0.2, local frame rise <0.15"
+        },
+        "raw_note_count": 0,
+        "normalized_note_count": 0,
+        "model_score_semantics": "mean model note activation for a raw event; merged notes use the maximum source activation; not calibrated accuracy",
+        "pitch_bend_semantics": "original pitch bends are retained in raw-note-events.json and upstream raw-performance.mid where MIDI permits; editable normalized notes currently contain discrete pitches only",
+        "velocity_semantics": "MIDI velocity derived by rounding model amplitude * 127; editable and not measured playing force",
+        "original_timing_semantics": "earliest source event snapshot; merged source events remain in raw-note-events.json via source_note_ids"
+      }
+    },
+    {
+      "id": "window_boundary_sustain",
+      "supplementary": true,
+      "input_sha256": "41a3ca8a49bfa339d85fb6011774934c7441d36df0d79d074ba3173be2051bba",
+      "duration_seconds": 20.0,
+      "elapsed_seconds": 0.2112,
+      "raw": {
+        "expected_notes": 1,
+        "predicted_notes": 2,
+        "matched_exact_pitch_and_onset": 1,
+        "false_positive_notes": 1,
+        "missed_notes": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "onset_mae_seconds": 0.000770975056689327,
+        "offset_mae_seconds": 0.051800907029480925,
+        "onset_max_error_seconds": 0.000770975056689327,
+        "offset_max_error_seconds": 0.051800907029480925,
+        "pitch_diagnostic_pairs": 1,
+        "pitch_mae_semitones_within_150ms": 0.0,
+        "octave_errors_within_150ms": 0
+      },
+      "cleaned": {
+        "expected_notes": 1,
+        "predicted_notes": 2,
+        "matched_exact_pitch_and_onset": 1,
+        "false_positive_notes": 1,
+        "missed_notes": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "onset_mae_seconds": 0.000770975056689327,
+        "offset_mae_seconds": 0.051800907029480925,
+        "onset_max_error_seconds": 0.000770975056689327,
+        "offset_max_error_seconds": 0.051800907029480925,
+        "pitch_diagnostic_pairs": 1,
+        "pitch_mae_semitones_within_150ms": 0.0,
+        "octave_errors_within_150ms": 0
+      },
+      "predicted_notes": [
+        {
+          "id": "387741f4-517d-5cf2-8b4e-50a5831f670c",
+          "pitch": 69,
+          "start": 0.4992290249433107,
+          "end": 18.44819909297052,
+          "velocity": 105,
+          "part_id": "part-1",
+          "model_score": 0.8253008723258972,
+          "provenance": "detected",
+          "source_note_ids": [
+            "387741f4-517d-5cf2-8b4e-50a5831f670c"
+          ],
+          "original_timing": {
+            "start": 0.4992290249433107,
+            "end": 18.44819909297052,
+            "pitch": 69,
+            "velocity": 105
+          },
+          "score_timing": null
+        },
+        {
+          "id": "28c313ba-d22d-5de8-9ccb-78c3ff36137e",
+          "pitch": 69,
+          "start": 18.44819909297052,
+          "end": 18.529468934240363,
+          "velocity": 83,
+          "part_id": "part-1",
+          "model_score": 0.6561980843544006,
+          "provenance": "detected",
+          "source_note_ids": [
+            "28c313ba-d22d-5de8-9ccb-78c3ff36137e"
+          ],
+          "original_timing": {
+            "start": 18.44819909297052,
+            "end": 18.529468934240363,
+            "pitch": 69,
+            "velocity": 83
+          },
+          "score_timing": null
+        }
+      ],
+      "manifest": {
+        "schema_version": 1,
+        "engine": "basic-pitch",
+        "namespace": "fc014877-7eb5-502a-8126-db3bb7ff95c4",
+        "clip_duration_seconds": 20.0,
+        "normalized_audio_sha256": "41a3ca8a49bfa339d85fb6011774934c7441d36df0d79d074ba3173be2051bba",
+        "engine_version": "0.4.0",
+        "runtime": "onnx",
+        "model_sha256": "2c3c1d144bfa61ad236e92e169c13535c880469a12a047d4e73451f2c059a0ec",
+        "runtime_version": "1.31.1",
+        "time_basis": "seconds relative to selected clip; unquantized",
+        "windowing": {
+          "implementation": "basic_pitch.inference.run_inference",
+          "sample_rate": 22050,
+          "model_window_samples": 43844,
+          "overlap_frames": 30,
+          "fft_hop_samples": 256,
+          "reconciliation": "upstream unwrap_output trims overlap and produces a global activation timeline before note extraction"
+        },
+        "extraction": {
+          "onset_threshold": 0.5,
+          "frame_threshold": 0.3,
+          "minimum_note_frames": 2,
+          "melodia_trick": true,
+          "infer_onsets": true
+        },
+        "cleanup": {
+          "settings": {
+            "minimum_note_seconds": 0.08,
+            "merge_gap_seconds": 0.03
+          },
+          "raw_valid_note_count": 2,
+          "removed_short_note_ids": [],
+          "merged_source_note_groups": [],
+          "normalized_note_count": 2,
+          "merge_rule": "same pitch/part, bounded gap or overlap, continuous frame activation >=0.3, boundary onset <0.2, local frame rise <0.15"
+        },
+        "raw_note_count": 2,
+        "normalized_note_count": 2,
+        "model_score_semantics": "mean model note activation for a raw event; merged notes use the maximum source activation; not calibrated accuracy",
+        "pitch_bend_semantics": "original pitch bends are retained in raw-note-events.json and upstream raw-performance.mid where MIDI permits; editable normalized notes currently contain discrete pitches only",
+        "velocity_semantics": "MIDI velocity derived by rounding model amplitude * 127; editable and not measured playing force",
+        "original_timing_semantics": "earliest source event snapshot; merged source events remain in raw-note-events.json via source_note_ids"
+      }
+    }
+  ]
+}

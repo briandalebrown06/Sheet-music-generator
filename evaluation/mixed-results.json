@@ -1,0 +1,2467 @@
+{
+  "run_at_utc": "2026-10-27T21:16:15.126655+00:00",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.11.18",
+  "fixture": {
+    "purpose": "Clearly labeled generated evaluation input; references are never supplied to inference",
+    "license": "CC0-1.0 for this original procedural audio",
+    "sample_rate": 44100,
+    "duration_seconds": 12.0,
+    "generator_sha256": "249d4ffcdc1de243cd32fbca816c1f6ad960b4f67ea0ce3e2bc40444a789ba72",
+    "random_seed_percussion_only": 72441,
+    "global_gain": 1,
+    "files": {
+      "vocals": {
+        "filename": "reference-vocals.wav",
+        "sha256": "a8d075cda4d4603b7d8c97608230fe609afb4ef4c38b20473579b877e5dd62a8"
+      },
+      "bass": {
+        "filename": "reference-bass.wav",
+        "sha256": "054998aa08129d388ddb9de0960336c613095bd12c58a9664e3cf09e16fffb7e"
+      },
+      "other": {
+        "filename": "reference-other.wav",
+        "sha256": "a6d6bcc81578efaec793d083491c81f5857643d0705b8678d2517516fa60322e"
+      },
+      "drums": {
+        "filename": "reference-drums.wav",
+        "sha256": "feb437c9a148b76885467ca09a38954f991339d9a87aa2978daf927cd3c458d3"
+      },
+      "mixture": {
+        "filename": "DEVELOPMENT-MULTITRACK.wav",
+        "sha256": "aa613b08c914f8a9c04bc3a5054a467d4da21e5b4c0f3dc60f6387f6b994281a"
+      }
+    },
+    "expected_notes": {
+      "vocals": [
+        {
+          "pitch": 69,
+          "start": 0.5,
+          "end": 1.45
+        },
+        {
+          "pitch": 69,
+          "start": 1.75,
+          "end": 2.7
+        },
+        {
+          "pitch": 71,
+          "start": 3.0,
+          "end": 3.95
+        },
+        {
+          "pitch": 72,
+          "start": 4.25,
+          "end": 5.2
+        },
+        {
+          "pitch": 74,
+          "start": 5.5,
+          "end": 6.45
+        },
+        {
+          "pitch": 72,
+          "start": 6.75,
+          "end": 7.7
+        },
+        {
+          "pitch": 71,
+          "start": 8.0,
+          "end": 8.95
+        },
+        {
+          "pitch": 69,
+          "start": 9.25,
+          "end": 10.2
+        }
+      ],
+      "bass": [
+        {
+          "pitch": 36,
+          "start": 0.3,
+          "end": 1.9
+        },
+        {
+          "pitch": 31,
+          "start": 2.1,
+          "end": 3.7
+        },
+        {
+          "pitch": 33,
+          "start": 3.9,
+          "end": 5.5
+        },
+        {
+          "pitch": 29,
+          "start": 5.7,
+          "end": 7.300000000000001
+        },
+        {
+          "pitch": 36,
+          "start": 7.5,
+          "end": 9.1
+        },
+        {
+          "pitch": 31,
+          "start": 9.3,
+          "end": 10.9
+        }
+      ],
+      "other": [
+        {
+          "pitch": 60,
+          "start": 0.35,
+          "end": 1.65
+        },
+        {
+          "pitch": 64,
+          "start": 0.35,
+          "end": 1.65
+        },
+        {
+          "pitch": 67,
+          "start": 0.35,
+          "end": 1.65
+        },
+        {
+          "pitch": 55,
+          "start": 2.15,
+          "end": 3.45
+        },
+        {
+          "pitch": 59,
+          "start": 2.15,
+          "end": 3.45
+        },
+        {
+          "pitch": 62,
+          "start": 2.15,
+          "end": 3.45
+        },
+        {
+          "pitch": 57,
+          "start": 3.95,
+          "end": 5.25
+        },
+        {
+          "pitch": 60,
+          "start": 3.95,
+          "end": 5.25
+        },
+        {
+          "pitch": 64,
+          "start": 3.95,
+          "end": 5.25
+        },
+        {
+          "pitch": 53,
+          "start": 5.75,
+          "end": 7.050000000000001
+        },
+        {
+          "pitch": 57,
+          "start": 5.75,
+          "end": 7.050000000000001
+        },
+        {
+          "pitch": 60,
+          "start": 5.75,
+          "end": 7.050000000000001
+        },
+        {
+          "pitch": 60,
+          "start": 7.55,
+          "end": 8.85
+        },
+        {
+          "pitch": 64,
+          "start": 7.55,
+          "end": 8.85
+        },
+        {
+          "pitch": 67,
+          "start": 7.55,
+          "end": 8.85
+        },
+        {
+          "pitch": 55,
+          "start": 9.35,
+          "end": 10.65
+        },
+        {
+          "pitch": 59,
+          "start": 9.35,
+          "end": 10.65
+        },
+        {
+          "pitch": 62,
+          "start": 9.35,
+          "end": 10.65
+        }
+      ],
+      "drums": []
+    },
+    "vocals": "Synthetic vowel-like excitation with ±0.6-semitone 5.4Hz vibrato; not human singing",
+    "other": "Generated struck harmonic chords; category name does not imply an isolated real piano or guitar",
+    "drums": "Seeded noise and swept sine percussion; no pitched-note reference or drum notation claim"
+  },
+  "separation_wall_seconds": 1.2925402908585966,
+  "separation_manifest": {
+    "schema_version": 1,
+    "engine": "open-unmix",
+    "model": "umxhq",
+    "model_version": "1.0.1",
+    "versions": {
+      "openunmix": "1.3.0",
+      "torch": "2.14.1",
+      "torchaudio": "2.11.0",
+      "numpy": "1.26.4",
+      "soundfile": "0.14.0"
+    },
+    "weights": [
+      {
+        "category": "vocals",
+        "filename": "vocals-b62c91ce.pth",
+        "sha256": "b62c91cedbc7a066f1778ead5b5cecb377aa3a46a31af1cce7c5c8769339d083",
+        "md5": "d918985fad0fedf6d9ce89e279aa7218",
+        "bytes": 35637796,
+        "url": "https://zenodo.org/records/3370489/files/vocals-b62c91ce.pth",
+        "license": "MIT",
+        "license_source": "https://zenodo.org/api/records/3370489"
+      },
+      {
+        "category": "drums",
+        "filename": "drums-9619578f.pth",
+        "sha256": "9619578f885c54737cb0234f9f9a4a679ee4f31438fd77fd1dbe02bb16c2da0a",
+        "md5": "cebf76e196e73e85d247f462c31e36fc",
+        "bytes": 35637796,
+        "url": "https://zenodo.org/records/3370489/files/drums-9619578f.pth",
+        "license": "MIT",
+        "license_source": "https://zenodo.org/api/records/3370489"
+      },
+      {
+        "category": "bass",
+        "filename": "bass-8d85a5bd.pth",
+        "sha256": "8d85a5bd3f996a8867fca0e8442e077e5a3f5ec747a6112742452a8f347b39c8",
+        "md5": "8cc37d31903fe48306468ee968f4b1b6",
+        "bytes": 35637796,
+        "url": "https://zenodo.org/records/3370489/files/bass-8d85a5bd.pth",
+        "license": "MIT",
+        "license_source": "https://zenodo.org/api/records/3370489"
+      },
+      {
+        "category": "other",
+        "filename": "other-b52fbbf7.pth",
+        "sha256": "b52fbbf76479e752bd72e02304c602ac7802aa5bfbfb9cd12054b2695d5093ab",
+        "md5": "8637606623ed7c74986789c3b1f94bc6",
+        "bytes": 35637796,
+        "url": "https://zenodo.org/records/3370489/files/other-b52fbbf7.pth",
+        "license": "MIT",
+        "license_source": "https://zenodo.org/api/records/3370489"
+      }
+    ],
+    "code_license": "MIT",
+    "model_license": "MIT",
+    "model_license_source": "https://zenodo.org/api/records/3370489",
+    "settings": {
+      "device": "cpu",
+      "threads": 2,
+      "segment_seconds": 10.0,
+      "segment_frames": 441000,
+      "step_frames": 330750,
+      "overlap": 0.25,
+      "overlap_add": "linear crossfade normalized by accumulated weights",
+      "niter": 1,
+      "wiener_win_len": 300,
+      "n_fft": 4096,
+      "n_hop": 1024,
+      "sample_rate": 44100,
+      "channels": 2,
+      "output_subtype": "FLOAT",
+      "seed": 0
+    },
+    "time_basis": "Each stem frame matches the same frame in the decoded selected mixture; no trimming or time stretching.",
+    "input_frames": 529200,
+    "input_sha256": "aa613b08c914f8a9c04bc3a5054a467d4da21e5b4c0f3dc60f6387f6b994281a",
+    "duration_seconds": 12.0,
+    "elapsed_seconds": 0.6832077910657972,
+    "limitations": [
+      "Stem categories are estimates and may contain leakage.",
+      "Other is a residual instrument category, not isolated guitar or piano.",
+      "Chunked bidirectional inference can differ near boundaries from whole-track inference."
+    ]
+  },
+  "aligned_frames": 529200,
+  "separation_metrics": {
+    "vocals": {
+      "si_sdr_db": 29.14885452502608,
+      "mixture_si_sdr_db": 2.040918057166821,
+      "si_sdr_improvement_db": 27.10793646785926,
+      "projection_target_to_interference_db": 48.15669758793449,
+      "projection_leakage_fraction": 1.5287047044308463e-05,
+      "projection_coefficients": {
+        "vocals": 0.998550621836429,
+        "bass": -0.00012116150491233574,
+        "other": 0.010317669723188145,
+        "drums": 0.009134558248969972
+      },
+      "unexplained_residual_energy_fraction": 0.00120027741643269
+    },
+    "bass": {
+      "si_sdr_db": 16.90449666725828,
+      "mixture_si_sdr_db": -3.9180750221522036,
+      "si_sdr_improvement_db": 20.82257168941048,
+      "projection_target_to_interference_db": 25.198771922317317,
+      "projection_leakage_fraction": 0.0030117080239241947,
+      "projection_coefficients": {
+        "vocals": 3.796756649599544e-05,
+        "bass": 0.9679936174837538,
+        "other": 0.04475979078240744,
+        "drums": 0.13455651243801395
+      },
+      "unexplained_residual_energy_fraction": 0.017036288705433
+    },
+    "other": {
+      "si_sdr_db": 13.903944240463007,
+      "mixture_si_sdr_db": -11.604947212314976,
+      "si_sdr_improvement_db": 25.50889145277798,
+      "projection_target_to_interference_db": 31.11974478216546,
+      "projection_leakage_fraction": 0.0007721293494186674,
+      "projection_coefficients": {
+        "vocals": 0.0001034523296362087,
+        "bass": 0.008544659188137405,
+        "other": 0.9387439633583178,
+        "drums": 0.022523367125186218
+      },
+      "unexplained_residual_energy_fraction": 0.038368018461993066
+    },
+    "drums": {
+      "si_sdr_db": 7.841826274022505,
+      "mixture_si_sdr_db": -14.041212654056261,
+      "si_sdr_improvement_db": 21.88303892807877,
+      "projection_target_to_interference_db": 22.105118016303248,
+      "projection_leakage_fraction": 0.006120990659801398,
+      "projection_coefficients": {
+        "vocals": 0.0013478568243908157,
+        "bass": 0.023597783646290994,
+        "other": 0.0061382498245970895,
+        "drums": 0.8317115434865093
+      },
+      "unexplained_residual_energy_fraction": 0.13588719778422526
+    }
+  },
+  "transcription": {
+    "vocals": {
+      "reference": {
+        "engine": "pyin-vocals",
+        "elapsed_seconds": 2.1547435829415917,
+        "cleaned": {
+          "expected_notes": 8,
+          "predicted_notes": 8,
+          "matched_exact_pitch_and_onset": 8,
+          "false_positive_notes": 0,
+          "missed_notes": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "onset_mae_seconds": 0.030736961451246866,
+          "offset_mae_seconds": 0.0336848072562361,
+          "onset_max_error_seconds": 0.0375056689342399,
+          "offset_max_error_seconds": 0.03804988662131592,
+          "pitch_diagnostic_pairs": 8,
+          "pitch_mae_semitones_within_150ms": 0.0,
+          "octave_errors_within_150ms": 0
+        },
+        "raw": {
+          "expected_notes": 8,
+          "predicted_notes": 12,
+          "matched_exact_pitch_and_onset": 8,
+          "false_positive_notes": 4,
+          "missed_notes": 0,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "onset_mae_seconds": 0.030736961451246866,
+          "offset_mae_seconds": 0.04126984126984143,
+          "onset_max_error_seconds": 0.0375056689342399,
+          "offset_max_error_seconds": 0.06643990929705179,
+          "pitch_diagnostic_pairs": 8,
+          "pitch_mae_semitones_within_150ms": 0.0,
+          "octave_errors_within_150ms": 0
+        },
+        "predicted_notes": [
+          {
+            "id": "850efe9c-ae3f-5f54-ab0c-5c077869e32c",
+            "pitch": 69,
+            "start": 0.47020408163265304,
+            "end": 1.4802721088435375,
+            "velocity": 105,
+            "part_id": "vocals",
+            "model_score": 0.8268648212111541,
+            "provenance": "detected",
+            "source_note_ids": [
+              "850efe9c-ae3f-5f54-ab0c-5c077869e32c"
+            ],
+            "original_timing": {
+              "start": 0.47020408163265304,
+              "end": 1.4802721088435375,
+              "pitch": 69,
+              "velocity": 105
+            },
+            "score_timing": null
+          },
+          {
+            "id": "f8fe70d4-8c43-5691-b1df-da567fae8733",
+            "pitch": 69,
+            "start": 1.7240816326530615,
+            "end": 2.7341496598639456,
+            "velocity": 106,
+            "part_id": "vocals",
+            "model_score": 0.8308971212081586,
+            "provenance": "detected",
+            "source_note_ids": [
+              "f8fe70d4-8c43-5691-b1df-da567fae8733"
+            ],
+            "original_timing": {
+              "start": 1.7240816326530615,
+              "end": 2.7341496598639456,
+              "pitch": 69,
+              "velocity": 106
+            },
+            "score_timing": null
+          },
+          {
+            "id": "9673f60d-3337-5af1-b51b-151f102e0b26",
+            "pitch": 71,
+            "start": 2.9663492063492063,
+            "end": 3.9880272108843537,
+            "velocity": 114,
+            "part_id": "vocals",
+            "model_score": 0.8952998472146686,
+            "provenance": "detected",
+            "source_note_ids": [
+              "9673f60d-3337-5af1-b51b-151f102e0b26"
+            ],
+            "original_timing": {
+              "start": 2.9663492063492063,
+              "end": 3.9880272108843537,
+              "pitch": 71,
+              "velocity": 114
+            },
+            "score_timing": null
+          },
+          {
+            "id": "9ddde99a-cf47-5162-b214-bcb971d994c2",
+            "pitch": 72,
+            "start": 4.220226757369615,
+            "end": 5.230294784580499,
+            "velocity": 118,
+            "part_id": "vocals",
+            "model_score": 0.9299951892494037,
+            "provenance": "detected",
+            "source_note_ids": [
+              "9ddde99a-cf47-5162-b214-bcb971d994c2",
+              "7625145f-4775-53cf-9497-f929f367417f",
+              "8218b045-b117-5b77-a9e6-94767125097c"
+            ],
+            "original_timing": {
+              "start": 4.220226757369615,
+              "end": 5.137414965986395,
+              "pitch": 72,
+              "velocity": 117
+            },
+            "score_timing": null
+          },
+          {
+            "id": "59be3f22-e19f-5d01-abc7-e34f15ae7239",
+            "pitch": 74,
+            "start": 5.46249433106576,
+            "end": 6.484172335600907,
+            "velocity": 119,
+            "part_id": "vocals",
+            "model_score": 0.9367612186233901,
+            "provenance": "detected",
+            "source_note_ids": [
+              "59be3f22-e19f-5d01-abc7-e34f15ae7239"
+            ],
+            "original_timing": {
+              "start": 5.46249433106576,
+              "end": 6.484172335600907,
+              "pitch": 74,
+              "velocity": 119
+            },
+            "score_timing": null
+          },
+          {
+            "id": "257713a5-e5e5-5226-b225-db1ae8a552cd",
+            "pitch": 72,
+            "start": 6.716371882086168,
+            "end": 7.738049886621316,
+            "velocity": 117,
+            "part_id": "vocals",
+            "model_score": 0.9243921678558941,
+            "provenance": "detected",
+            "source_note_ids": [
+              "257713a5-e5e5-5226-b225-db1ae8a552cd",
+              "6b2248de-4994-5e9a-9285-7391c2d58625",
+              "5a83e030-d6cd-5f45-810d-cf2e98e8afe6"
+            ],
+            "original_timing": {
+              "start": 6.716371882086168,
+              "end": 7.633560090702948,
+              "pitch": 72,
+              "velocity": 116
+            },
+            "score_timing": null
+          },
+          {
+            "id": "555569a8-5893-501d-b4d6-39e9b3620894",
+            "pitch": 71,
+            "start": 7.970249433106576,
+            "end": 8.98031746031746,
+            "velocity": 114,
+            "part_id": "vocals",
+            "model_score": 0.8937700153696886,
+            "provenance": "detected",
+            "source_note_ids": [
+              "555569a8-5893-501d-b4d6-39e9b3620894"
+            ],
+            "original_timing": {
+              "start": 7.970249433106576,
+              "end": 8.98031746031746,
+              "pitch": 71,
+              "velocity": 114
+            },
+            "score_timing": null
+          },
+          {
+            "id": "8b67fed7-a78d-5714-9b3c-d31c4273b48b",
+            "pitch": 69,
+            "start": 9.224126984126984,
+            "end": 10.234195011337869,
+            "velocity": 106,
+            "part_id": "vocals",
+            "model_score": 0.8317141019218337,
+            "provenance": "detected",
+            "source_note_ids": [
+              "8b67fed7-a78d-5714-9b3c-d31c4273b48b"
+            ],
+            "original_timing": {
+              "start": 9.224126984126984,
+              "end": 10.234195011337869,
+              "pitch": 69,
+              "velocity": 106
+            },
+            "score_timing": null
+          }
+        ],
+        "manifest": {
+          "schema_version": 1,
+          "engine": "pyin-vocals",
+          "engine_version": "0.11.0",
+          "namespace": "mixed-evaluation:vocals:reference",
+          "profile": "vocals",
+          "clip_duration_seconds": 12.0,
+          "normalized_audio_sha256": "dadbf91f2781d4859cbe3f7e83b738389fb41195cb0c9065ba78e4e0e6b04fce",
+          "model_weights": null,
+          "algorithm": "librosa.pyin",
+          "code_license": "ISC (librosa); no learned checkpoint",
+          "sample_rate": 22050,
+          "hop_samples": 256,
+          "settings": {
+            "fmin_midi": 36,
+            "fmax_midi": 96,
+            "frame_length": 2048,
+            "hysteresis_semitones": 0.75,
+            "transition_seconds": 0.05,
+            "median_seconds": 0.07
+          },
+          "chunking": {
+            "core_seconds": 30.00018140589569,
+            "context_seconds": 0.5108390022675737,
+            "reconciliation": "shared hop lattice; overlap context discarded; full global frame timeline segmented once"
+          },
+          "voicing": {
+            "minimum_probability": 0.15,
+            "rms_absolute_floor_dbfs": -70,
+            "rms_relative_floor": 0.04
+          },
+          "cleanup": {
+            "settings": {
+              "minimum_note_seconds": 0.08,
+              "merge_gap_seconds": 0.03
+            },
+            "removed_short_stabilized_events": 0,
+            "rule": "voiced-island median, persistent semitone hysteresis and deep RMS reattack detection; no silence bridging"
+          },
+          "raw_note_count": 12,
+          "normalized_note_count": 8,
+          "model_score_semantics": "pYIN voicing score, not calibrated note accuracy; MIDI velocity is a voicing-derived audition proxy",
+          "limitations": "One predominant pitch per frame. Vocal harmonies, breath, vibrato wider than the configured hysteresis, portamento and separation leakage can cause errors. No accompaniment is generated.",
+          "result_kind": "transcription"
+        }
+      },
+      "separated": {
+        "engine": "pyin-vocals",
+        "elapsed_seconds": 2.389580500079319,
+        "cleaned": {
+          "expected_notes": 8,
+          "predicted_notes": 8,
+          "matched_exact_pitch_and_onset": 8,
+          "false_positive_notes": 0,
+          "missed_notes": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "onset_mae_seconds": 0.030736961451246866,
+          "offset_mae_seconds": 0.0336848072562361,
+          "onset_max_error_seconds": 0.0375056689342399,
+          "offset_max_error_seconds": 0.03804988662131592,
+          "pitch_diagnostic_pairs": 8,
+          "pitch_mae_semitones_within_150ms": 0.0,
+          "octave_errors_within_150ms": 0
+        },
+        "raw": {
+          "expected_notes": 8,
+          "predicted_notes": 12,
+          "matched_exact_pitch_and_onset": 8,
+          "false_positive_notes": 4,
+          "missed_notes": 0,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "onset_mae_seconds": 0.030736961451246866,
+          "offset_mae_seconds": 0.04126984126984143,
+          "onset_max_error_seconds": 0.0375056689342399,
+          "offset_max_error_seconds": 0.06643990929705179,
+          "pitch_diagnostic_pairs": 8,
+          "pitch_mae_semitones_within_150ms": 0.0,
+          "octave_errors_within_150ms": 0
+        },
+        "predicted_notes": [
+          {
+            "id": "c553123a-0817-5afc-985b-871cc14fb138",
+            "pitch": 69,
+            "start": 0.47020408163265304,
+            "end": 1.4802721088435375,
+            "velocity": 105,
+            "part_id": "vocals",
+            "model_score": 0.8281242629259309,
+            "provenance": "detected",
+            "source_note_ids": [
+              "c553123a-0817-5afc-985b-871cc14fb138"
+            ],
+            "original_timing": {
+              "start": 0.47020408163265304,
+              "end": 1.4802721088435375,
+              "pitch": 69,
+              "velocity": 105
+            },
+            "score_timing": null
+          },
+          {
+            "id": "947ab3c5-c863-5cc9-9c4b-6b3e3552df92",
+            "pitch": 69,
+            "start": 1.7240816326530615,
+            "end": 2.7341496598639456,
+            "velocity": 106,
+            "part_id": "vocals",
+            "model_score": 0.8346316314396406,
+            "provenance": "detected",
+            "source_note_ids": [
+              "947ab3c5-c863-5cc9-9c4b-6b3e3552df92"
+            ],
+            "original_timing": {
+              "start": 1.7240816326530615,
+              "end": 2.7341496598639456,
+              "pitch": 69,
+              "velocity": 106
+            },
+            "score_timing": null
+          },
+          {
+            "id": "34f7517e-ab95-58b7-9888-f3a1c5969436",
+            "pitch": 71,
+            "start": 2.9663492063492063,
+            "end": 3.9880272108843537,
+            "velocity": 114,
+            "part_id": "vocals",
+            "model_score": 0.8973348455741934,
+            "provenance": "detected",
+            "source_note_ids": [
+              "34f7517e-ab95-58b7-9888-f3a1c5969436"
+            ],
+            "original_timing": {
+              "start": 2.9663492063492063,
+              "end": 3.9880272108843537,
+              "pitch": 71,
+              "velocity": 114
+            },
+            "score_timing": null
+          },
+          {
+            "id": "42790077-a07a-574c-8c98-681e698b2d29",
+            "pitch": 72,
+            "start": 4.220226757369615,
+            "end": 5.230294784580499,
+            "velocity": 118,
+            "part_id": "vocals",
+            "model_score": 0.9313660128125464,
+            "provenance": "detected",
+            "source_note_ids": [
+              "42790077-a07a-574c-8c98-681e698b2d29",
+              "9ab8cc9c-ddb1-5760-b001-615b00ea6ce5",
+              "9fc83e90-8c57-53bc-8d82-51ba37c9825c"
+            ],
+            "original_timing": {
+              "start": 4.220226757369615,
+              "end": 5.137414965986395,
+              "pitch": 72,
+              "velocity": 117
+            },
+            "score_timing": null
+          },
+          {
+            "id": "af9ee318-fe6f-560b-833e-2557abe19118",
+            "pitch": 74,
+            "start": 5.46249433106576,
+            "end": 6.484172335600907,
+            "velocity": 119,
+            "part_id": "vocals",
+            "model_score": 0.9399485768017984,
+            "provenance": "detected",
+            "source_note_ids": [
+              "af9ee318-fe6f-560b-833e-2557abe19118"
+            ],
+            "original_timing": {
+              "start": 5.46249433106576,
+              "end": 6.484172335600907,
+              "pitch": 74,
+              "velocity": 119
+            },
+            "score_timing": null
+          },
+          {
+            "id": "de1e9e8b-2b12-5bfe-8621-71ae9731303c",
+            "pitch": 72,
+            "start": 6.716371882086168,
+            "end": 7.738049886621316,
+            "velocity": 117,
+            "part_id": "vocals",
+            "model_score": 0.9240485082223938,
+            "provenance": "detected",
+            "source_note_ids": [
+              "de1e9e8b-2b12-5bfe-8621-71ae9731303c",
+              "130223e8-e804-54f9-9215-08d29ce8158a",
+              "c9be7c91-3f5c-536e-b3a4-b5cf5d668de4"
+            ],
+            "original_timing": {
+              "start": 6.716371882086168,
+              "end": 7.633560090702948,
+              "pitch": 72,
+              "velocity": 116
+            },
+            "score_timing": null
+          },
+          {
+            "id": "da8d234f-0fa3-57b7-9532-7092b4c95884",
+            "pitch": 71,
+            "start": 7.970249433106576,
+            "end": 8.98031746031746,
+            "velocity": 115,
+            "part_id": "vocals",
+            "model_score": 0.9051285941446625,
+            "provenance": "detected",
+            "source_note_ids": [
+              "da8d234f-0fa3-57b7-9532-7092b4c95884"
+            ],
+            "original_timing": {
+              "start": 7.970249433106576,
+              "end": 8.98031746031746,
+              "pitch": 71,
+              "velocity": 115
+            },
+            "score_timing": null
+          },
+          {
+            "id": "eeb6150e-9d7b-5caf-a89d-815317f59a6c",
+            "pitch": 69,
+            "start": 9.224126984126984,
+            "end": 10.234195011337869,
+            "velocity": 106,
+            "part_id": "vocals",
+            "model_score": 0.8338905287338862,
+            "provenance": "detected",
+            "source_note_ids": [
+              "eeb6150e-9d7b-5caf-a89d-815317f59a6c"
+            ],
+            "original_timing": {
+              "start": 9.224126984126984,
+              "end": 10.234195011337869,
+              "pitch": 69,
+              "velocity": 106
+            },
+            "score_timing": null
+          }
+        ],
+        "manifest": {
+          "schema_version": 1,
+          "engine": "pyin-vocals",
+          "engine_version": "0.11.0",
+          "namespace": "mixed-evaluation:vocals:separated",
+          "profile": "vocals",
+          "clip_duration_seconds": 12.0,
+          "normalized_audio_sha256": "df79b1160115e8c48796aaa80b6601f2383b0da89f3a5e59f3b9709c812a818e",
+          "model_weights": null,
+          "algorithm": "librosa.pyin",
+          "code_license": "ISC (librosa); no learned checkpoint",
+          "sample_rate": 22050,
+          "hop_samples": 256,
+          "settings": {
+            "fmin_midi": 36,
+            "fmax_midi": 96,
+            "frame_length": 2048,
+            "hysteresis_semitones": 0.75,
+            "transition_seconds": 0.05,
+            "median_seconds": 0.07
+          },
+          "chunking": {
+            "core_seconds": 30.00018140589569,
+            "context_seconds": 0.5108390022675737,
+            "reconciliation": "shared hop lattice; overlap context discarded; full global frame timeline segmented once"
+          },
+          "voicing": {
+            "minimum_probability": 0.15,
+            "rms_absolute_floor_dbfs": -70,
+            "rms_relative_floor": 0.04
+          },
+          "cleanup": {
+            "settings": {
+              "minimum_note_seconds": 0.08,
+              "merge_gap_seconds": 0.03
+            },
+            "removed_short_stabilized_events": 0,
+            "rule": "voiced-island median, persistent semitone hysteresis and deep RMS reattack detection; no silence bridging"
+          },
+          "raw_note_count": 12,
+          "normalized_note_count": 8,
+          "model_score_semantics": "pYIN voicing score, not calibrated note accuracy; MIDI velocity is a voicing-derived audition proxy",
+          "limitations": "One predominant pitch per frame. Vocal harmonies, breath, vibrato wider than the configured hysteresis, portamento and separation leakage can cause errors. No accompaniment is generated.",
+          "result_kind": "transcription"
+        }
+      }
+    },
+    "bass": {
+      "reference": {
+        "engine": "pyin-bass",
+        "elapsed_seconds": 1.001173040829599,
+        "cleaned": {
+          "expected_notes": 6,
+          "predicted_notes": 6,
+          "matched_exact_pitch_and_onset": 6,
+          "false_positive_notes": 0,
+          "missed_notes": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "onset_mae_seconds": 0.015253212396069546,
+          "offset_mae_seconds": 0.04160241874527615,
+          "onset_max_error_seconds": 0.029523809523809952,
+          "offset_max_error_seconds": 0.0562811791383222,
+          "pitch_diagnostic_pairs": 6,
+          "pitch_mae_semitones_within_150ms": 0.0,
+          "octave_errors_within_150ms": 0
+        },
+        "raw": {
+          "expected_notes": 6,
+          "predicted_notes": 6,
+          "matched_exact_pitch_and_onset": 6,
+          "false_positive_notes": 0,
+          "missed_notes": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "onset_mae_seconds": 0.015253212396069546,
+          "offset_mae_seconds": 0.04160241874527615,
+          "onset_max_error_seconds": 0.029523809523809952,
+          "offset_max_error_seconds": 0.0562811791383222,
+          "pitch_diagnostic_pairs": 6,
+          "pitch_mae_semitones_within_150ms": 0.0,
+          "octave_errors_within_150ms": 0
+        },
+        "predicted_notes": [
+          {
+            "id": "f0aeae04-b5da-5add-a1fa-c82764757bba",
+            "pitch": 36,
+            "start": 0.28444444444444444,
+            "end": 1.9562811791383221,
+            "velocity": 105,
+            "part_id": "bass",
+            "model_score": 0.8302343795266512,
+            "provenance": "detected",
+            "source_note_ids": [
+              "f0aeae04-b5da-5add-a1fa-c82764757bba"
+            ],
+            "original_timing": {
+              "start": 0.28444444444444444,
+              "end": 1.9562811791383221,
+              "pitch": 36,
+              "velocity": 105
+            },
+            "score_timing": null
+          },
+          {
+            "id": "fb7bc129-1a81-512c-b0d6-ae66fd5a819c",
+            "pitch": 31,
+            "start": 2.1072108843537416,
+            "end": 3.732607709750567,
+            "velocity": 96,
+            "part_id": "bass",
+            "model_score": 0.7536309641214355,
+            "provenance": "detected",
+            "source_note_ids": [
+              "fb7bc129-1a81-512c-b0d6-ae66fd5a819c"
+            ],
+            "original_timing": {
+              "start": 2.1072108843537416,
+              "end": 3.732607709750567,
+              "pitch": 31,
+              "velocity": 96
+            },
+            "score_timing": null
+          },
+          {
+            "id": "a32483de-c4de-586b-ba3d-a3c4a5b38961",
+            "pitch": 33,
+            "start": 3.8951473922902493,
+            "end": 5.543764172335601,
+            "velocity": 101,
+            "part_id": "bass",
+            "model_score": 0.7939256490741161,
+            "provenance": "detected",
+            "source_note_ids": [
+              "a32483de-c4de-586b-ba3d-a3c4a5b38961"
+            ],
+            "original_timing": {
+              "start": 3.8951473922902493,
+              "end": 5.543764172335601,
+              "pitch": 33,
+              "velocity": 101
+            },
+            "score_timing": null
+          },
+          {
+            "id": "a88b3637-45bc-5838-8078-d721f4f6fcbc",
+            "pitch": 29,
+            "start": 5.72952380952381,
+            "end": 7.331700680272109,
+            "velocity": 89,
+            "part_id": "bass",
+            "model_score": 0.7018366743544582,
+            "provenance": "detected",
+            "source_note_ids": [
+              "a88b3637-45bc-5838-8078-d721f4f6fcbc"
+            ],
+            "original_timing": {
+              "start": 5.72952380952381,
+              "end": 7.331700680272109,
+              "pitch": 29,
+              "velocity": 89
+            },
+            "score_timing": null
+          },
+          {
+            "id": "6bf5007b-7554-55cc-a394-aec1fea6945b",
+            "pitch": 36,
+            "start": 7.4826303854875285,
+            "end": 9.154467120181407,
+            "velocity": 106,
+            "part_id": "bass",
+            "model_score": 0.8310410955490819,
+            "provenance": "detected",
+            "source_note_ids": [
+              "6bf5007b-7554-55cc-a394-aec1fea6945b"
+            ],
+            "original_timing": {
+              "start": 7.4826303854875285,
+              "end": 9.154467120181407,
+              "pitch": 36,
+              "velocity": 106
+            },
+            "score_timing": null
+          },
+          {
+            "id": "0b46e0af-4507-59b7-99bf-a7ebb9f782da",
+            "pitch": 31,
+            "start": 9.317006802721089,
+            "end": 10.930793650793651,
+            "velocity": 96,
+            "part_id": "bass",
+            "model_score": 0.7566906672797962,
+            "provenance": "detected",
+            "source_note_ids": [
+              "0b46e0af-4507-59b7-99bf-a7ebb9f782da"
+            ],
+            "original_timing": {
+              "start": 9.317006802721089,
+              "end": 10.930793650793651,
+              "pitch": 31,
+              "velocity": 96
+            },
+            "score_timing": null
+          }
+        ],
+        "manifest": {
+          "schema_version": 1,
+          "engine": "pyin-bass",
+          "engine_version": "0.11.0",
+          "namespace": "mixed-evaluation:bass:reference",
+          "profile": "bass",
+          "clip_duration_seconds": 12.0,
+          "normalized_audio_sha256": "2d299c23c7c3fba18e9449097d67ec5c300d84540d1820159ebc3d34548a8eb0",
+          "model_weights": null,
+          "algorithm": "librosa.pyin",
+          "code_license": "ISC (librosa); no learned checkpoint",
+          "sample_rate": 22050,
+          "hop_samples": 256,
+          "settings": {
+            "fmin_midi": 21,
+            "fmax_midi": 60,
+            "frame_length": 4096,
+            "hysteresis_semitones": 0.65,
+            "transition_seconds": 0.035,
+            "median_seconds": 0.045
+          },
+          "chunking": {
+            "core_seconds": 30.00018140589569,
+            "context_seconds": 0.5108390022675737,
+            "reconciliation": "shared hop lattice; overlap context discarded; full global frame timeline segmented once"
+          },
+          "voicing": {
+            "minimum_probability": 0.15,
+            "rms_absolute_floor_dbfs": -70,
+            "rms_relative_floor": 0.04
+          },
+          "cleanup": {
+            "settings": {
+              "minimum_note_seconds": 0.08,
+              "merge_gap_seconds": 0.03
+            },
+            "removed_short_stabilized_events": 0,
+            "rule": "voiced-island median, persistent semitone hysteresis and deep RMS reattack detection; no silence bridging"
+          },
+          "raw_note_count": 6,
+          "normalized_note_count": 6,
+          "model_score_semantics": "pYIN voicing score, not calibrated note accuracy; MIDI velocity is a voicing-derived audition proxy",
+          "limitations": "One predominant pitch per frame. Vocal harmonies, breath, vibrato wider than the configured hysteresis, portamento and separation leakage can cause errors. No accompaniment is generated.",
+          "result_kind": "transcription"
+        }
+      },
+      "separated": {
+        "engine": "pyin-bass",
+        "elapsed_seconds": 0.98241320787929,
+        "cleaned": {
+          "expected_notes": 6,
+          "predicted_notes": 6,
+          "matched_exact_pitch_and_onset": 6,
+          "false_positive_notes": 0,
+          "missed_notes": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "onset_mae_seconds": 0.0216780045351473,
+          "offset_mae_seconds": 0.035797430083144545,
+          "onset_max_error_seconds": 0.04249433106575967,
+          "offset_max_error_seconds": 0.05446712018140687,
+          "pitch_diagnostic_pairs": 6,
+          "pitch_mae_semitones_within_150ms": 0.0,
+          "octave_errors_within_150ms": 0
+        },
+        "raw": {
+          "expected_notes": 6,
+          "predicted_notes": 6,
+          "matched_exact_pitch_and_onset": 6,
+          "false_positive_notes": 0,
+          "missed_notes": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "onset_mae_seconds": 0.0216780045351473,
+          "offset_mae_seconds": 0.035797430083144545,
+          "onset_max_error_seconds": 0.04249433106575967,
+          "offset_max_error_seconds": 0.05446712018140687,
+          "pitch_diagnostic_pairs": 6,
+          "pitch_mae_semitones_within_150ms": 0.0,
+          "octave_errors_within_150ms": 0
+        },
+        "predicted_notes": [
+          {
+            "id": "f1b8bc9e-bbbb-5c7e-9814-7d6ee36e6b7a",
+            "pitch": 36,
+            "start": 0.34249433106575966,
+            "end": 1.944671201814059,
+            "velocity": 106,
+            "part_id": "bass",
+            "model_score": 0.8309389527069191,
+            "provenance": "detected",
+            "source_note_ids": [
+              "f1b8bc9e-bbbb-5c7e-9814-7d6ee36e6b7a"
+            ],
+            "original_timing": {
+              "start": 0.34249433106575966,
+              "end": 1.944671201814059,
+              "pitch": 36,
+              "velocity": 106
+            },
+            "score_timing": null
+          },
+          {
+            "id": "46f7e004-6540-5cb1-ba7c-89b37ff29f47",
+            "pitch": 31,
+            "start": 2.1072108843537416,
+            "end": 3.732607709750567,
+            "velocity": 91,
+            "part_id": "bass",
+            "model_score": 0.7140326966967555,
+            "provenance": "detected",
+            "source_note_ids": [
+              "46f7e004-6540-5cb1-ba7c-89b37ff29f47"
+            ],
+            "original_timing": {
+              "start": 2.1072108843537416,
+              "end": 3.732607709750567,
+              "pitch": 31,
+              "velocity": 91
+            },
+            "score_timing": null
+          },
+          {
+            "id": "53df6ba4-f153-5a71-9a89-46376bcf580b",
+            "pitch": 33,
+            "start": 3.8951473922902493,
+            "end": 5.543764172335601,
+            "velocity": 99,
+            "part_id": "bass",
+            "model_score": 0.7810039212767678,
+            "provenance": "detected",
+            "source_note_ids": [
+              "53df6ba4-f153-5a71-9a89-46376bcf580b"
+            ],
+            "original_timing": {
+              "start": 3.8951473922902493,
+              "end": 5.543764172335601,
+              "pitch": 33,
+              "velocity": 99
+            },
+            "score_timing": null
+          },
+          {
+            "id": "53e33ccd-1d6e-557a-a4f1-9d9ad49eba4e",
+            "pitch": 29,
+            "start": 5.72952380952381,
+            "end": 7.308480725623583,
+            "velocity": 85,
+            "part_id": "bass",
+            "model_score": 0.6683468400076492,
+            "provenance": "detected",
+            "source_note_ids": [
+              "53e33ccd-1d6e-557a-a4f1-9d9ad49eba4e"
+            ],
+            "original_timing": {
+              "start": 5.72952380952381,
+              "end": 7.308480725623583,
+              "pitch": 29,
+              "velocity": 85
+            },
+            "score_timing": null
+          },
+          {
+            "id": "13c6ebb4-611f-5cc2-b6ad-904b289cc070",
+            "pitch": 36,
+            "start": 7.4826303854875285,
+            "end": 9.154467120181407,
+            "velocity": 105,
+            "part_id": "bass",
+            "model_score": 0.824196983716309,
+            "provenance": "detected",
+            "source_note_ids": [
+              "13c6ebb4-611f-5cc2-b6ad-904b289cc070"
+            ],
+            "original_timing": {
+              "start": 7.4826303854875285,
+              "end": 9.154467120181407,
+              "pitch": 36,
+              "velocity": 105
+            },
+            "score_timing": null
+          },
+          {
+            "id": "1398dc2b-b530-535b-bd4f-12c5ff7cc790",
+            "pitch": 31,
+            "start": 9.328616780045351,
+            "end": 10.930793650793651,
+            "velocity": 94,
+            "part_id": "bass",
+            "model_score": 0.7402130212937684,
+            "provenance": "detected",
+            "source_note_ids": [
+              "1398dc2b-b530-535b-bd4f-12c5ff7cc790"
+            ],
+            "original_timing": {
+              "start": 9.328616780045351,
+              "end": 10.930793650793651,
+              "pitch": 31,
+              "velocity": 94
+            },
+            "score_timing": null
+          }
+        ],
+        "manifest": {
+          "schema_version": 1,
+          "engine": "pyin-bass",
+          "engine_version": "0.11.0",
+          "namespace": "mixed-evaluation:bass:separated",
+          "profile": "bass",
+          "clip_duration_seconds": 12.0,
+          "normalized_audio_sha256": "2d9bf29b03d20bdff6db109427cd507eb41db5b32107fde503e5bd8ef5badaf5",
+          "model_weights": null,
+          "algorithm": "librosa.pyin",
+          "code_license": "ISC (librosa); no learned checkpoint",
+          "sample_rate": 22050,
+          "hop_samples": 256,
+          "settings": {
+            "fmin_midi": 21,
+            "fmax_midi": 60,
+            "frame_length": 4096,
+            "hysteresis_semitones": 0.65,
+            "transition_seconds": 0.035,
+            "median_seconds": 0.045
+          },
+          "chunking": {
+            "core_seconds": 30.00018140589569,
+            "context_seconds": 0.5108390022675737,
+            "reconciliation": "shared hop lattice; overlap context discarded; full global frame timeline segmented once"
+          },
+          "voicing": {
+            "minimum_probability": 0.15,
+            "rms_absolute_floor_dbfs": -70,
+            "rms_relative_floor": 0.04
+          },
+          "cleanup": {
+            "settings": {
+              "minimum_note_seconds": 0.08,
+              "merge_gap_seconds": 0.03
+            },
+            "removed_short_stabilized_events": 0,
+            "rule": "voiced-island median, persistent semitone hysteresis and deep RMS reattack detection; no silence bridging"
+          },
+          "raw_note_count": 6,
+          "normalized_note_count": 6,
+          "model_score_semantics": "pYIN voicing score, not calibrated note accuracy; MIDI velocity is a voicing-derived audition proxy",
+          "limitations": "One predominant pitch per frame. Vocal harmonies, breath, vibrato wider than the configured hysteresis, portamento and separation leakage can cause errors. No accompaniment is generated.",
+          "result_kind": "transcription"
+        }
+      }
+    },
+    "other": {
+      "reference": {
+        "engine": "basic-pitch",
+        "elapsed_seconds": 1.0844867918640375,
+        "cleaned": {
+          "expected_notes": 18,
+          "predicted_notes": 18,
+          "matched_exact_pitch_and_onset": 18,
+          "false_positive_notes": 0,
+          "missed_notes": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "onset_mae_seconds": 0.0075494331065760105,
+          "offset_mae_seconds": 0.013130385487528392,
+          "onset_max_error_seconds": 0.011946938775510674,
+          "offset_max_error_seconds": 0.034552380952381334,
+          "pitch_diagnostic_pairs": 18,
+          "pitch_mae_semitones_within_150ms": 0.0,
+          "octave_errors_within_150ms": 0
+        },
+        "raw": {
+          "expected_notes": 18,
+          "predicted_notes": 18,
+          "matched_exact_pitch_and_onset": 18,
+          "false_positive_notes": 0,
+          "missed_notes": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "onset_mae_seconds": 0.0075494331065760105,
+          "offset_mae_seconds": 0.013130385487528392,
+          "onset_max_error_seconds": 0.011946938775510674,
+          "offset_max_error_seconds": 0.034552380952381334,
+          "pitch_diagnostic_pairs": 18,
+          "pitch_mae_semitones_within_150ms": 0.0,
+          "octave_errors_within_150ms": 0
+        },
+        "predicted_notes": [
+          {
+            "id": "6075c5ab-9bda-5f1e-9236-5fd67debbcd0",
+            "pitch": 60,
+            "start": 0.3599092970521542,
+            "end": 1.6253968253968254,
+            "velocity": 97,
+            "part_id": "part-1",
+            "model_score": 0.7667888402938843,
+            "provenance": "detected",
+            "source_note_ids": [
+              "6075c5ab-9bda-5f1e-9236-5fd67debbcd0"
+            ],
+            "original_timing": {
+              "start": 0.3599092970521542,
+              "end": 1.6253968253968254,
+              "pitch": 60,
+              "velocity": 97
+            },
+            "score_timing": null
+          },
+          {
+            "id": "8513489b-9452-52d7-95b7-381fd85bbb3e",
+            "pitch": 64,
+            "start": 0.3599092970521542,
+            "end": 1.6370068027210884,
+            "velocity": 101,
+            "part_id": "part-1",
+            "model_score": 0.7954628467559814,
+            "provenance": "detected",
+            "source_note_ids": [
+              "8513489b-9452-52d7-95b7-381fd85bbb3e"
+            ],
+            "original_timing": {
+              "start": 0.3599092970521542,
+              "end": 1.6370068027210884,
+              "pitch": 64,
+              "velocity": 101
+            },
+            "score_timing": null
+          },
+          {
+            "id": "ce12481b-19ed-53fa-b321-5e1d1c0ab480",
+            "pitch": 67,
+            "start": 0.3599092970521542,
+            "end": 1.6486167800453515,
+            "velocity": 98,
+            "part_id": "part-1",
+            "model_score": 0.7707220315933228,
+            "provenance": "detected",
+            "source_note_ids": [
+              "ce12481b-19ed-53fa-b321-5e1d1c0ab480"
+            ],
+            "original_timing": {
+              "start": 0.3599092970521542,
+              "end": 1.6486167800453515,
+              "pitch": 67,
+              "velocity": 98
+            },
+            "score_timing": null
+          },
+          {
+            "id": "0e2fcf0e-e25c-5fd7-8aa8-f2f3da182c28",
+            "pitch": 55,
+            "start": 2.1491297052154192,
+            "end": 3.4262272108843534,
+            "velocity": 98,
+            "part_id": "part-1",
+            "model_score": 0.7718777060508728,
+            "provenance": "detected",
+            "source_note_ids": [
+              "0e2fcf0e-e25c-5fd7-8aa8-f2f3da182c28"
+            ],
+            "original_timing": {
+              "start": 2.1491297052154192,
+              "end": 3.4262272108843534,
+              "pitch": 55,
+              "velocity": 98
+            },
+            "score_timing": null
+          },
+          {
+            "id": "3aef688e-112f-57f2-bb2e-4f00908dbe54",
+            "pitch": 59,
+            "start": 2.1491297052154192,
+            "end": 3.4378371882086167,
+            "velocity": 101,
+            "part_id": "part-1",
+            "model_score": 0.7959264516830444,
+            "provenance": "detected",
+            "source_note_ids": [
+              "3aef688e-112f-57f2-bb2e-4f00908dbe54"
+            ],
+            "original_timing": {
+              "start": 2.1491297052154192,
+              "end": 3.4378371882086167,
+              "pitch": 59,
+              "velocity": 101
+            },
+            "score_timing": null
+          },
+          {
+            "id": "00b5d26c-167c-5657-bcf5-ad1c9ee4eaa9",
+            "pitch": 62,
+            "start": 2.1491297052154192,
+            "end": 3.461057142857143,
+            "velocity": 99,
+            "part_id": "part-1",
+            "model_score": 0.7785776853561401,
+            "provenance": "detected",
+            "source_note_ids": [
+              "00b5d26c-167c-5657-bcf5-ad1c9ee4eaa9"
+            ],
+            "original_timing": {
+              "start": 2.1491297052154192,
+              "end": 3.461057142857143,
+              "pitch": 62,
+              "velocity": 99
+            },
+            "score_timing": null
+          },
+          {
+            "id": "c7c77ddf-c0d9-506f-bf6c-bd28e5b94584",
+            "pitch": 57,
+            "start": 3.9602861678004535,
+            "end": 5.215447619047619,
+            "velocity": 93,
+            "part_id": "part-1",
+            "model_score": 0.7329449653625488,
+            "provenance": "detected",
+            "source_note_ids": [
+              "c7c77ddf-c0d9-506f-bf6c-bd28e5b94584"
+            ],
+            "original_timing": {
+              "start": 3.9602861678004535,
+              "end": 5.215447619047619,
+              "pitch": 57,
+              "velocity": 93
+            },
+            "score_timing": null
+          },
+          {
+            "id": "4256c157-5245-5dcc-ae86-2b6446089238",
+            "pitch": 60,
+            "start": 3.9602861678004535,
+            "end": 5.238667573696145,
+            "velocity": 96,
+            "part_id": "part-1",
+            "model_score": 0.7581301331520081,
+            "provenance": "detected",
+            "source_note_ids": [
+              "4256c157-5245-5dcc-ae86-2b6446089238"
+            ],
+            "original_timing": {
+              "start": 3.9602861678004535,
+              "end": 5.238667573696145,
+              "pitch": 60,
+              "velocity": 96
+            },
+            "score_timing": null
+          },
+          {
+            "id": "31b43180-85db-5ffb-8c7c-d87a33f35d1a",
+            "pitch": 64,
+            "start": 3.9602861678004535,
+            "end": 5.250277551020408,
+            "velocity": 96,
+            "part_id": "part-1",
+            "model_score": 0.7572551369667053,
+            "provenance": "detected",
+            "source_note_ids": [
+              "31b43180-85db-5ffb-8c7c-d87a33f35d1a"
+            ],
+            "original_timing": {
+              "start": 3.9602861678004535,
+              "end": 5.250277551020408,
+              "pitch": 64,
+              "velocity": 96
+            },
+            "score_timing": null
+          },
+          {
+            "id": "a6e97a15-def9-5078-aef1-bfa4dc799c65",
+            "pitch": 53,
+            "start": 5.761116553287982,
+            "end": 7.02788798185941,
+            "velocity": 97,
+            "part_id": "part-1",
+            "model_score": 0.7670580148696899,
+            "provenance": "detected",
+            "source_note_ids": [
+              "a6e97a15-def9-5078-aef1-bfa4dc799c65"
+            ],
+            "original_timing": {
+              "start": 5.761116553287982,
+              "end": 7.02788798185941,
+              "pitch": 53,
+              "velocity": 97
+            },
+            "score_timing": null
+          },
+          {
+            "id": "b7b0f378-351b-5b9f-acfb-43fedc84b7c9",
+            "pitch": 57,
+            "start": 5.761116553287982,
+            "end": 7.039497959183674,
+            "velocity": 102,
+            "part_id": "part-1",
+            "model_score": 0.8033115267753601,
+            "provenance": "detected",
+            "source_note_ids": [
+              "b7b0f378-351b-5b9f-acfb-43fedc84b7c9"
+            ],
+            "original_timing": {
+              "start": 5.761116553287982,
+              "end": 7.039497959183674,
+              "pitch": 57,
+              "velocity": 102
+            },
+            "score_timing": null
+          },
+          {
+            "id": "791d91c9-68fc-527e-a823-ec85ec72df0b",
+            "pitch": 60,
+            "start": 5.761116553287982,
+            "end": 7.062717913832199,
+            "velocity": 98,
+            "part_id": "part-1",
+            "model_score": 0.770724356174469,
+            "provenance": "detected",
+            "source_note_ids": [
+              "791d91c9-68fc-527e-a823-ec85ec72df0b"
+            ],
+            "original_timing": {
+              "start": 5.761116553287982,
+              "end": 7.062717913832199,
+              "pitch": 60,
+              "velocity": 98
+            },
+            "score_timing": null
+          },
+          {
+            "id": "aa92e271-a5b3-5d30-906d-c3b7c3e0d48d",
+            "pitch": 60,
+            "start": 7.5619469387755105,
+            "end": 8.828718367346939,
+            "velocity": 96,
+            "part_id": "part-1",
+            "model_score": 0.7591004371643066,
+            "provenance": "detected",
+            "source_note_ids": [
+              "aa92e271-a5b3-5d30-906d-c3b7c3e0d48d"
+            ],
+            "original_timing": {
+              "start": 7.5619469387755105,
+              "end": 8.828718367346939,
+              "pitch": 60,
+              "velocity": 96
+            },
+            "score_timing": null
+          },
+          {
+            "id": "c9f1ada0-5276-5574-81ed-2a747a6dd0c7",
+            "pitch": 64,
+            "start": 7.5619469387755105,
+            "end": 8.840328344671201,
+            "velocity": 100,
+            "part_id": "part-1",
+            "model_score": 0.7894405126571655,
+            "provenance": "detected",
+            "source_note_ids": [
+              "c9f1ada0-5276-5574-81ed-2a747a6dd0c7"
+            ],
+            "original_timing": {
+              "start": 7.5619469387755105,
+              "end": 8.840328344671201,
+              "pitch": 64,
+              "velocity": 100
+            },
+            "score_timing": null
+          },
+          {
+            "id": "3b0fba3d-aec4-5765-9a85-b188f48f6677",
+            "pitch": 67,
+            "start": 7.5619469387755105,
+            "end": 8.851938321995464,
+            "velocity": 97,
+            "part_id": "part-1",
+            "model_score": 0.7662924528121948,
+            "provenance": "detected",
+            "source_note_ids": [
+              "3b0fba3d-aec4-5765-9a85-b188f48f6677"
+            ],
+            "original_timing": {
+              "start": 7.5619469387755105,
+              "end": 8.851938321995464,
+              "pitch": 67,
+              "velocity": 97
+            },
+            "score_timing": null
+          },
+          {
+            "id": "a26680fa-55ae-5b22-82df-e5b7241476ff",
+            "pitch": 55,
+            "start": 9.351167346938775,
+            "end": 10.64115873015873,
+            "velocity": 99,
+            "part_id": "part-1",
+            "model_score": 0.7797411680221558,
+            "provenance": "detected",
+            "source_note_ids": [
+              "a26680fa-55ae-5b22-82df-e5b7241476ff"
+            ],
+            "original_timing": {
+              "start": 9.351167346938775,
+              "end": 10.64115873015873,
+              "pitch": 55,
+              "velocity": 99
+            },
+            "score_timing": null
+          },
+          {
+            "id": "7e9620b3-8aa9-5b25-bfec-dcc25e459314",
+            "pitch": 59,
+            "start": 9.351167346938775,
+            "end": 10.652768707482995,
+            "velocity": 102,
+            "part_id": "part-1",
+            "model_score": 0.8049940466880798,
+            "provenance": "detected",
+            "source_note_ids": [
+              "7e9620b3-8aa9-5b25-bfec-dcc25e459314"
+            ],
+            "original_timing": {
+              "start": 9.351167346938775,
+              "end": 10.652768707482995,
+              "pitch": 59,
+              "velocity": 102
+            },
+            "score_timing": null
+          },
+          {
+            "id": "31fc9467-7a66-5460-8406-c79b52c85378",
+            "pitch": 62,
+            "start": 9.351167346938775,
+            "end": 10.664378684807257,
+            "velocity": 100,
+            "part_id": "part-1",
+            "model_score": 0.7896512150764465,
+            "provenance": "detected",
+            "source_note_ids": [
+              "31fc9467-7a66-5460-8406-c79b52c85378"
+            ],
+            "original_timing": {
+              "start": 9.351167346938775,
+              "end": 10.664378684807257,
+              "pitch": 62,
+              "velocity": 100
+            },
+            "score_timing": null
+          }
+        ],
+        "manifest": {
+          "schema_version": 1,
+          "engine": "basic-pitch",
+          "namespace": "mixed-evaluation:other:reference",
+          "clip_duration_seconds": 12.0,
+          "normalized_audio_sha256": "204ca6f64c12ec4fd2527044508eb1b92b3196dfaee5183a3b5a0c88d35d31d4",
+          "engine_version": "0.4.0",
+          "runtime": "onnx",
+          "model_sha256": "2c3c1d144bfa61ad236e92e169c13535c880469a12a047d4e73451f2c059a0ec",
+          "runtime_version": "1.31.1",
+          "time_basis": "seconds relative to selected clip; unquantized",
+          "windowing": {
+            "implementation": "basic_pitch.inference.run_inference",
+            "sample_rate": 22050,
+            "model_window_samples": 43844,
+            "overlap_frames": 30,
+            "fft_hop_samples": 256,
+            "reconciliation": "upstream unwrap_output trims overlap and produces a global activation timeline before note extraction"
+          },
+          "extraction": {
+            "onset_threshold": 0.5,
+            "frame_threshold": 0.3,
+            "minimum_note_frames": 2,
+            "melodia_trick": true,
+            "infer_onsets": true
+          },
+          "cleanup": {
+            "settings": {
+              "minimum_note_seconds": 0.08,
+              "merge_gap_seconds": 0.03
+            },
+            "raw_valid_note_count": 18,
+            "removed_short_note_ids": [],
+            "merged_source_note_groups": [],
+            "normalized_note_count": 18,
+            "merge_rule": "same pitch/part, bounded gap or overlap, continuous frame activation >=0.3, boundary onset <0.2, local frame rise <0.15"
+          },
+          "raw_note_count": 18,
+          "normalized_note_count": 18,
+          "model_score_semantics": "mean model note activation for a raw event; merged notes use the maximum source activation; not calibrated accuracy",
+          "pitch_bend_semantics": "original pitch bends are retained in raw-note-events.json and upstream raw-performance.mid where MIDI permits; editable normalized notes currently contain discrete pitches only",
+          "velocity_semantics": "MIDI velocity derived by rounding model amplitude * 127; editable and not measured playing force",
+          "original_timing_semantics": "earliest source event snapshot; merged source events remain in raw-note-events.json via source_note_ids"
+        }
+      },
+      "separated": {
+        "engine": "basic-pitch",
+        "elapsed_seconds": 0.8813975828234106,
+        "cleaned": {
+          "expected_notes": 18,
+          "predicted_notes": 33,
+          "matched_exact_pitch_and_onset": 18,
+          "false_positive_notes": 15,
+          "missed_notes": 0,
+          "precision": 0.5454545454545454,
+          "recall": 1.0,
+          "f1": 0.7058823529411764,
+          "onset_mae_seconds": 0.0075494331065760105,
+          "offset_mae_seconds": 0.0768302091206854,
+          "onset_max_error_seconds": 0.011946938775510674,
+          "offset_max_error_seconds": 0.5089006802721094,
+          "pitch_diagnostic_pairs": 18,
+          "pitch_mae_semitones_within_150ms": 1.3333333333333333,
+          "octave_errors_within_150ms": 2
+        },
+        "raw": {
+          "expected_notes": 18,
+          "predicted_notes": 39,
+          "matched_exact_pitch_and_onset": 18,
+          "false_positive_notes": 21,
+          "missed_notes": 0,
+          "precision": 0.46153846153846156,
+          "recall": 1.0,
+          "f1": 0.631578947368421,
+          "onset_mae_seconds": 0.0075494331065760105,
+          "offset_mae_seconds": 0.0768302091206854,
+          "onset_max_error_seconds": 0.011946938775510674,
+          "offset_max_error_seconds": 0.5089006802721094,
+          "pitch_diagnostic_pairs": 18,
+          "pitch_mae_semitones_within_150ms": 1.3333333333333333,
+          "octave_errors_within_150ms": 2
+        },
+        "predicted_notes": [
+          {
+            "id": "f1ae2b19-1252-5673-b995-585ef1e52cfe",
+            "pitch": 48,
+            "start": 0.34829931972789113,
+            "end": 1.5441269841269842,
+            "velocity": 85,
+            "part_id": "part-1",
+            "model_score": 0.6685665845870972,
+            "provenance": "detected",
+            "source_note_ids": [
+              "f1ae2b19-1252-5673-b995-585ef1e52cfe"
+            ],
+            "original_timing": {
+              "start": 0.34829931972789113,
+              "end": 1.5441269841269842,
+              "pitch": 48,
+              "velocity": 85
+            },
+            "score_timing": null
+          },
+          {
+            "id": "1163c367-63d2-51b4-b482-124ce3767960",
+            "pitch": 60,
+            "start": 0.3599092970521542,
+            "end": 1.5325170068027212,
+            "velocity": 73,
+            "part_id": "part-1",
+            "model_score": 0.5759857296943665,
+            "provenance": "detected",
+            "source_note_ids": [
+              "1163c367-63d2-51b4-b482-124ce3767960"
+            ],
+            "original_timing": {
+              "start": 0.3599092970521542,
+              "end": 1.5325170068027212,
+              "pitch": 60,
+              "velocity": 73
+            },
+            "score_timing": null
+          },
+          {
+            "id": "d761fe11-2f4f-5bb1-a3df-45fddc21645a",
+            "pitch": 64,
+            "start": 0.3599092970521542,
+            "end": 1.6253968253968254,
+            "velocity": 94,
+            "part_id": "part-1",
+            "model_score": 0.7407572865486145,
+            "provenance": "detected",
+            "source_note_ids": [
+              "d761fe11-2f4f-5bb1-a3df-45fddc21645a"
+            ],
+            "original_timing": {
+              "start": 0.3599092970521542,
+              "end": 1.6253968253968254,
+              "pitch": 64,
+              "velocity": 94
+            },
+            "score_timing": null
+          },
+          {
+            "id": "c67d0d3d-9b40-5853-b1f8-0611c414c8fd",
+            "pitch": 67,
+            "start": 0.3599092970521542,
+            "end": 1.6253968253968254,
+            "velocity": 83,
+            "part_id": "part-1",
+            "model_score": 0.6520289182662964,
+            "provenance": "detected",
+            "source_note_ids": [
+              "c67d0d3d-9b40-5853-b1f8-0611c414c8fd"
+            ],
+            "original_timing": {
+              "start": 0.3599092970521542,
+              "end": 1.6253968253968254,
+              "pitch": 67,
+              "velocity": 83
+            },
+            "score_timing": null
+          },
+          {
+            "id": "f428918c-d71c-521b-bb8b-df362cc931aa",
+            "pitch": 55,
+            "start": 0.3831292517006803,
+            "end": 1.4628571428571429,
+            "velocity": 48,
+            "part_id": "part-1",
+            "model_score": 0.380150705575943,
+            "provenance": "detected",
+            "source_note_ids": [
+              "f428918c-d71c-521b-bb8b-df362cc931aa"
+            ],
+            "original_timing": {
+              "start": 0.3831292517006803,
+              "end": 1.4628571428571429,
+              "pitch": 55,
+              "velocity": 48
+            },
+            "score_timing": null
+          },
+          {
+            "id": "0a777faa-07c1-5dea-bd23-f69f7e3a8948",
+            "pitch": 72,
+            "start": 0.5108390022675737,
+            "end": 0.7662585034013606,
+            "velocity": 50,
+            "part_id": "part-1",
+            "model_score": 0.3913654088973999,
+            "provenance": "detected",
+            "source_note_ids": [
+              "0a777faa-07c1-5dea-bd23-f69f7e3a8948"
+            ],
+            "original_timing": {
+              "start": 0.5108390022675737,
+              "end": 0.7662585034013606,
+              "pitch": 72,
+              "velocity": 50
+            },
+            "score_timing": null
+          },
+          {
+            "id": "7103c1ae-15f8-5326-a23e-994eaf555801",
+            "pitch": 50,
+            "start": 2.1491297052154192,
+            "end": 2.7528485260770976,
+            "velocity": 59,
+            "part_id": "part-1",
+            "model_score": 0.46334192156791687,
+            "provenance": "detected",
+            "source_note_ids": [
+              "7103c1ae-15f8-5326-a23e-994eaf555801"
+            ],
+            "original_timing": {
+              "start": 2.1491297052154192,
+              "end": 2.7528485260770976,
+              "pitch": 50,
+              "velocity": 59
+            },
+            "score_timing": null
+          },
+          {
+            "id": "23147473-0649-5abb-95dd-029f9a783465",
+            "pitch": 55,
+            "start": 2.1491297052154192,
+            "end": 3.4146172335600906,
+            "velocity": 87,
+            "part_id": "part-1",
+            "model_score": 0.6828556060791016,
+            "provenance": "detected",
+            "source_note_ids": [
+              "23147473-0649-5abb-95dd-029f9a783465"
+            ],
+            "original_timing": {
+              "start": 2.1491297052154192,
+              "end": 3.4146172335600906,
+              "pitch": 55,
+              "velocity": 87
+            },
+            "score_timing": null
+          },
+          {
+            "id": "f421f93a-f8fc-59f2-8784-4a0413855313",
+            "pitch": 59,
+            "start": 2.1491297052154192,
+            "end": 3.321737414965986,
+            "velocity": 95,
+            "part_id": "part-1",
+            "model_score": 0.7449198961257935,
+            "provenance": "detected",
+            "source_note_ids": [
+              "f421f93a-f8fc-59f2-8784-4a0413855313"
+            ],
+            "original_timing": {
+              "start": 2.1491297052154192,
+              "end": 3.321737414965986,
+              "pitch": 59,
+              "velocity": 95
+            },
+            "score_timing": null
+          },
+          {
+            "id": "55f75c48-24b4-5a0c-8021-1635b6c63310",
+            "pitch": 62,
+            "start": 2.1491297052154192,
+            "end": 3.4494471655328796,
+            "velocity": 90,
+            "part_id": "part-1",
+            "model_score": 0.710322916507721,
+            "provenance": "detected",
+            "source_note_ids": [
+              "55f75c48-24b4-5a0c-8021-1635b6c63310"
+            ],
+            "original_timing": {
+              "start": 2.1491297052154192,
+              "end": 3.4494471655328796,
+              "pitch": 62,
+              "velocity": 90
+            },
+            "score_timing": null
+          },
+          {
+            "id": "4dfb688b-6543-5511-a40f-094824ce363f",
+            "pitch": 57,
+            "start": 3.9602861678004535,
+            "end": 5.18061768707483,
+            "velocity": 81,
+            "part_id": "part-1",
+            "model_score": 0.6364873051643372,
+            "provenance": "detected",
+            "source_note_ids": [
+              "4dfb688b-6543-5511-a40f-094824ce363f"
+            ],
+            "original_timing": {
+              "start": 3.9602861678004535,
+              "end": 5.18061768707483,
+              "pitch": 57,
+              "velocity": 81
+            },
+            "score_timing": null
+          },
+          {
+            "id": "a35e10eb-76eb-5da8-a840-90f370989b86",
+            "pitch": 60,
+            "start": 3.9602861678004535,
+            "end": 5.215447619047619,
+            "velocity": 87,
+            "part_id": "part-1",
+            "model_score": 0.6847999095916748,
+            "provenance": "detected",
+            "source_note_ids": [
+              "a35e10eb-76eb-5da8-a840-90f370989b86"
+            ],
+            "original_timing": {
+              "start": 3.9602861678004535,
+              "end": 5.215447619047619,
+              "pitch": 60,
+              "velocity": 87
+            },
+            "score_timing": null
+          },
+          {
+            "id": "734b8500-47a1-53cb-b651-d1f110925b1e",
+            "pitch": 64,
+            "start": 3.9602861678004535,
+            "end": 5.227057596371882,
+            "velocity": 83,
+            "part_id": "part-1",
+            "model_score": 0.6538298726081848,
+            "provenance": "detected",
+            "source_note_ids": [
+              "734b8500-47a1-53cb-b651-d1f110925b1e"
+            ],
+            "original_timing": {
+              "start": 3.9602861678004535,
+              "end": 5.227057596371882,
+              "pitch": 64,
+              "velocity": 83
+            },
+            "score_timing": null
+          },
+          {
+            "id": "c0876778-ed99-5201-b130-b9959ba14039",
+            "pitch": 45,
+            "start": 3.9963999999999995,
+            "end": 4.936808163265306,
+            "velocity": 58,
+            "part_id": "part-1",
+            "model_score": 0.45891326665878296,
+            "provenance": "detected",
+            "source_note_ids": [
+              "c0876778-ed99-5201-b130-b9959ba14039"
+            ],
+            "original_timing": {
+              "start": 3.9963999999999995,
+              "end": 4.936808163265306,
+              "pitch": 45,
+              "velocity": 58
+            },
+            "score_timing": null
+          },
+          {
+            "id": "f7c321fb-a186-523a-b638-373a9ac1f775",
+            "pitch": 72,
+            "start": 4.240209523809524,
+            "end": 4.4143591836734695,
+            "velocity": 44,
+            "part_id": "part-1",
+            "model_score": 0.34372276067733765,
+            "provenance": "detected",
+            "source_note_ids": [
+              "f7c321fb-a186-523a-b638-373a9ac1f775"
+            ],
+            "original_timing": {
+              "start": 4.240209523809524,
+              "end": 4.4143591836734695,
+              "pitch": 72,
+              "velocity": 44
+            },
+            "score_timing": null
+          },
+          {
+            "id": "1adafbc9-d336-5a5a-b110-2a60304d67df",
+            "pitch": 52,
+            "start": 4.762658503401361,
+            "end": 4.91358820861678,
+            "velocity": 55,
+            "part_id": "part-1",
+            "model_score": 0.4365578293800354,
+            "provenance": "detected",
+            "source_note_ids": [
+              "1adafbc9-d336-5a5a-b110-2a60304d67df"
+            ],
+            "original_timing": {
+              "start": 4.762658503401361,
+              "end": 4.91358820861678,
+              "pitch": 52,
+              "velocity": 55
+            },
+            "score_timing": null
+          },
+          {
+            "id": "667607af-5d13-51f1-9efd-a08908b8c422",
+            "pitch": 48,
+            "start": 5.761116553287982,
+            "end": 6.37772925170068,
+            "velocity": 46,
+            "part_id": "part-1",
+            "model_score": 0.36203131079673767,
+            "provenance": "detected",
+            "source_note_ids": [
+              "667607af-5d13-51f1-9efd-a08908b8c422"
+            ],
+            "original_timing": {
+              "start": 5.761116553287982,
+              "end": 6.37772925170068,
+              "pitch": 48,
+              "velocity": 46
+            },
+            "score_timing": null
+          },
+          {
+            "id": "58e2d639-33ba-54e9-a9a8-f42365de7b53",
+            "pitch": 53,
+            "start": 5.761116553287982,
+            "end": 6.91178820861678,
+            "velocity": 87,
+            "part_id": "part-1",
+            "model_score": 0.6867783069610596,
+            "provenance": "detected",
+            "source_note_ids": [
+              "58e2d639-33ba-54e9-a9a8-f42365de7b53"
+            ],
+            "original_timing": {
+              "start": 5.761116553287982,
+              "end": 6.91178820861678,
+              "pitch": 53,
+              "velocity": 87
+            },
+            "score_timing": null
+          },
+          {
+            "id": "9087338e-7145-5a24-9d70-7d61bd1988b7",
+            "pitch": 57,
+            "start": 5.761116553287982,
+            "end": 6.9930580498866215,
+            "velocity": 94,
+            "part_id": "part-1",
+            "model_score": 0.7389808893203735,
+            "provenance": "detected",
+            "source_note_ids": [
+              "9087338e-7145-5a24-9d70-7d61bd1988b7"
+            ],
+            "original_timing": {
+              "start": 5.761116553287982,
+              "end": 6.9930580498866215,
+              "pitch": 57,
+              "velocity": 94
+            },
+            "score_timing": null
+          },
+          {
+            "id": "7226b3b7-aac4-5475-88a1-095f0f04f3b2",
+            "pitch": 60,
+            "start": 5.761116553287982,
+            "end": 7.051107936507937,
+            "velocity": 90,
+            "part_id": "part-1",
+            "model_score": 0.7085586190223694,
+            "provenance": "detected",
+            "source_note_ids": [
+              "7226b3b7-aac4-5475-88a1-095f0f04f3b2"
+            ],
+            "original_timing": {
+              "start": 5.761116553287982,
+              "end": 7.051107936507937,
+              "pitch": 60,
+              "velocity": 90
+            },
+            "score_timing": null
+          },
+          {
+            "id": "ecdd98c2-1499-5fa1-a782-9545395ff4b7",
+            "pitch": 65,
+            "start": 5.912046258503401,
+            "end": 6.319679365079365,
+            "velocity": 46,
+            "part_id": "part-1",
+            "model_score": 0.36579999327659607,
+            "provenance": "detected",
+            "source_note_ids": [
+              "ecdd98c2-1499-5fa1-a782-9545395ff4b7"
+            ],
+            "original_timing": {
+              "start": 5.912046258503401,
+              "end": 6.319679365079365,
+              "pitch": 65,
+              "velocity": 46
+            },
+            "score_timing": null
+          },
+          {
+            "id": "266bf338-f4e5-5227-93a0-128b268a73c0",
+            "pitch": 41,
+            "start": 5.923656235827664,
+            "end": 6.168749659863946,
+            "velocity": 47,
+            "part_id": "part-1",
+            "model_score": 0.3685568571090698,
+            "provenance": "detected",
+            "source_note_ids": [
+              "266bf338-f4e5-5227-93a0-128b268a73c0"
+            ],
+            "original_timing": {
+              "start": 5.923656235827664,
+              "end": 6.168749659863946,
+              "pitch": 41,
+              "velocity": 47
+            },
+            "score_timing": null
+          },
+          {
+            "id": "7097cf48-cff0-5c5c-990b-382d764803f0",
+            "pitch": 48,
+            "start": 7.550336961451247,
+            "end": 8.805498412698412,
+            "velocity": 89,
+            "part_id": "part-1",
+            "model_score": 0.6981091499328613,
+            "provenance": "detected",
+            "source_note_ids": [
+              "7097cf48-cff0-5c5c-990b-382d764803f0"
+            ],
+            "original_timing": {
+              "start": 7.550336961451247,
+              "end": 8.805498412698412,
+              "pitch": 48,
+              "velocity": 89
+            },
+            "score_timing": null
+          },
+          {
+            "id": "b6a9b8fc-a69d-5f13-ba55-74e4e07b98df",
+            "pitch": 60,
+            "start": 7.5619469387755105,
+            "end": 8.34109931972789,
+            "velocity": 75,
+            "part_id": "part-1",
+            "model_score": 0.5934861302375793,
+            "provenance": "detected",
+            "source_note_ids": [
+              "b6a9b8fc-a69d-5f13-ba55-74e4e07b98df"
+            ],
+            "original_timing": {
+              "start": 7.5619469387755105,
+              "end": 8.34109931972789,
+              "pitch": 60,
+              "velocity": 75
+            },
+            "score_timing": null
+          },
+          {
+            "id": "20efc396-9db0-5d24-89d7-42ecbee81ed5",
+            "pitch": 64,
+            "start": 7.5619469387755105,
+            "end": 8.782278458049886,
+            "velocity": 87,
+            "part_id": "part-1",
+            "model_score": 0.6885281205177307,
+            "provenance": "detected",
+            "source_note_ids": [
+              "20efc396-9db0-5d24-89d7-42ecbee81ed5"
+            ],
+            "original_timing": {
+              "start": 7.5619469387755105,
+              "end": 8.782278458049886,
+              "pitch": 64,
+              "velocity": 87
+            },
+            "score_timing": null
+          },
+          {
+            "id": "85719642-f72e-5b70-8a56-2cdfaa74b9da",
+            "pitch": 67,
+            "start": 7.5619469387755105,
+            "end": 8.770668480725623,
+            "velocity": 84,
+            "part_id": "part-1",
+            "model_score": 0.6580725312232971,
+            "provenance": "detected",
+            "source_note_ids": [
+              "85719642-f72e-5b70-8a56-2cdfaa74b9da"
+            ],
+            "original_timing": {
+              "start": 7.5619469387755105,
+              "end": 8.770668480725623,
+              "pitch": 67,
+              "velocity": 84
+            },
+            "score_timing": null
+          },
+          {
+            "id": "ad00e3ef-cd2a-5311-ac97-d8623ebd8a30",
+            "pitch": 55,
+            "start": 7.573556916099774,
+            "end": 8.027629931972788,
+            "velocity": 48,
+            "part_id": "part-1",
+            "model_score": 0.3770337700843811,
+            "provenance": "detected",
+            "source_note_ids": [
+              "ad00e3ef-cd2a-5311-ac97-d8623ebd8a30"
+            ],
+            "original_timing": {
+              "start": 7.573556916099774,
+              "end": 8.027629931972788,
+              "pitch": 55,
+              "velocity": 48
+            },
+            "score_timing": null
+          },
+          {
+            "id": "10c83e29-8c3e-5f1c-aa59-77a9fd682620",
+            "pitch": 72,
+            "start": 7.643216780045352,
+            "end": 7.8638063492063495,
+            "velocity": 36,
+            "part_id": "part-1",
+            "model_score": 0.2817685008049011,
+            "provenance": "detected",
+            "source_note_ids": [
+              "10c83e29-8c3e-5f1c-aa59-77a9fd682620"
+            ],
+            "original_timing": {
+              "start": 7.643216780045352,
+              "end": 7.8638063492063495,
+              "pitch": 72,
+              "velocity": 36
+            },
+            "score_timing": null
+          },
+          {
+            "id": "646e285f-f41e-563d-abbc-f2584ccff2d0",
+            "pitch": 50,
+            "start": 9.351167346938775,
+            "end": 9.734296598639455,
+            "velocity": 49,
+            "part_id": "part-1",
+            "model_score": 0.38892102241516113,
+            "provenance": "detected",
+            "source_note_ids": [
+              "646e285f-f41e-563d-abbc-f2584ccff2d0"
+            ],
+            "original_timing": {
+              "start": 9.351167346938775,
+              "end": 9.734296598639455,
+              "pitch": 50,
+              "velocity": 49
+            },
+            "score_timing": null
+          },
+          {
+            "id": "a4ad6c26-a16d-56da-b727-0fbbd12b328f",
+            "pitch": 55,
+            "start": 9.351167346938775,
+            "end": 10.617938775510204,
+            "velocity": 92,
+            "part_id": "part-1",
+            "model_score": 0.7216650247573853,
+            "provenance": "detected",
+            "source_note_ids": [
+              "a4ad6c26-a16d-56da-b727-0fbbd12b328f"
+            ],
+            "original_timing": {
+              "start": 9.351167346938775,
+              "end": 10.617938775510204,
+              "pitch": 55,
+              "velocity": 92
+            },
+            "score_timing": null
+          },
+          {
+            "id": "4076f2af-1c39-5c46-bb28-6de01e62cff7",
+            "pitch": 59,
+            "start": 9.351167346938775,
+            "end": 10.629548752834468,
+            "velocity": 96,
+            "part_id": "part-1",
+            "model_score": 0.7534685730934143,
+            "provenance": "detected",
+            "source_note_ids": [
+              "4076f2af-1c39-5c46-bb28-6de01e62cff7"
+            ],
+            "original_timing": {
+              "start": 9.351167346938775,
+              "end": 10.629548752834468,
+              "pitch": 59,
+              "velocity": 96
+            },
+            "score_timing": null
+          },
+          {
+            "id": "8fc0b7c3-0495-54cb-a5a2-96f90c723c34",
+            "pitch": 62,
+            "start": 9.351167346938775,
+            "end": 10.629548752834468,
+            "velocity": 84,
+            "part_id": "part-1",
+            "model_score": 0.6600290536880493,
+            "provenance": "detected",
+            "source_note_ids": [
+              "8fc0b7c3-0495-54cb-a5a2-96f90c723c34"
+            ],
+            "original_timing": {
+              "start": 9.351167346938775,
+              "end": 10.629548752834468,
+              "pitch": 62,
+              "velocity": 84
+            },
+            "score_timing": null
+          },
+          {
+            "id": "9395be23-53ae-5934-8f1b-4e224d665d02",
+            "pitch": 43,
+            "start": 9.478877097505668,
+            "end": 10.420569160997733,
+            "velocity": 59,
+            "part_id": "part-1",
+            "model_score": 0.46736013889312744,
+            "provenance": "detected",
+            "source_note_ids": [
+              "9395be23-53ae-5934-8f1b-4e224d665d02"
+            ],
+            "original_timing": {
+              "start": 9.478877097505668,
+              "end": 10.420569160997733,
+              "pitch": 43,
+              "velocity": 59
+            },
+            "score_timing": null
+          }
+        ],
+        "manifest": {
+          "schema_version": 1,
+          "engine": "basic-pitch",
+          "namespace": "mixed-evaluation:other:separated",
+          "clip_duration_seconds": 12.0,
+          "normalized_audio_sha256": "04a33603e8f13aff13ae728756f43b262be6dfca339fbb5eefbe00cbec36583d",
+          "engine_version": "0.4.0",
+          "runtime": "onnx",
+          "model_sha256": "2c3c1d144bfa61ad236e92e169c13535c880469a12a047d4e73451f2c059a0ec",
+          "runtime_version": "1.31.1",
+          "time_basis": "seconds relative to selected clip; unquantized",
+          "windowing": {
+            "implementation": "basic_pitch.inference.run_inference",
+            "sample_rate": 22050,
+            "model_window_samples": 43844,
+            "overlap_frames": 30,
+            "fft_hop_samples": 256,
+            "reconciliation": "upstream unwrap_output trims overlap and produces a global activation timeline before note extraction"
+          },
+          "extraction": {
+            "onset_threshold": 0.5,
+            "frame_threshold": 0.3,
+            "minimum_note_frames": 2,
+            "melodia_trick": true,
+            "infer_onsets": true
+          },
+          "cleanup": {
+            "settings": {
+              "minimum_note_seconds": 0.08,
+              "merge_gap_seconds": 0.03
+            },
+            "raw_valid_note_count": 39,
+            "removed_short_note_ids": [
+              "2f3f4d36-2ae4-51fb-aae9-d3c985cfd1d3",
+              "45e6fc02-7ff1-5693-8efd-00b69837b4ac",
+              "c2782194-1a4f-5fef-8c44-220b29b76f14",
+              "75c4791f-c791-559c-98b7-d5dfba346d61",
+              "dde3a79d-1414-5ada-9112-56c2da14b5c5",
+              "55072478-1ed1-591a-a6b7-7605b80ca78e"
+            ],
+            "merged_source_note_groups": [],
+            "normalized_note_count": 33,
+            "merge_rule": "same pitch/part, bounded gap or overlap, continuous frame activation >=0.3, boundary onset <0.2, local frame rise <0.15"
+          },
+          "raw_note_count": 39,
+          "normalized_note_count": 33,
+          "model_score_semantics": "mean model note activation for a raw event; merged notes use the maximum source activation; not calibrated accuracy",
+          "pitch_bend_semantics": "original pitch bends are retained in raw-note-events.json and upstream raw-performance.mid where MIDI permits; editable normalized notes currently contain discrete pitches only",
+          "velocity_semantics": "MIDI velocity derived by rounding model amplitude * 127; editable and not measured playing force",
+          "original_timing_semantics": "earliest source event snapshot; merged source events remain in raw-note-events.json via source_note_ids"
+        }
+      }
+    }
+  },
+  "onset_tolerance_seconds": 0.1,
+  "generator_sha256": "32ae0f1eb53c18c8dbb0ac933d4059ffccadcc67e31ec81a0e94387f16af8d7c",
+  "execution": "Each separation/transcription adapter runs in a fresh checked subprocess; nonzero exits and timeouts fail evaluation before report publication."
+}

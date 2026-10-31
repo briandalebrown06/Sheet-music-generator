@@ -1,0 +1,14 @@
+# Optional worker environment. Use the checked installer: python backend/install_analysis.py
+# Python 3.11 only; Apple Silicon upstream compatibility remains a validation caveat.
+# Do NOT install into Python 3.12+; Python 3.10 is now end-of-life.
+-r requirements.txt
+basic-pitch[onnx]==0.4.0
+# 9.x supports Python 3.10 and avoids music21 10's Python >=3.11 floor.
+music21==9.9.1
+# Basic Pitch's TensorFlow 2.15 runtime requires NumPy <2.
+numpy==1.26.4
+
+# Explicit CPU inference runtime; the adapter selects the shipped ONNX weights.
+onnxruntime==1.31.1
+# resampy 0.4.2 still imports pkg_resources, removed by newer setuptools releases.
+setuptools==79.0.1

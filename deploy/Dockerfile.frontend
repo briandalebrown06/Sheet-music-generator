@@ -1,0 +1,14 @@
+FROM node:24.22.1-bookworm@sha256:6449e19d8184d84062525b6a7524def03146c2cb04a7f08b076680d0e8e4240a AS build
+WORKDIR /app
+RUN npm install --global pnpm@11.25.0
+COPY frontend/package.json frontend/pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
+COPY frontend/ ./
+RUN pnpm build
+FROM caddy:2.11.7-alpine@sha256:eb4d35b7452d1ab6171fbdbe8d9275b2301dad6dad92115d91e19fb9b24d510f
+RUN setcap -r /usr/bin/caddy \
+    && addgroup -g 10001 scorecraft && adduser -D -u 10001 -G scorecraft scorecraft \
+    && mkdir -p /data/caddy /config/caddy && chown -R 10001:10001 /data /config
+COPY --from=build /app/dist /srv
+COPY deploy/Caddyfile /etc/caddy/Caddyfile
+USER 10001:10001

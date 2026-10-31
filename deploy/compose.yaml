@@ -1,0 +1,167 @@
+name: scorecraft
+
+x-backend: &backend
+  image: scorecraft-backend:local
+  build:
+    context: ..
+    dockerfile: deploy/Dockerfile.backend
+  user: "10001:10001"
+  read_only: true
+  tmpfs:
+    - /tmp:size=512m,mode=1777
+  security_opt:
+    - no-new-privileges:true
+  cap_drop: [ALL]
+  ulimits:
+    core: 0
+    nofile: 1024
+  volumes:
+    - private_data:/data
+    - model_weights:/models:ro
+  environment: &environment
+    APP_MODE: hosted
+    AUTH_ENABLED: "true"
+    PUBLIC_ORIGIN: https://${APP_DOMAIN:?Set APP_DOMAIN in deploy/.env}
+    DATA_DIR: /data
+    SEPARATION_MODEL_DIR: /models/umxhq
+    FFMPEG_BINARY: /usr/bin/ffmpeg
+    BASIC_PITCH_RUNTIME: onnx
+    TMPDIR: /data/.scratch
+    DECODE_TIMEOUT_SECONDS: ${DECODE_TIMEOUT_SECONDS:-600}
+    DECODE_CPU_SECONDS: ${DECODE_CPU_SECONDS:-300}
+    MAX_UPLOAD_BYTES: ${MAX_UPLOAD_BYTES:-500000000}
+    UPLOAD_CHUNK_BYTES: ${UPLOAD_CHUNK_BYTES:-8388608}
+    UPLOAD_TTL_SECONDS: ${UPLOAD_TTL_SECONDS:-86400}
+    MAX_ACTIVE_UPLOADS_PER_USER: ${MAX_ACTIVE_UPLOADS_PER_USER:-3}
+    UPLOAD_CHUNK_RATE_LIMIT_PER_MINUTE: ${UPLOAD_CHUNK_RATE_LIMIT_PER_MINUTE:-120}
+    MAX_DURATION_SECONDS: ${MAX_DURATION_SECONDS:-3600}
+    MAX_PROJECTS_PER_USER: ${MAX_PROJECTS_PER_USER:-100}
+    MAX_STORAGE_MB_PER_USER: ${MAX_STORAGE_MB_PER_USER:-32768}
+    MAX_ACTIVE_JOBS_PER_USER: ${MAX_ACTIVE_JOBS_PER_USER:-3}
+    MAX_JOBS_PER_DAY: ${MAX_JOBS_PER_DAY:-30}
+    API_RATE_LIMIT_PER_MINUTE: ${API_RATE_LIMIT_PER_MINUTE:-300}
+    WRITE_RATE_LIMIT_PER_MINUTE: ${WRITE_RATE_LIMIT_PER_MINUTE:-60}
+    LOGIN_RATE_LIMIT_PER_MINUTE: ${LOGIN_RATE_LIMIT_PER_MINUTE:-10}
+    SESSION_TTL_SECONDS: ${SESSION_TTL_SECONDS:-28800}
+    MAX_JOB_ATTEMPTS: ${MAX_JOB_ATTEMPTS:-3}
+    JOB_TIMEOUT_SECONDS: ${JOB_TIMEOUT_SECONDS:-7200}
+    SEPARATION_TIMEOUT_SECONDS: ${SEPARATION_TIMEOUT_SECONDS:-14400}
+    SEPARATION_MEMORY_MB: ${SEPARATION_MEMORY_MB:-4096}
+    MAX_SEPARATION_STORAGE_MB: ${MAX_SEPARATION_STORAGE_MB:-16384}
+    SEPARATION_THREADS: ${SEPARATION_THREADS:-2}
+    SEPARATION_SEGMENT_SECONDS: ${SEPARATION_SEGMENT_SECONDS:-10}
+    SEPARATION_OVERLAP: ${SEPARATION_OVERLAP:-0.25}
+    PDF_TIMEOUT_SECONDS: ${PDF_TIMEOUT_SECONDS:-120}
+    PDF_MEMORY_MB: ${PDF_MEMORY_MB:-1024}
+  logging:
+    driver: json-file
+    options:
+      max-size: "10m"
+      max-file: "3"
+
+services:
+  # Explicit, one-off model/account maintenance. Not started by `up`.
+  setup:
+    <<: *backend
+    profiles: [setup]
+    command: [python, backend/install_separation.py]
+    volumes:
+      - private_data:/data
+      - model_weights:/models
+    networks: [edge]
+    mem_limit: 2g
+    pids_limit: 128
+
+  initialize:
+    <<: *backend
+    command: [python, -m, deploy.preflight, --initialize]
+    network_mode: none
+    mem_limit: 2g
+    pids_limit: 128
+
+  api:
+    <<: *backend
+    restart: unless-stopped
+    depends_on:
+      initialize:
+        condition: service_completed_successfully
+    networks: [private]
+    mem_limit: 3g
+    cpus: 2
+    pids_limit: 128
+    stop_grace_period: 45s
+    healthcheck:
+      test: [CMD, python, -m, deploy.preflight, --api-health]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+
+  worker:
+    <<: *backend
+    command: [python, -m, backend.app.worker]
+    restart: unless-stopped
+    depends_on:
+      initialize:
+        condition: service_completed_successfully
+    # Installed models only: private audio analysis has no network interface.
+    network_mode: none
+    mem_limit: 5g
+    cpus: 2
+    pids_limit: 128
+    stop_grace_period: 45s
+    healthcheck:
+      test: [CMD, python, -m, deploy.preflight, --worker-health]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 60s
+
+  frontend:
+    image: scorecraft-frontend:local
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.frontend
+    restart: unless-stopped
+    depends_on:
+      api:
+        condition: service_healthy
+    user: "10001:10001"
+    read_only: true
+    tmpfs: [/tmp:size=16m,mode=1777]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    mem_limit: 256m
+    pids_limit: 64
+    ports:
+      - "80:8080"
+      - "443:8443"
+    environment:
+      APP_DOMAIN: ${APP_DOMAIN:?Set APP_DOMAIN in deploy/.env}
+      ACME_EMAIL: ${ACME_EMAIL:?Set ACME_EMAIL in deploy/.env}
+    volumes:
+      - tls_data:/data
+      - tls_config:/config
+    networks:
+      edge:
+      private:
+        ipv4_address: 172.30.67.2
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  private_data:
+  model_weights:
+  tls_data:
+  tls_config:
+
+networks:
+  edge:
+  private:
+    internal: true
+    ipam:
+      config:
+        - subnet: 172.30.67.0/24

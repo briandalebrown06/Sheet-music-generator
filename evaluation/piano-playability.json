@@ -1,0 +1,3780 @@
+{
+  "fixture": true,
+  "human_validation": false,
+  "original_unchanged": true,
+  "input_notes": 144,
+  "output_notes": 120,
+  "before": {
+    "schema_version": 1,
+    "settings": {
+      "profile": "comfortable_accompaniment",
+      "left_reach": 9,
+      "right_reach": 9,
+      "max_keys_per_hand": 5,
+      "max_jump_semitones": 12,
+      "max_jump_semitones_per_second": 28,
+      "attack_tolerance_seconds": 0.035,
+      "include_vocal_cue": false
+    },
+    "tempo_bpm": 120.0,
+    "transpose_semitones": 0,
+    "issues": [
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 1,
+        "hand": "right",
+        "note_ids": [
+          "43767417-ea07-540e-8324-087dbeb9781b",
+          "4ef40eaf-44a7-5888-a341-5fc3a26b40db",
+          "55a6ae3b-0c44-59f0-a030-285cfb4a5af4",
+          "8efb03b5-d7c0-53b2-86b7-606e4b8243a5",
+          "9a1dbe10-c483-5e23-89e0-3a73fbf803e3"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 1,
+        "hand": "right",
+        "note_ids": [
+          "43767417-ea07-540e-8324-087dbeb9781b",
+          "4ef40eaf-44a7-5888-a341-5fc3a26b40db",
+          "55a6ae3b-0c44-59f0-a030-285cfb4a5af4",
+          "8efb03b5-d7c0-53b2-86b7-606e4b8243a5",
+          "9a1dbe10-c483-5e23-89e0-3a73fbf803e3"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 1,
+        "hand": "right",
+        "note_ids": [
+          "03439501-3d68-5704-8fd0-6295b05b4a41",
+          "6d4ca3af-83f3-5b0c-a517-e6b503026a9f",
+          "bb5a9f0b-74a7-543b-89e3-75f8f3ec8a0b",
+          "cb895074-e942-5f5e-ae0d-1fe132236dd5",
+          "d55a98fa-9ea1-5fa2-9aa4-ca635a4f2064"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 1,
+        "hand": "right",
+        "note_ids": [
+          "03439501-3d68-5704-8fd0-6295b05b4a41",
+          "6d4ca3af-83f3-5b0c-a517-e6b503026a9f",
+          "bb5a9f0b-74a7-543b-89e3-75f8f3ec8a0b",
+          "cb895074-e942-5f5e-ae0d-1fe132236dd5",
+          "d55a98fa-9ea1-5fa2-9aa4-ca635a4f2064"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 1,
+        "hand": "right",
+        "note_ids": [
+          "89a5218f-c86f-5fa1-9669-83377184e702",
+          "c2327d39-4f66-50fd-ad90-6a37fa604c39",
+          "c509e364-c14e-5ab3-809e-8dfbade1a35b",
+          "e8b93d02-3254-505a-8f4d-d1f67bd6e20f",
+          "ef420e2d-455d-5f40-9815-da88739c85a8"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 1,
+        "hand": "right",
+        "note_ids": [
+          "89a5218f-c86f-5fa1-9669-83377184e702",
+          "c2327d39-4f66-50fd-ad90-6a37fa604c39",
+          "c509e364-c14e-5ab3-809e-8dfbade1a35b",
+          "e8b93d02-3254-505a-8f4d-d1f67bd6e20f",
+          "ef420e2d-455d-5f40-9815-da88739c85a8"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 2,
+        "hand": "right",
+        "note_ids": [
+          "409ea7dd-51ea-5ea9-8e0e-8ece8d3699d3",
+          "7fbe1b5f-1fbb-55e8-8ccd-8e3b31a79bc7",
+          "ab22c625-3c62-5657-b315-c9ef3d9ce562",
+          "ba99bd07-9412-5f80-b8d3-89edbaa8cdb9",
+          "fed49051-353f-5f9a-90e0-cfb6c88c5283"
+        ],
+        "detail": "15-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 15,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 2,
+        "hand": "right",
+        "note_ids": [
+          "409ea7dd-51ea-5ea9-8e0e-8ece8d3699d3",
+          "7fbe1b5f-1fbb-55e8-8ccd-8e3b31a79bc7",
+          "ab22c625-3c62-5657-b315-c9ef3d9ce562",
+          "ba99bd07-9412-5f80-b8d3-89edbaa8cdb9",
+          "fed49051-353f-5f9a-90e0-cfb6c88c5283"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 2,
+        "hand": "right",
+        "note_ids": [
+          "3a44bc25-40bf-5ab9-b3ff-a96a9943ce65",
+          "4eee62f0-17d0-5e38-9b9c-684f03b71c6c",
+          "5f2b0fd0-d89c-5372-9fc9-da8a5178f9b7",
+          "763612db-9a2d-5435-8081-84b5b64dbf26",
+          "bc4fd48d-800c-5b6c-8cb0-910e669c4deb"
+        ],
+        "detail": "15-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 15,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 2,
+        "hand": "right",
+        "note_ids": [
+          "3a44bc25-40bf-5ab9-b3ff-a96a9943ce65",
+          "4eee62f0-17d0-5e38-9b9c-684f03b71c6c",
+          "5f2b0fd0-d89c-5372-9fc9-da8a5178f9b7",
+          "763612db-9a2d-5435-8081-84b5b64dbf26",
+          "bc4fd48d-800c-5b6c-8cb0-910e669c4deb"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 2,
+        "hand": "right",
+        "note_ids": [
+          "07a2d80a-8474-5857-b4ee-dda9f8b51da2",
+          "10b3eea5-f475-5577-a3fa-32ad8d7007e8",
+          "b8266ea3-b977-5717-be5a-8d3ed05a171a",
+          "d5d14b2f-f8aa-576d-8404-fc61513b8f66",
+          "fcf77724-e7c5-589a-ba8c-76de545155f0"
+        ],
+        "detail": "15-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 15,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 2,
+        "hand": "right",
+        "note_ids": [
+          "07a2d80a-8474-5857-b4ee-dda9f8b51da2",
+          "10b3eea5-f475-5577-a3fa-32ad8d7007e8",
+          "b8266ea3-b977-5717-be5a-8d3ed05a171a",
+          "d5d14b2f-f8aa-576d-8404-fc61513b8f66",
+          "fcf77724-e7c5-589a-ba8c-76de545155f0"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 3,
+        "hand": "right",
+        "note_ids": [
+          "14673d78-b2a3-5217-98e9-56fdf5f5be79",
+          "19b1599a-8eb2-5a3b-8168-383e5ed5807f",
+          "28ff9ba4-988a-5af2-9c49-2b14ecb3ddc3",
+          "8551847e-f63e-5088-8409-bcdd0cfb369d",
+          "b68218c1-2b91-5cea-a6dc-12bee1aee4e9"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 3,
+        "hand": "right",
+        "note_ids": [
+          "14673d78-b2a3-5217-98e9-56fdf5f5be79",
+          "19b1599a-8eb2-5a3b-8168-383e5ed5807f",
+          "28ff9ba4-988a-5af2-9c49-2b14ecb3ddc3",
+          "8551847e-f63e-5088-8409-bcdd0cfb369d",
+          "b68218c1-2b91-5cea-a6dc-12bee1aee4e9"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 3,
+        "hand": "right",
+        "note_ids": [
+          "153909e2-1088-5732-9396-bb5f93724741",
+          "6526feec-ccd6-5ac9-88c0-13afd58dd214",
+          "837f1423-8267-5bcd-9b29-462aa398ea58",
+          "aa5017fb-437d-5a4e-9aa5-dba01391e206",
+          "f7cc22df-41bc-5b96-b729-c4cca0ed02a1"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 3,
+        "hand": "right",
+        "note_ids": [
+          "153909e2-1088-5732-9396-bb5f93724741",
+          "6526feec-ccd6-5ac9-88c0-13afd58dd214",
+          "837f1423-8267-5bcd-9b29-462aa398ea58",
+          "aa5017fb-437d-5a4e-9aa5-dba01391e206",
+          "f7cc22df-41bc-5b96-b729-c4cca0ed02a1"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 3,
+        "hand": "right",
+        "note_ids": [
+          "3253ce8b-0669-5b37-8891-39106b2559e3",
+          "b0f710b7-d0ef-563f-a74a-26ce99acdd47",
+          "b9c7926b-e022-5d03-a2c5-c9a391fd8a44",
+          "d99e7caf-e41f-5381-b292-0d41b1e39874",
+          "ef7f5721-c285-5025-96f8-b0ec76fadf54"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 3,
+        "hand": "right",
+        "note_ids": [
+          "3253ce8b-0669-5b37-8891-39106b2559e3",
+          "b0f710b7-d0ef-563f-a74a-26ce99acdd47",
+          "b9c7926b-e022-5d03-a2c5-c9a391fd8a44",
+          "d99e7caf-e41f-5381-b292-0d41b1e39874",
+          "ef7f5721-c285-5025-96f8-b0ec76fadf54"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 4,
+        "hand": "right",
+        "note_ids": [
+          "0752228d-521c-5d52-819e-c28c5efd3dd3",
+          "534ad9cb-eba1-5fe5-9d13-f62a4995f697",
+          "54c91b2d-c091-58e6-81be-69ee8ffbb074",
+          "9abc9aad-b9aa-585e-8fbc-220f256d912b",
+          "d7bb2a23-37a2-50e6-81ec-359a8260cccc"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 4,
+        "hand": "right",
+        "note_ids": [
+          "0752228d-521c-5d52-819e-c28c5efd3dd3",
+          "534ad9cb-eba1-5fe5-9d13-f62a4995f697",
+          "54c91b2d-c091-58e6-81be-69ee8ffbb074",
+          "9abc9aad-b9aa-585e-8fbc-220f256d912b",
+          "d7bb2a23-37a2-50e6-81ec-359a8260cccc"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 4,
+        "hand": "right",
+        "note_ids": [
+          "02b42b4a-6f7f-5d95-a403-7393ea39153c",
+          "157e3365-5650-5283-a0fb-e07a8d829115",
+          "260ff17d-65d6-5514-aa51-98b2030194c0",
+          "9574922e-df3a-57a2-97a6-a1b999ed699b",
+          "fa6f6870-ed0d-593e-b59c-5912435f9d5a"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 4,
+        "hand": "right",
+        "note_ids": [
+          "02b42b4a-6f7f-5d95-a403-7393ea39153c",
+          "157e3365-5650-5283-a0fb-e07a8d829115",
+          "260ff17d-65d6-5514-aa51-98b2030194c0",
+          "9574922e-df3a-57a2-97a6-a1b999ed699b",
+          "fa6f6870-ed0d-593e-b59c-5912435f9d5a"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 4,
+        "hand": "right",
+        "note_ids": [
+          "0f21fbb9-b884-5203-88d3-228db41c0560",
+          "372a6724-d347-591e-a337-99cd6f879c2f",
+          "6c1019d7-03d1-5e1c-b08f-02626e6db2be",
+          "750dfcd9-360d-5fbf-b213-a29be06e2a1f",
+          "d8556a51-78b4-5c90-acce-79e49be88cd6"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 4,
+        "hand": "right",
+        "note_ids": [
+          "0f21fbb9-b884-5203-88d3-228db41c0560",
+          "372a6724-d347-591e-a337-99cd6f879c2f",
+          "6c1019d7-03d1-5e1c-b08f-02626e6db2be",
+          "750dfcd9-360d-5fbf-b213-a29be06e2a1f",
+          "d8556a51-78b4-5c90-acce-79e49be88cd6"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 5,
+        "hand": "right",
+        "note_ids": [
+          "065dd4b6-5e78-57b2-a768-4cb4485482cd",
+          "14f87376-9d7a-510a-88e9-0c445ac2dfc2",
+          "32250cd3-11dd-5838-8466-4ea7466d6f2d",
+          "9ba60905-5e54-5f94-8ec8-263d609ba62b",
+          "a7036767-23fb-5bbd-a0ad-9606c103c5f2"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 5,
+        "hand": "right",
+        "note_ids": [
+          "065dd4b6-5e78-57b2-a768-4cb4485482cd",
+          "14f87376-9d7a-510a-88e9-0c445ac2dfc2",
+          "32250cd3-11dd-5838-8466-4ea7466d6f2d",
+          "9ba60905-5e54-5f94-8ec8-263d609ba62b",
+          "a7036767-23fb-5bbd-a0ad-9606c103c5f2"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 5,
+        "hand": "right",
+        "note_ids": [
+          "20a19f29-4ef7-51e7-a235-ca11620f5d86",
+          "36ccbdcb-5774-50e5-b816-e11ac1e422e1",
+          "a6ee58da-29a2-5f68-90ec-ede3e24b0f0b",
+          "a856325d-15a6-548a-aa21-cffdd3df75bc",
+          "e151f2c9-a860-5862-b2e1-31075dc93149"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 5,
+        "hand": "right",
+        "note_ids": [
+          "20a19f29-4ef7-51e7-a235-ca11620f5d86",
+          "36ccbdcb-5774-50e5-b816-e11ac1e422e1",
+          "a6ee58da-29a2-5f68-90ec-ede3e24b0f0b",
+          "a856325d-15a6-548a-aa21-cffdd3df75bc",
+          "e151f2c9-a860-5862-b2e1-31075dc93149"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 5,
+        "hand": "right",
+        "note_ids": [
+          "2aa93bf3-6d12-5d1d-8600-97519dc94749",
+          "75459db2-8558-524c-a25f-ec285902f930",
+          "92cfbff1-330e-587c-b847-98fde6125d7c",
+          "9a47b7a6-f575-5214-8ce0-03c7a8041a69",
+          "d913f3bd-405d-530c-b3de-902b4934ce97"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 5,
+        "hand": "right",
+        "note_ids": [
+          "2aa93bf3-6d12-5d1d-8600-97519dc94749",
+          "75459db2-8558-524c-a25f-ec285902f930",
+          "92cfbff1-330e-587c-b847-98fde6125d7c",
+          "9a47b7a6-f575-5214-8ce0-03c7a8041a69",
+          "d913f3bd-405d-530c-b3de-902b4934ce97"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 6,
+        "hand": "right",
+        "note_ids": [
+          "04b375c7-c83c-531a-a873-7b75b6e32984",
+          "4a8bd404-be1a-5810-a542-c018021b8059",
+          "896be291-0df9-5f13-a694-17ff199e2a5f",
+          "c966d7ca-1eba-5c36-be5e-a84c02003738",
+          "cd803b9f-c4fc-5582-97d8-7f43c4c9bda2"
+        ],
+        "detail": "15-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 15,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 6,
+        "hand": "right",
+        "note_ids": [
+          "04b375c7-c83c-531a-a873-7b75b6e32984",
+          "4a8bd404-be1a-5810-a542-c018021b8059",
+          "896be291-0df9-5f13-a694-17ff199e2a5f",
+          "c966d7ca-1eba-5c36-be5e-a84c02003738",
+          "cd803b9f-c4fc-5582-97d8-7f43c4c9bda2"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 6,
+        "hand": "right",
+        "note_ids": [
+          "190b01c8-83c6-5fa8-ae65-8051903b9ad3",
+          "58d833c6-9efd-5589-bce6-e21b75faa267",
+          "a592d8f3-3761-58c2-b023-4badd972768c",
+          "a6868735-6d3c-5f87-b244-f87c278ff09a",
+          "b5210e9d-23db-56c7-8db5-336664bad5de"
+        ],
+        "detail": "15-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 15,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 6,
+        "hand": "right",
+        "note_ids": [
+          "190b01c8-83c6-5fa8-ae65-8051903b9ad3",
+          "58d833c6-9efd-5589-bce6-e21b75faa267",
+          "a592d8f3-3761-58c2-b023-4badd972768c",
+          "a6868735-6d3c-5f87-b244-f87c278ff09a",
+          "b5210e9d-23db-56c7-8db5-336664bad5de"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 6,
+        "hand": "right",
+        "note_ids": [
+          "1d97ebda-5906-5e67-8850-3709a20183e6",
+          "5b5c0f59-b5ee-5d65-96b8-4b7090278b9b",
+          "bc04bfc7-f6ac-5ee7-94b3-a703baa38717",
+          "d2801488-c7bc-5666-9681-567c9054a3d8",
+          "f166a08a-a24a-5f25-9400-73b259cc46aa"
+        ],
+        "detail": "15-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 15,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 6,
+        "hand": "right",
+        "note_ids": [
+          "1d97ebda-5906-5e67-8850-3709a20183e6",
+          "5b5c0f59-b5ee-5d65-96b8-4b7090278b9b",
+          "bc04bfc7-f6ac-5ee7-94b3-a703baa38717",
+          "d2801488-c7bc-5666-9681-567c9054a3d8",
+          "f166a08a-a24a-5f25-9400-73b259cc46aa"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 7,
+        "hand": "right",
+        "note_ids": [
+          "7b670ced-3f97-505c-92c9-1776c8bce9ed",
+          "a196af46-8480-5c8e-b354-edcd05324a2e",
+          "bfd39683-7765-5a1e-9de1-6318552f32de",
+          "cfa486eb-c5fe-5a87-8957-7bdaf0873b08",
+          "f21b2f83-5e60-5cc4-8115-46237a3da536"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 7,
+        "hand": "right",
+        "note_ids": [
+          "7b670ced-3f97-505c-92c9-1776c8bce9ed",
+          "a196af46-8480-5c8e-b354-edcd05324a2e",
+          "bfd39683-7765-5a1e-9de1-6318552f32de",
+          "cfa486eb-c5fe-5a87-8957-7bdaf0873b08",
+          "f21b2f83-5e60-5cc4-8115-46237a3da536"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 7,
+        "hand": "right",
+        "note_ids": [
+          "319bec89-51cc-55d2-a855-6e196e3fbe17",
+          "338c463c-a17a-593a-834b-f941b52406a8",
+          "61c764a0-e2e6-550f-b3e4-d3e146a16246",
+          "674671ef-8ab3-58bf-9668-3af4f213077e",
+          "e1ca9aa1-ee99-55e0-91dc-d0ec59987be3"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 7,
+        "hand": "right",
+        "note_ids": [
+          "319bec89-51cc-55d2-a855-6e196e3fbe17",
+          "338c463c-a17a-593a-834b-f941b52406a8",
+          "61c764a0-e2e6-550f-b3e4-d3e146a16246",
+          "674671ef-8ab3-58bf-9668-3af4f213077e",
+          "e1ca9aa1-ee99-55e0-91dc-d0ec59987be3"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 7,
+        "hand": "right",
+        "note_ids": [
+          "0ab37281-081a-5f49-94ff-6deb23a9d95c",
+          "0f7e0694-ca58-5949-9fc0-e6b1ec4fce3a",
+          "7a275071-da66-5574-ae83-b701acf2d2fd",
+          "937fc017-9bc5-51f8-9c8d-cc93e048a50c",
+          "b9e21b04-94dd-59bb-8f34-082dbacb567b"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 7,
+        "hand": "right",
+        "note_ids": [
+          "0ab37281-081a-5f49-94ff-6deb23a9d95c",
+          "0f7e0694-ca58-5949-9fc0-e6b1ec4fce3a",
+          "7a275071-da66-5574-ae83-b701acf2d2fd",
+          "937fc017-9bc5-51f8-9c8d-cc93e048a50c",
+          "b9e21b04-94dd-59bb-8f34-082dbacb567b"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 8,
+        "hand": "right",
+        "note_ids": [
+          "279e1970-6be4-577e-837c-ddc62cbd3c4f",
+          "4d91bf8f-d60c-57bb-93f3-2b43eb7d648c",
+          "5e0152d8-cc90-5bd8-8692-42fe7b527d7d",
+          "b808e487-37da-591f-bc56-466fbe24632e",
+          "fa417b4c-e2c7-5457-bce7-f85cabd76ca7"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 8,
+        "hand": "right",
+        "note_ids": [
+          "279e1970-6be4-577e-837c-ddc62cbd3c4f",
+          "4d91bf8f-d60c-57bb-93f3-2b43eb7d648c",
+          "5e0152d8-cc90-5bd8-8692-42fe7b527d7d",
+          "b808e487-37da-591f-bc56-466fbe24632e",
+          "fa417b4c-e2c7-5457-bce7-f85cabd76ca7"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 8,
+        "hand": "right",
+        "note_ids": [
+          "048e1841-786c-52e7-8e5b-592262e6b2f0",
+          "26106856-f521-5335-9900-e5a8e52ef81d",
+          "9f2c0f76-3aff-57ca-bf26-e57733cfa8e1",
+          "b08cb646-3abd-5267-8857-106f0bf2ac26",
+          "b1101f19-4d30-59f7-baa5-10354ca206f3"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 8,
+        "hand": "right",
+        "note_ids": [
+          "048e1841-786c-52e7-8e5b-592262e6b2f0",
+          "26106856-f521-5335-9900-e5a8e52ef81d",
+          "9f2c0f76-3aff-57ca-bf26-e57733cfa8e1",
+          "b08cb646-3abd-5267-8857-106f0bf2ac26",
+          "b1101f19-4d30-59f7-baa5-10354ca206f3"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      },
+      {
+        "code": "hand_reach",
+        "severity": "error",
+        "measure": 8,
+        "hand": "right",
+        "note_ids": [
+          "4235b5ea-35f0-5397-ac90-2e30d2ddcc33",
+          "5f39997b-7fcc-5cc0-ba04-ac5fc107124f",
+          "77f6a703-28b7-58e7-a84d-f829ea4d07f7",
+          "94a79183-5cda-55f6-b95d-8e65a5bbe656",
+          "ca022b5f-e152-581f-a55b-5071ea6a33a8"
+        ],
+        "detail": "16-semitone span exceeds this hand's 9-semitone limit.",
+        "span_semitones": 16,
+        "reach_limit": 9
+      },
+      {
+        "code": "keyboard_shape",
+        "severity": "error",
+        "measure": 8,
+        "hand": "right",
+        "note_ids": [
+          "4235b5ea-35f0-5397-ac90-2e30d2ddcc33",
+          "5f39997b-7fcc-5cc0-ba04-ac5fc107124f",
+          "77f6a703-28b7-58e7-a84d-f829ea4d07f7",
+          "94a79183-5cda-55f6-b95d-8e65a5bbe656",
+          "ca022b5f-e152-581f-a55b-5071ea6a33a8"
+        ],
+        "detail": "Uneven intervals and black/white-key geometry do not fit the profile's ordered finger-capacity heuristic, despite the pitch-span/key-count checks."
+      }
+    ],
+    "summary": {
+      "passed_automated_constraints": false,
+      "requires_review": true,
+      "hard_constraints_passed": false,
+      "pianist_review": "not_performed",
+      "error_count": 48,
+      "warning_count": 0,
+      "note_count": 144,
+      "vocal_cue_notes_excluded_from_hand_checks": 0,
+      "max_left_span": 0,
+      "max_right_span": 16,
+      "max_left_keys": 1,
+      "max_right_keys": 5
+    },
+    "limitations": [
+      "Automated constraint compliance is not pianist review or a guarantee of comfort.",
+      "Hand movement and keyboard-shape estimates are conservative heuristics; no finger numbers are generated.",
+      "Without an explicit pedal-sustained flag and physical key-release time, sounding notes are treated as physically held.",
+      "Bass/texture priorities inferred from register are editorial assumptions; mark important riffs, bass lines and locked edits before arranging.",
+      "This pass does not identify octave transcription errors or recover isolated piano from a mixed-instrument stem."
+    ]
+  },
+  "after": {
+    "schema_version": 1,
+    "settings": {
+      "profile": "comfortable_accompaniment",
+      "left_reach": 9,
+      "right_reach": 9,
+      "max_keys_per_hand": 5,
+      "max_jump_semitones": 12,
+      "max_jump_semitones_per_second": 28,
+      "attack_tolerance_seconds": 0.035,
+      "include_vocal_cue": false
+    },
+    "tempo_bpm": 120.0,
+    "transpose_semitones": 0,
+    "issues": [],
+    "summary": {
+      "passed_automated_constraints": true,
+      "requires_review": false,
+      "hard_constraints_passed": true,
+      "pianist_review": "not_performed",
+      "error_count": 0,
+      "warning_count": 0,
+      "note_count": 120,
+      "vocal_cue_notes_excluded_from_hand_checks": 0,
+      "max_left_span": 4,
+      "max_right_span": 9,
+      "max_left_keys": 2,
+      "max_right_keys": 3
+    },
+    "limitations": [
+      "Automated constraint compliance is not pianist review or a guarantee of comfort.",
+      "Hand movement and keyboard-shape estimates are conservative heuristics; no finger numbers are generated.",
+      "Without an explicit pedal-sustained flag and physical key-release time, sounding notes are treated as physically held.",
+      "Bass/texture priorities inferred from register are editorial assumptions; mark important riffs, bass lines and locked edits before arranging.",
+      "This pass does not identify octave transcription errors or recover isolated piano from a mixed-instrument stem."
+    ]
+  },
+  "changes": [
+    {
+      "note_id": "0a153bf3-375b-5919-ab4a-a5e1478f89fa",
+      "action": "modify",
+      "measure": 1,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "4ef40eaf-44a7-5888-a341-5fc3a26b40db",
+      "action": "modify",
+      "measure": 1,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "55a6ae3b-0c44-59f0-a030-285cfb4a5af4",
+      "action": "modify",
+      "measure": 1,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "9a1dbe10-c483-5e23-89e0-3a73fbf803e3",
+      "action": "modify",
+      "measure": 1,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 64,
+          "after": 52,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "8efb03b5-d7c0-53b2-86b7-606e4b8243a5",
+      "action": "modify",
+      "measure": 1,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 76,
+          "after": 64,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "542801b9-d9c6-509f-b2ae-9aa09ebd3a45",
+      "action": "modify",
+      "measure": 1,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "cb895074-e942-5f5e-ae0d-1fe132236dd5",
+      "action": "modify",
+      "measure": 1,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "6d4ca3af-83f3-5b0c-a517-e6b503026a9f",
+      "action": "modify",
+      "measure": 1,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "d55a98fa-9ea1-5fa2-9aa4-ca635a4f2064",
+      "action": "modify",
+      "measure": 1,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 64,
+          "after": 52,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "bb5a9f0b-74a7-543b-89e3-75f8f3ec8a0b",
+      "action": "modify",
+      "measure": 1,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 76,
+          "after": 64,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "4e656858-1792-5c2c-a20f-dafb45c97158",
+      "action": "modify",
+      "measure": 1,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "ef420e2d-455d-5f40-9815-da88739c85a8",
+      "action": "modify",
+      "measure": 1,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "e8b93d02-3254-505a-8f4d-d1f67bd6e20f",
+      "action": "modify",
+      "measure": 1,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "c509e364-c14e-5ab3-809e-8dfbade1a35b",
+      "action": "modify",
+      "measure": 1,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 64,
+          "after": 52,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "c2327d39-4f66-50fd-ad90-6a37fa604c39",
+      "action": "modify",
+      "measure": 1,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 76,
+          "after": 64,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "1c679c85-8645-5fd2-a4c4-30b3f6fbad16",
+      "action": "modify",
+      "measure": 2,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "fed49051-353f-5f9a-90e0-cfb6c88c5283",
+      "action": "modify",
+      "measure": 2,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "ba99bd07-9412-5f80-b8d3-89edbaa8cdb9",
+      "action": "modify",
+      "measure": 2,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "7fbe1b5f-1fbb-55e8-8ccd-8e3b31a79bc7",
+      "action": "modify",
+      "measure": 2,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 65,
+          "after": 53,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "ab22c625-3c62-5657-b315-c9ef3d9ce562",
+      "action": "modify",
+      "measure": 2,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 77,
+          "after": 65,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "3c21fb8d-6dd0-5ef4-9b31-2a10e117a75c",
+      "action": "modify",
+      "measure": 2,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "763612db-9a2d-5435-8081-84b5b64dbf26",
+      "action": "modify",
+      "measure": 2,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "4eee62f0-17d0-5e38-9b9c-684f03b71c6c",
+      "action": "modify",
+      "measure": 2,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "5f2b0fd0-d89c-5372-9fc9-da8a5178f9b7",
+      "action": "modify",
+      "measure": 2,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 65,
+          "after": 53,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "3a44bc25-40bf-5ab9-b3ff-a96a9943ce65",
+      "action": "modify",
+      "measure": 2,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 77,
+          "after": 65,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "77186a14-1d1c-5f13-8b42-6c8efa594277",
+      "action": "modify",
+      "measure": 2,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "fcf77724-e7c5-589a-ba8c-76de545155f0",
+      "action": "modify",
+      "measure": 2,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "10b3eea5-f475-5577-a3fa-32ad8d7007e8",
+      "action": "modify",
+      "measure": 2,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "b8266ea3-b977-5717-be5a-8d3ed05a171a",
+      "action": "modify",
+      "measure": 2,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 65,
+          "after": 53,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "07a2d80a-8474-5857-b4ee-dda9f8b51da2",
+      "action": "modify",
+      "measure": 2,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 77,
+          "after": 65,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "08a20817-4eed-596e-9310-d2831bb9bf53",
+      "action": "modify",
+      "measure": 3,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "28ff9ba4-988a-5af2-9c49-2b14ecb3ddc3",
+      "action": "modify",
+      "measure": 3,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "14673d78-b2a3-5217-98e9-56fdf5f5be79",
+      "action": "modify",
+      "measure": 3,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 55,
+          "after": 67,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "19b1599a-8eb2-5a3b-8168-383e5ed5807f",
+      "action": "modify",
+      "measure": 3,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 59,
+          "after": 47,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "8551847e-f63e-5088-8409-bcdd0cfb369d",
+      "action": "modify",
+      "measure": 3,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "48e80deb-ce66-583d-8b71-5e1940d5567f",
+      "action": "modify",
+      "measure": 3,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "837f1423-8267-5bcd-9b29-462aa398ea58",
+      "action": "modify",
+      "measure": 3,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "f7cc22df-41bc-5b96-b729-c4cca0ed02a1",
+      "action": "modify",
+      "measure": 3,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 55,
+          "after": 67,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "6526feec-ccd6-5ac9-88c0-13afd58dd214",
+      "action": "modify",
+      "measure": 3,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 59,
+          "after": 47,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "153909e2-1088-5732-9396-bb5f93724741",
+      "action": "modify",
+      "measure": 3,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "6436947e-8c34-5a6e-b5d9-ed91fdaa3e13",
+      "action": "modify",
+      "measure": 3,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "b0f710b7-d0ef-563f-a74a-26ce99acdd47",
+      "action": "modify",
+      "measure": 3,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "ef7f5721-c285-5025-96f8-b0ec76fadf54",
+      "action": "modify",
+      "measure": 3,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 55,
+          "after": 67,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "b9c7926b-e022-5d03-a2c5-c9a391fd8a44",
+      "action": "modify",
+      "measure": 3,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 59,
+          "after": 47,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "3253ce8b-0669-5b37-8891-39106b2559e3",
+      "action": "modify",
+      "measure": 3,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "e1afe28d-9ca4-5907-862b-0d148bec032e",
+      "action": "modify",
+      "measure": 4,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "54c91b2d-c091-58e6-81be-69ee8ffbb074",
+      "action": "modify",
+      "measure": 4,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "534ad9cb-eba1-5fe5-9d13-f62a4995f697",
+      "action": "modify",
+      "measure": 4,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "0752228d-521c-5d52-819e-c28c5efd3dd3",
+      "action": "modify",
+      "measure": 4,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 64,
+          "after": 52,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "d7bb2a23-37a2-50e6-81ec-359a8260cccc",
+      "action": "modify",
+      "measure": 4,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 76,
+          "after": 64,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "3547b23b-697e-5be3-ac2e-ba0b8b623668",
+      "action": "modify",
+      "measure": 4,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "9574922e-df3a-57a2-97a6-a1b999ed699b",
+      "action": "modify",
+      "measure": 4,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "02b42b4a-6f7f-5d95-a403-7393ea39153c",
+      "action": "modify",
+      "measure": 4,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "fa6f6870-ed0d-593e-b59c-5912435f9d5a",
+      "action": "modify",
+      "measure": 4,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 64,
+          "after": 52,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "157e3365-5650-5283-a0fb-e07a8d829115",
+      "action": "modify",
+      "measure": 4,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 76,
+          "after": 64,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "820302ea-b5db-5653-b875-ae18665a20d4",
+      "action": "modify",
+      "measure": 4,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "d8556a51-78b4-5c90-acce-79e49be88cd6",
+      "action": "modify",
+      "measure": 4,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "0f21fbb9-b884-5203-88d3-228db41c0560",
+      "action": "modify",
+      "measure": 4,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "750dfcd9-360d-5fbf-b213-a29be06e2a1f",
+      "action": "modify",
+      "measure": 4,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 64,
+          "after": 52,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "6c1019d7-03d1-5e1c-b08f-02626e6db2be",
+      "action": "modify",
+      "measure": 4,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 76,
+          "after": 64,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "c0d01d53-6af4-57d3-a10c-9a16cd8b85ea",
+      "action": "modify",
+      "measure": 5,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "14f87376-9d7a-510a-88e9-0c445ac2dfc2",
+      "action": "modify",
+      "measure": 5,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "9ba60905-5e54-5f94-8ec8-263d609ba62b",
+      "action": "modify",
+      "measure": 5,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "a7036767-23fb-5bbd-a0ad-9606c103c5f2",
+      "action": "modify",
+      "measure": 5,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 64,
+          "after": 52,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "065dd4b6-5e78-57b2-a768-4cb4485482cd",
+      "action": "modify",
+      "measure": 5,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 76,
+          "after": 64,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "b362c7c5-6b77-5300-86a6-ee4423266b69",
+      "action": "modify",
+      "measure": 5,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "e151f2c9-a860-5862-b2e1-31075dc93149",
+      "action": "modify",
+      "measure": 5,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "a6ee58da-29a2-5f68-90ec-ede3e24b0f0b",
+      "action": "modify",
+      "measure": 5,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "20a19f29-4ef7-51e7-a235-ca11620f5d86",
+      "action": "modify",
+      "measure": 5,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 64,
+          "after": 52,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "36ccbdcb-5774-50e5-b816-e11ac1e422e1",
+      "action": "modify",
+      "measure": 5,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 76,
+          "after": 64,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "8bd994d5-1124-54ea-8632-6d42db41415f",
+      "action": "modify",
+      "measure": 5,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "92cfbff1-330e-587c-b847-98fde6125d7c",
+      "action": "modify",
+      "measure": 5,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "d913f3bd-405d-530c-b3de-902b4934ce97",
+      "action": "modify",
+      "measure": 5,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "9a47b7a6-f575-5214-8ce0-03c7a8041a69",
+      "action": "modify",
+      "measure": 5,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 64,
+          "after": 52,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "2aa93bf3-6d12-5d1d-8600-97519dc94749",
+      "action": "modify",
+      "measure": 5,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 76,
+          "after": 64,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "92555ac0-e263-5534-a878-35d3ef057fbf",
+      "action": "modify",
+      "measure": 6,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "04b375c7-c83c-531a-a873-7b75b6e32984",
+      "action": "modify",
+      "measure": 6,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "cd803b9f-c4fc-5582-97d8-7f43c4c9bda2",
+      "action": "modify",
+      "measure": 6,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "896be291-0df9-5f13-a694-17ff199e2a5f",
+      "action": "modify",
+      "measure": 6,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 65,
+          "after": 53,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "4a8bd404-be1a-5810-a542-c018021b8059",
+      "action": "modify",
+      "measure": 6,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 77,
+          "after": 65,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "d2e0ef10-3ad0-5faa-8f23-0d3719f67f2e",
+      "action": "modify",
+      "measure": 6,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "190b01c8-83c6-5fa8-ae65-8051903b9ad3",
+      "action": "modify",
+      "measure": 6,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "b5210e9d-23db-56c7-8db5-336664bad5de",
+      "action": "modify",
+      "measure": 6,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "a592d8f3-3761-58c2-b023-4badd972768c",
+      "action": "modify",
+      "measure": 6,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 65,
+          "after": 53,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "58d833c6-9efd-5589-bce6-e21b75faa267",
+      "action": "modify",
+      "measure": 6,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 77,
+          "after": 65,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "b285ddaf-3793-5904-be3a-6a7d316a2cda",
+      "action": "modify",
+      "measure": 6,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "bc04bfc7-f6ac-5ee7-94b3-a703baa38717",
+      "action": "modify",
+      "measure": 6,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "f166a08a-a24a-5f25-9400-73b259cc46aa",
+      "action": "modify",
+      "measure": 6,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "1d97ebda-5906-5e67-8850-3709a20183e6",
+      "action": "modify",
+      "measure": 6,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 65,
+          "after": 53,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "d2801488-c7bc-5666-9681-567c9054a3d8",
+      "action": "modify",
+      "measure": 6,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 77,
+          "after": 65,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "2acd0d4e-be5e-5e94-b079-ae7303cb03d1",
+      "action": "modify",
+      "measure": 7,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "7b670ced-3f97-505c-92c9-1776c8bce9ed",
+      "action": "modify",
+      "measure": 7,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "f21b2f83-5e60-5cc4-8115-46237a3da536",
+      "action": "modify",
+      "measure": 7,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 55,
+          "after": 67,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "a196af46-8480-5c8e-b354-edcd05324a2e",
+      "action": "modify",
+      "measure": 7,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 59,
+          "after": 47,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "bfd39683-7765-5a1e-9de1-6318552f32de",
+      "action": "modify",
+      "measure": 7,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "94f7a540-26eb-5ff7-8817-ba7869942ea7",
+      "action": "modify",
+      "measure": 7,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "674671ef-8ab3-58bf-9668-3af4f213077e",
+      "action": "modify",
+      "measure": 7,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "e1ca9aa1-ee99-55e0-91dc-d0ec59987be3",
+      "action": "modify",
+      "measure": 7,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 55,
+          "after": 67,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "319bec89-51cc-55d2-a855-6e196e3fbe17",
+      "action": "modify",
+      "measure": 7,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 59,
+          "after": 47,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "338c463c-a17a-593a-834b-f941b52406a8",
+      "action": "modify",
+      "measure": 7,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "e5c8ded2-9572-5d30-ae45-966190b6eb92",
+      "action": "modify",
+      "measure": 7,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "937fc017-9bc5-51f8-9c8d-cc93e048a50c",
+      "action": "modify",
+      "measure": 7,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "0f7e0694-ca58-5949-9fc0-e6b1ec4fce3a",
+      "action": "modify",
+      "measure": 7,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 55,
+          "after": 67,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "7a275071-da66-5574-ae83-b701acf2d2fd",
+      "action": "modify",
+      "measure": 7,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 59,
+          "after": 47,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "0ab37281-081a-5f49-94ff-6deb23a9d95c",
+      "action": "modify",
+      "measure": 7,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "25ac31f6-f0b3-52d5-a61b-033f2cecdc39",
+      "action": "modify",
+      "measure": 8,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "4d91bf8f-d60c-57bb-93f3-2b43eb7d648c",
+      "action": "modify",
+      "measure": 8,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "fa417b4c-e2c7-5457-bce7-f85cabd76ca7",
+      "action": "modify",
+      "measure": 8,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "5e0152d8-cc90-5bd8-8692-42fe7b527d7d",
+      "action": "modify",
+      "measure": 8,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 64,
+          "after": 52,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "279e1970-6be4-577e-837c-ddc62cbd3c4f",
+      "action": "modify",
+      "measure": 8,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 76,
+          "after": 64,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "567b828c-0d30-5065-8930-629a16527793",
+      "action": "modify",
+      "measure": 8,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "b08cb646-3abd-5267-8857-106f0bf2ac26",
+      "action": "modify",
+      "measure": 8,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "9f2c0f76-3aff-57ca-bf26-e57733cfa8e1",
+      "action": "modify",
+      "measure": 8,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "048e1841-786c-52e7-8e5b-592262e6b2f0",
+      "action": "modify",
+      "measure": 8,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 64,
+          "after": 52,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "26106856-f521-5335-9900-e5a8e52ef81d",
+      "action": "modify",
+      "measure": 8,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 76,
+          "after": 64,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "21547fbf-bbf1-599a-8c0f-47f53ceba5b5",
+      "action": "modify",
+      "measure": 8,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "bass",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "94a79183-5cda-55f6-b95d-8e65a5bbe656",
+      "action": "modify",
+      "measure": 8,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "77f6a703-28b7-58e7-a84d-f829ea4d07f7",
+      "action": "modify",
+      "measure": 8,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        }
+      ]
+    },
+    {
+      "note_id": "4235b5ea-35f0-5397-ac90-2e30d2ddcc33",
+      "action": "modify",
+      "measure": 8,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "hand",
+          "before": "right",
+          "after": "left",
+          "reason": "Sequence-aware two-hand allocation"
+        },
+        {
+          "field": "pitch",
+          "before": 64,
+          "after": 52,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "ca022b5f-e152-581f-a55b-5071ea6a33a8",
+      "action": "modify",
+      "measure": 8,
+      "edits": [
+        {
+          "field": "role",
+          "before": null,
+          "after": "harmony",
+          "reason": "Editorial register-based priority assumption, not a detected instrument or musical role"
+        },
+        {
+          "field": "pitch",
+          "before": 76,
+          "after": 64,
+          "reason": "Octave revoicing of inner material; pitch class retained"
+        }
+      ]
+    },
+    {
+      "note_id": "5f39997b-7fcc-5cc0-ba04-ac5fc107124f",
+      "source_note_ids": [
+        "5f39997b-7fcc-5cc0-ba04-ac5fc107124f"
+      ],
+      "action": "omit",
+      "measure": 8,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "b1101f19-4d30-59f7-baa5-10354ca206f3",
+      "source_note_ids": [
+        "b1101f19-4d30-59f7-baa5-10354ca206f3"
+      ],
+      "action": "omit",
+      "measure": 8,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "b808e487-37da-591f-bc56-466fbe24632e",
+      "source_note_ids": [
+        "b808e487-37da-591f-bc56-466fbe24632e"
+      ],
+      "action": "omit",
+      "measure": 8,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "b9e21b04-94dd-59bb-8f34-082dbacb567b",
+      "source_note_ids": [
+        "b9e21b04-94dd-59bb-8f34-082dbacb567b"
+      ],
+      "action": "omit",
+      "measure": 7,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "61c764a0-e2e6-550f-b3e4-d3e146a16246",
+      "source_note_ids": [
+        "61c764a0-e2e6-550f-b3e4-d3e146a16246"
+      ],
+      "action": "omit",
+      "measure": 7,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "cfa486eb-c5fe-5a87-8957-7bdaf0873b08",
+      "source_note_ids": [
+        "cfa486eb-c5fe-5a87-8957-7bdaf0873b08"
+      ],
+      "action": "omit",
+      "measure": 7,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "5b5c0f59-b5ee-5d65-96b8-4b7090278b9b",
+      "source_note_ids": [
+        "5b5c0f59-b5ee-5d65-96b8-4b7090278b9b"
+      ],
+      "action": "omit",
+      "measure": 6,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "a6868735-6d3c-5f87-b244-f87c278ff09a",
+      "source_note_ids": [
+        "a6868735-6d3c-5f87-b244-f87c278ff09a"
+      ],
+      "action": "omit",
+      "measure": 6,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "c966d7ca-1eba-5c36-be5e-a84c02003738",
+      "source_note_ids": [
+        "c966d7ca-1eba-5c36-be5e-a84c02003738"
+      ],
+      "action": "omit",
+      "measure": 6,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "75459db2-8558-524c-a25f-ec285902f930",
+      "source_note_ids": [
+        "75459db2-8558-524c-a25f-ec285902f930"
+      ],
+      "action": "omit",
+      "measure": 5,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "a856325d-15a6-548a-aa21-cffdd3df75bc",
+      "source_note_ids": [
+        "a856325d-15a6-548a-aa21-cffdd3df75bc"
+      ],
+      "action": "omit",
+      "measure": 5,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "32250cd3-11dd-5838-8466-4ea7466d6f2d",
+      "source_note_ids": [
+        "32250cd3-11dd-5838-8466-4ea7466d6f2d"
+      ],
+      "action": "omit",
+      "measure": 5,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "372a6724-d347-591e-a337-99cd6f879c2f",
+      "source_note_ids": [
+        "372a6724-d347-591e-a337-99cd6f879c2f"
+      ],
+      "action": "omit",
+      "measure": 4,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "260ff17d-65d6-5514-aa51-98b2030194c0",
+      "source_note_ids": [
+        "260ff17d-65d6-5514-aa51-98b2030194c0"
+      ],
+      "action": "omit",
+      "measure": 4,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "9abc9aad-b9aa-585e-8fbc-220f256d912b",
+      "source_note_ids": [
+        "9abc9aad-b9aa-585e-8fbc-220f256d912b"
+      ],
+      "action": "omit",
+      "measure": 4,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "d99e7caf-e41f-5381-b292-0d41b1e39874",
+      "source_note_ids": [
+        "d99e7caf-e41f-5381-b292-0d41b1e39874"
+      ],
+      "action": "omit",
+      "measure": 3,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "aa5017fb-437d-5a4e-9aa5-dba01391e206",
+      "source_note_ids": [
+        "aa5017fb-437d-5a4e-9aa5-dba01391e206"
+      ],
+      "action": "omit",
+      "measure": 3,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "b68218c1-2b91-5cea-a6dc-12bee1aee4e9",
+      "source_note_ids": [
+        "b68218c1-2b91-5cea-a6dc-12bee1aee4e9"
+      ],
+      "action": "omit",
+      "measure": 3,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "d5d14b2f-f8aa-576d-8404-fc61513b8f66",
+      "source_note_ids": [
+        "d5d14b2f-f8aa-576d-8404-fc61513b8f66"
+      ],
+      "action": "omit",
+      "measure": 2,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "bc4fd48d-800c-5b6c-8cb0-910e669c4deb",
+      "source_note_ids": [
+        "bc4fd48d-800c-5b6c-8cb0-910e669c4deb"
+      ],
+      "action": "omit",
+      "measure": 2,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "409ea7dd-51ea-5ea9-8e0e-8ece8d3699d3",
+      "source_note_ids": [
+        "409ea7dd-51ea-5ea9-8e0e-8ece8d3699d3"
+      ],
+      "action": "omit",
+      "measure": 2,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "89a5218f-c86f-5fa1-9669-83377184e702",
+      "source_note_ids": [
+        "89a5218f-c86f-5fa1-9669-83377184e702"
+      ],
+      "action": "omit",
+      "measure": 1,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "03439501-3d68-5704-8fd0-6295b05b4a41",
+      "source_note_ids": [
+        "03439501-3d68-5704-8fd0-6295b05b4a41"
+      ],
+      "action": "omit",
+      "measure": 1,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    },
+    {
+      "note_id": "43767417-ea07-540e-8324-087dbeb9781b",
+      "source_note_ids": [
+        "43767417-ea07-540e-8324-087dbeb9781b"
+      ],
+      "action": "omit",
+      "measure": 1,
+      "reason": "Remove a redundant doubling or secondary texture to fit two physical hands"
+    }
+  ],
+  "readability_changes": [
+    {
+      "note_ids": [
+        "55a6ae3b-0c44-59f0-a030-285cfb4a5af4"
+      ],
+      "field": "start",
+      "before": 0.003,
+      "after": 0.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "9a1dbe10-c483-5e23-89e0-3a73fbf803e3"
+      ],
+      "field": "start",
+      "before": 0.006,
+      "after": 0.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "8efb03b5-d7c0-53b2-86b7-606e4b8243a5"
+      ],
+      "field": "start",
+      "before": 0.006,
+      "after": 0.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "6d4ca3af-83f3-5b0c-a517-e6b503026a9f"
+      ],
+      "field": "start",
+      "before": 0.753,
+      "after": 0.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "d55a98fa-9ea1-5fa2-9aa4-ca635a4f2064"
+      ],
+      "field": "start",
+      "before": 0.756,
+      "after": 0.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "bb5a9f0b-74a7-543b-89e3-75f8f3ec8a0b"
+      ],
+      "field": "start",
+      "before": 0.756,
+      "after": 0.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "e8b93d02-3254-505a-8f4d-d1f67bd6e20f"
+      ],
+      "field": "start",
+      "before": 1.503,
+      "after": 1.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "c509e364-c14e-5ab3-809e-8dfbade1a35b"
+      ],
+      "field": "start",
+      "before": 1.506,
+      "after": 1.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "c2327d39-4f66-50fd-ad90-6a37fa604c39"
+      ],
+      "field": "start",
+      "before": 1.506,
+      "after": 1.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "ba99bd07-9412-5f80-b8d3-89edbaa8cdb9"
+      ],
+      "field": "start",
+      "before": 2.003,
+      "after": 2.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "7fbe1b5f-1fbb-55e8-8ccd-8e3b31a79bc7"
+      ],
+      "field": "start",
+      "before": 2.006,
+      "after": 2.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "ab22c625-3c62-5657-b315-c9ef3d9ce562"
+      ],
+      "field": "start",
+      "before": 2.006,
+      "after": 2.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "4eee62f0-17d0-5e38-9b9c-684f03b71c6c"
+      ],
+      "field": "start",
+      "before": 2.753,
+      "after": 2.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "5f2b0fd0-d89c-5372-9fc9-da8a5178f9b7"
+      ],
+      "field": "start",
+      "before": 2.756,
+      "after": 2.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "3a44bc25-40bf-5ab9-b3ff-a96a9943ce65"
+      ],
+      "field": "start",
+      "before": 2.756,
+      "after": 2.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "10b3eea5-f475-5577-a3fa-32ad8d7007e8"
+      ],
+      "field": "start",
+      "before": 3.503,
+      "after": 3.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "b8266ea3-b977-5717-be5a-8d3ed05a171a"
+      ],
+      "field": "start",
+      "before": 3.506,
+      "after": 3.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "07a2d80a-8474-5857-b4ee-dda9f8b51da2"
+      ],
+      "field": "start",
+      "before": 3.506,
+      "after": 3.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "14673d78-b2a3-5217-98e9-56fdf5f5be79"
+      ],
+      "field": "start",
+      "before": 4.003,
+      "after": 4.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "19b1599a-8eb2-5a3b-8168-383e5ed5807f"
+      ],
+      "field": "start",
+      "before": 4.006,
+      "after": 4.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "8551847e-f63e-5088-8409-bcdd0cfb369d"
+      ],
+      "field": "start",
+      "before": 4.006,
+      "after": 4.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "f7cc22df-41bc-5b96-b729-c4cca0ed02a1"
+      ],
+      "field": "start",
+      "before": 4.753,
+      "after": 4.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "6526feec-ccd6-5ac9-88c0-13afd58dd214"
+      ],
+      "field": "start",
+      "before": 4.756,
+      "after": 4.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "153909e2-1088-5732-9396-bb5f93724741"
+      ],
+      "field": "start",
+      "before": 4.756,
+      "after": 4.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "ef7f5721-c285-5025-96f8-b0ec76fadf54"
+      ],
+      "field": "start",
+      "before": 5.503,
+      "after": 5.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "b9c7926b-e022-5d03-a2c5-c9a391fd8a44"
+      ],
+      "field": "start",
+      "before": 5.506,
+      "after": 5.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "3253ce8b-0669-5b37-8891-39106b2559e3"
+      ],
+      "field": "start",
+      "before": 5.506,
+      "after": 5.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "534ad9cb-eba1-5fe5-9d13-f62a4995f697"
+      ],
+      "field": "start",
+      "before": 6.003,
+      "after": 6.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "0752228d-521c-5d52-819e-c28c5efd3dd3"
+      ],
+      "field": "start",
+      "before": 6.006,
+      "after": 6.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "d7bb2a23-37a2-50e6-81ec-359a8260cccc"
+      ],
+      "field": "start",
+      "before": 6.006,
+      "after": 6.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "02b42b4a-6f7f-5d95-a403-7393ea39153c"
+      ],
+      "field": "start",
+      "before": 6.753,
+      "after": 6.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "fa6f6870-ed0d-593e-b59c-5912435f9d5a"
+      ],
+      "field": "start",
+      "before": 6.756,
+      "after": 6.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "157e3365-5650-5283-a0fb-e07a8d829115"
+      ],
+      "field": "start",
+      "before": 6.756,
+      "after": 6.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "0f21fbb9-b884-5203-88d3-228db41c0560"
+      ],
+      "field": "start",
+      "before": 7.503,
+      "after": 7.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "750dfcd9-360d-5fbf-b213-a29be06e2a1f"
+      ],
+      "field": "start",
+      "before": 7.506,
+      "after": 7.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "6c1019d7-03d1-5e1c-b08f-02626e6db2be"
+      ],
+      "field": "start",
+      "before": 7.506,
+      "after": 7.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "9ba60905-5e54-5f94-8ec8-263d609ba62b"
+      ],
+      "field": "start",
+      "before": 8.003,
+      "after": 8.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "a7036767-23fb-5bbd-a0ad-9606c103c5f2"
+      ],
+      "field": "start",
+      "before": 8.006,
+      "after": 8.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "065dd4b6-5e78-57b2-a768-4cb4485482cd"
+      ],
+      "field": "start",
+      "before": 8.006,
+      "after": 8.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "a6ee58da-29a2-5f68-90ec-ede3e24b0f0b"
+      ],
+      "field": "start",
+      "before": 8.753,
+      "after": 8.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "20a19f29-4ef7-51e7-a235-ca11620f5d86"
+      ],
+      "field": "start",
+      "before": 8.756,
+      "after": 8.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "36ccbdcb-5774-50e5-b816-e11ac1e422e1"
+      ],
+      "field": "start",
+      "before": 8.756,
+      "after": 8.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "d913f3bd-405d-530c-b3de-902b4934ce97"
+      ],
+      "field": "start",
+      "before": 9.503,
+      "after": 9.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "9a47b7a6-f575-5214-8ce0-03c7a8041a69"
+      ],
+      "field": "start",
+      "before": 9.506,
+      "after": 9.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "2aa93bf3-6d12-5d1d-8600-97519dc94749"
+      ],
+      "field": "start",
+      "before": 9.506,
+      "after": 9.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "cd803b9f-c4fc-5582-97d8-7f43c4c9bda2"
+      ],
+      "field": "start",
+      "before": 10.003,
+      "after": 10.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "896be291-0df9-5f13-a694-17ff199e2a5f"
+      ],
+      "field": "start",
+      "before": 10.006,
+      "after": 10.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "4a8bd404-be1a-5810-a542-c018021b8059"
+      ],
+      "field": "start",
+      "before": 10.006,
+      "after": 10.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "b5210e9d-23db-56c7-8db5-336664bad5de"
+      ],
+      "field": "start",
+      "before": 10.753,
+      "after": 10.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "a592d8f3-3761-58c2-b023-4badd972768c"
+      ],
+      "field": "start",
+      "before": 10.756,
+      "after": 10.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "58d833c6-9efd-5589-bce6-e21b75faa267"
+      ],
+      "field": "start",
+      "before": 10.756,
+      "after": 10.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "f166a08a-a24a-5f25-9400-73b259cc46aa"
+      ],
+      "field": "start",
+      "before": 11.503,
+      "after": 11.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "1d97ebda-5906-5e67-8850-3709a20183e6"
+      ],
+      "field": "start",
+      "before": 11.506,
+      "after": 11.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "d2801488-c7bc-5666-9681-567c9054a3d8"
+      ],
+      "field": "start",
+      "before": 11.506,
+      "after": 11.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "f21b2f83-5e60-5cc4-8115-46237a3da536"
+      ],
+      "field": "start",
+      "before": 12.003,
+      "after": 12.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "a196af46-8480-5c8e-b354-edcd05324a2e"
+      ],
+      "field": "start",
+      "before": 12.006,
+      "after": 12.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "bfd39683-7765-5a1e-9de1-6318552f32de"
+      ],
+      "field": "start",
+      "before": 12.006,
+      "after": 12.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "e1ca9aa1-ee99-55e0-91dc-d0ec59987be3"
+      ],
+      "field": "start",
+      "before": 12.753,
+      "after": 12.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "319bec89-51cc-55d2-a855-6e196e3fbe17"
+      ],
+      "field": "start",
+      "before": 12.756,
+      "after": 12.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "338c463c-a17a-593a-834b-f941b52406a8"
+      ],
+      "field": "start",
+      "before": 12.756,
+      "after": 12.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "0f7e0694-ca58-5949-9fc0-e6b1ec4fce3a"
+      ],
+      "field": "start",
+      "before": 13.503,
+      "after": 13.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "7a275071-da66-5574-ae83-b701acf2d2fd"
+      ],
+      "field": "start",
+      "before": 13.506,
+      "after": 13.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "0ab37281-081a-5f49-94ff-6deb23a9d95c"
+      ],
+      "field": "start",
+      "before": 13.506,
+      "after": 13.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "fa417b4c-e2c7-5457-bce7-f85cabd76ca7"
+      ],
+      "field": "start",
+      "before": 14.003,
+      "after": 14.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "5e0152d8-cc90-5bd8-8692-42fe7b527d7d"
+      ],
+      "field": "start",
+      "before": 14.006,
+      "after": 14.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "279e1970-6be4-577e-837c-ddc62cbd3c4f"
+      ],
+      "field": "start",
+      "before": 14.006,
+      "after": 14.0,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "9f2c0f76-3aff-57ca-bf26-e57733cfa8e1"
+      ],
+      "field": "start",
+      "before": 14.753,
+      "after": 14.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "048e1841-786c-52e7-8e5b-592262e6b2f0"
+      ],
+      "field": "start",
+      "before": 14.756,
+      "after": 14.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "26106856-f521-5335-9900-e5a8e52ef81d"
+      ],
+      "field": "start",
+      "before": 14.756,
+      "after": 14.75,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "77f6a703-28b7-58e7-a84d-f829ea4d07f7"
+      ],
+      "field": "start",
+      "before": 15.503,
+      "after": 15.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "4235b5ea-35f0-5397-ac90-2e30d2ddcc33"
+      ],
+      "field": "start",
+      "before": 15.506,
+      "after": 15.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    },
+    {
+      "note_ids": [
+        "ca022b5f-e152-581f-a55b-5071ea6a33a8"
+      ],
+      "field": "start",
+      "before": 15.506,
+      "after": 15.5,
+      "reason": "Aligned sub-grid performance jitter; intentional offbeats remain on their selected grid.",
+      "pass": "notation_readability"
+    }
+  ],
+  "exports": {
+    "before": {
+      "musicxml_round_trip": true,
+      "midi_matches_musicxml_pitches_onsets_durations": true,
+      "note_events": 144,
+      "pages": 1,
+      "notation": {
+        "parts": 1,
+        "staves": 2,
+        "max_voices_per_staff": 2,
+        "visible_rests": 120,
+        "tied_fragments": 0,
+        "readability": null
+      }
+    },
+    "after": {
+      "musicxml_round_trip": true,
+      "midi_matches_musicxml_pitches_onsets_durations": true,
+      "note_events": 120,
+      "pages": 1,
+      "notation": {
+        "parts": 1,
+        "staves": 2,
+        "max_voices_per_staff": 1,
+        "visible_rests": 88,
+        "tied_fragments": 0,
+        "readability": {
+          "issues": [],
+          "statistics": {
+            "visible_rests": 88,
+            "hidden_rests": 0,
+            "tied_fragments": 0,
+            "sounding_events": 48,
+            "maximum_voices_per_staff": 1,
+            "maximum_ledger_lines": 1
+          },
+          "limitations": [
+            "These counts are not a visual collision test or human readability assessment.",
+            "Ledger counts estimate diatonic register; enharmonic spelling can change the count."
+          ]
+        }
+      },
+      "browser_playback_matches_midi_pitches_onsets_durations": true
+    }
+  },
+  "wall_seconds": 6.21
+}

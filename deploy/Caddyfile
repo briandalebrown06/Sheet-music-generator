@@ -1,0 +1,54 @@
+{
+	admin off
+	log default {
+		format filter {
+			wrap json
+			fields {
+				request delete
+			}
+		}
+	}
+	servers {
+		timeouts {
+			read_header 10s
+			read_body 30m
+			read_body_idle 30s
+			write 15m
+			idle 1m
+		}
+	}
+	email {$ACME_EMAIL}
+	http_port 8080
+	https_port 8443
+}
+
+{$APP_DOMAIN} {
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "no-referrer"
+		Permissions-Policy "microphone=(self), camera=(), geolocation=()"
+		Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; font-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'"
+		-Server
+	}
+	# No access log: account/project URLs, cookies and request bodies are private.
+	@api path /api /api/*
+	handle @api {
+		request_body {
+			max_size 500065536
+		}
+		reverse_proxy api:8000 {
+			# Caddy overwrites forwarded headers from untrusted external clients.
+			transport http {
+				dial_timeout 5s
+				response_header_timeout 660s
+			}
+		}
+	}
+	handle {
+		root * /srv
+		try_files {path} /index.html
+		header Cache-Control "no-cache"
+		file_server
+	}
+}

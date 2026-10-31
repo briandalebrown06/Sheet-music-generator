@@ -1,0 +1,5 @@
+# Deployment resolver input, Python 3.11 / Linux CPU. Retains upstream metadata,
+# including Basic Pitch's Linux TensorFlow requirement even with ONNX inference.
+-r ../backend/requirements-analysis.txt
+-r ../backend/requirements-separation.txt
+-r ../backend/requirements-engraving.txt

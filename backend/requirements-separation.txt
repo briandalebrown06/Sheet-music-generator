@@ -1,0 +1,11 @@
+# Verified together in the existing Python 3.11 / macOS arm64 analysis environment.
+# CPU inference is the supported application path; no GPU is required.
+# Torch 2.14.1 fixes GHSA-rrmf-rvhw-rf47; TorchAudio 2.11 uses the stable ABI.
+torch==2.14.1
+torchaudio==2.11.0
+openunmix==1.3.0
+# Existing analysis constraints stay intact.
+numpy==1.26.4
+soundfile==0.14.0
+# Tested monophonic vocal/bass pYIN adapter (Basic Pitch permits this version).
+librosa==0.11.0

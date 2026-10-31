@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-27",
+  "python_tests_passed": 218,
+  "browser_assertions": {
+    "audio": 90,
+    "solo_review": 71,
+    "mixed": 48,
+    "authenticated": 68,
+    "loopback_https_ingress": 26
+  },
+  "playback_tests_passed": 8,
+  "long_audio": {
+    "fixture": "Original procedural test audio; references never injected into inference",
+    "platform": "darwin",
+    "python": "3.11.18",
+    "results": [
+      {
+        "case": "maximum-allowed-solo",
+        "status": "completed",
+        "worker_wall_seconds": 6.704941208939999,
+        "original_seconds": 300.0,
+        "clip_seconds": 299.5000453514739,
+        "note_count": 648,
+        "error": null
+      },
+      {
+        "case": "over-limit-rejected-despite-short-selection",
+        "status": "failed",
+        "worker_wall_seconds": 0.359973874874413,
+        "original_seconds": null,
+        "clip_seconds": null,
+        "note_count": null,
+        "error": "This recording exceeds the 300-second limit. Trim the original and upload again."
+      },
+      {
+        "case": "multi-window-mixed",
+        "status": "completed",
+        "worker_wall_seconds": 6.687841959064826,
+        "original_seconds": 90.0,
+        "clip_seconds": 89.5,
+        "note_count": null,
+        "error": null,
+        "stems": [
+          {
+            "category": "vocals",
+            "duration": 89.5,
+            "original_offset": 0.25
+          },
+          {
+            "category": "drums",
+            "duration": 89.5,
+            "original_offset": 0.25
+          },
+          {
+            "category": "bass",
+            "duration": 89.5,
+            "original_offset": 0.25
+          },
+          {
+            "category": "other",
+            "duration": 89.5,
+            "original_offset": 0.25
+          }
+        ]
+      }
+    ],
+    "measurement_note": "These long-audio timings preceded the Torch patch and used Torch 2.11.0; they are not deployment latency guarantees."
+  },
+  "worker_recovery": {
+    "worker_crash": "SIGKILL during actual separation",
+    "recovered_attempts": 2,
+    "recovered_status": "completed",
+    "abandoned_attempt_removed": true,
+    "cancel_during_real_inference": "canceled",
+    "canceled_output_removed": true
+  },
+  "fixture_restore": {
+    "fixture_data_only": true,
+    "integrity_check": "ok",
+    "artifact_files_verified": 18,
+    "projects_restored": 3,
+    "notes_restored": 648
+  },
+  "validators": {
+    "compose": "5.6.1",
+    "caddy": "2.11.7",
+    "uv": "0.13.6"
+  },
+  "production_deployed": false,
+  "docker_execution_tested": false,
+  "public_tls_tested": false,
+  "physical_microphone_tested": false,
+  "advisories_resolved": false,
+  "runtime_patch": {
+    "torch_before": "2.11.0",
+    "torch_after": "2.14.1",
+    "targeted_tests_passed": 38,
+    "quality_metrics_unchanged": true,
+    "remaining_flagged_packages": [
+      "keras",
+      "protobuf",
+      "setuptools"
+    ]
+  }
+}

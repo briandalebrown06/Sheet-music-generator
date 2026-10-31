@@ -1,0 +1,13 @@
+# Actual vector PDF engraving; verified macOS arm64 / Python 3.11.
+# Independent of MuseScore and its desktop configuration.
+verovio==6.3.0
+svglib==2.3.2
+reportlab==5.1.0
+pypdf==6.21.2
+# Pin SVG parser/conversion dependencies as verified with the analysis environment.
+cssselect2==0.10.1
+lxml==6.1.3
+tinycss2==1.5.1
+webencodings==0.6.1
+pillow==13.0.0
+charset-normalizer==3.5.2

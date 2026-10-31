@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "description": "Generated additive-synthesis test audio with authored note boundaries. No commercial recordings or transcription outputs are embedded.",
+  "sample_rate": 22050,
+  "synthesis": {
+    "amplitude_per_note": 0.18,
+    "harmonics": [1.0, 0.35, 0.2],
+    "attack_seconds": 0.02,
+    "release_seconds": 0.04,
+    "phase": "zero at each note start"
+  },
+  "fixtures": [
+    {
+      "id": "single_note_melody",
+      "duration_seconds": 5.0,
+      "notes": [
+        {"pitch": 60, "start": 0.5, "end": 1.25},
+        {"pitch": 62, "start": 1.5, "end": 2.25},
+        {"pitch": 64, "start": 2.5, "end": 3.25},
+        {"pitch": 67, "start": 3.5, "end": 4.25}
+      ]
+    },
+    {
+      "id": "sustained_notes",
+      "duration_seconds": 9.0,
+      "notes": [
+        {"pitch": 60, "start": 0.5, "end": 4.5},
+        {"pitch": 67, "start": 5.0, "end": 8.5}
+      ]
+    },
+    {
+      "id": "repeated_notes",
+      "duration_seconds": 5.0,
+      "notes": [
+        {"pitch": 64, "start": 0.5, "end": 0.95},
+        {"pitch": 64, "start": 1.2, "end": 1.65},
+        {"pitch": 64, "start": 1.9, "end": 2.35},
+        {"pitch": 64, "start": 2.6, "end": 3.05},
+        {"pitch": 64, "start": 3.3, "end": 3.75},
+        {"pitch": 64, "start": 4.0, "end": 4.45}
+      ]
+    },
+    {
+      "id": "simple_chords",
+      "duration_seconds": 4.0,
+      "notes": [
+        {"pitch": 60, "start": 0.5, "end": 1.7},
+        {"pitch": 64, "start": 0.5, "end": 1.7},
+        {"pitch": 67, "start": 0.5, "end": 1.7},
+        {"pitch": 62, "start": 2.2, "end": 3.4},
+        {"pitch": 65, "start": 2.2, "end": 3.4},
+        {"pitch": 69, "start": 2.2, "end": 3.4}
+      ]
+    },
+    {"id": "silence", "duration_seconds": 4.0, "notes": []},
+    {
+      "id": "window_boundary_sustain",
+      "duration_seconds": 20.0,
+      "supplementary": true,
+      "notes": [{"pitch": 69, "start": 0.5, "end": 18.5}]
+    }
+  ]
+}
